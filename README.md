@@ -1,8 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3260309.svg)](https://doi.org/10.5281/zenodo.3260309)
 
-# Genomics Workshop
+# Metagenomics Workshop
 
-Overview of the Genomics workshop. 
+Overview of the Metagenomics workshop. 
 
 ## Code of Conduct
 
@@ -10,9 +10,9 @@ All participants should agree to abide by [The Carpentries Code of Conduct](http
 
 ## Authors
 
-The Genomics workshop overview is authored and maintained by the [community](https://github.com/datacarpentry/genomics-workshop/network/members).
+The Metagenomics workshop overview is authored and maintained by the [community](https://github.com/datacarpentry/genomics-workshop/network/members).
 
 ## Citation
 
-Please cite as:   
-Erin Alison Becker, Tracy Teal, François Michonneau, Maneesha Sane, Taylor Reiter, Jason Williams, et al. (2019, June). datacarpentry/genomics-workshop: Data Carpentry: Genomics Workshop Overview, June 2019 (Version v2019.06.1). Zenodo. http://doi.org/10.5281/zenodo.3260309
+Please cite as:
+Pending Set Version and Data in Zenodo
