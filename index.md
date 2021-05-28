@@ -54,7 +54,7 @@ were we will be happy to help you!
 | ------- | ---------- |
 | [Project organization and management](https://nselem.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your genomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|
 | [Introduction to the command line](https://nselem.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. |
-|[Data wrangling and processing](https://carpentries-incubator.github.io/metagenomics/) | Use command-line tools to perform quality control, align reads to a reference genome, and identify and visualize between-sample variation. |
+|[Data processing and visualization for metagenomics](https://carpentries-incubator.github.io/metagenomics/) | Use command-line tools to perform quality control, align reads to a reference genome, and identify and visualize between-sample variation. |
 
 <!--
 # Optional Additional Lessons
