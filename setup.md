@@ -6,20 +6,16 @@ title: Setup
 # Overview
 
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
-instances. With the exception of a spreadsheet program, all of the software and data used in the workshop are hosted on an Amazon 
+instances. With the exception of a spreadsheet program, all of the command line software and data used in the workshop are hosted on an Amazon 
 Machine Image (AMI). Please follow the instructions below to prepare your computer for the workshop:
 
-- Required additional software + Option A   
-**OR**
-- Required additional software + Option B
 
-## Required additional software
+
+## Required  software
 
 This lesson requires a working spreadsheet program. If you don't have a spreadsheet program already, you can use LibreOffice. It's a free, open source spreadsheet program.  Directions to install are included for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
 > ## Windows
-> - Install LibreOffice by going to [the installation page](https://www.libreoffice.org/download/libreoffice-fresh/). The version for Windows should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don't need to make one. Your download should begin automatically.  
-> - Once the installer is downloaded, double click on it and LibreOffice should install.
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
 >   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
 >   + Select "Use the nano editor by default" and click on "Next".
@@ -34,30 +30,74 @@ This lesson requires a working spreadsheet program. If you don't have a spreadsh
 >   + Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
 >   + Press [Enter], you should see `SUCCESS: Specified value was saved.`
 >   + Quit command prompt by typing `exit` then pressing [Enter]
-> - An **alternative option** is to install PuTTY by going to the [the installation page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version. If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi. If you aren't sure whether you need the 64 or 32 bit version, you can check your laptop version by following [the instructions here](https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq). Once the installer is downloaded, double click on it, and PuTTY should install.
+> - An **alternative option** is to install PuTTY
+>  by going to the [the installation page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version. If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi. If you aren't sure whether you need the 64 or 32 bit version, you can check your laptop version by following [the instructions here](https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq). Once the installer is downloaded, double click on it, and PuTTY should install.
 > - **Another alternative option** is to use the Ubuntu Subsystem for Windows. This option is only available for Windows 10 - detailed [instructions are available here](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 {: .solution}
 
 > ## Mac OS X
-> - Install LibreOffice by going to [the installation page](https://www.libreoffice.org/download/libreoffice-fresh/). The version for Mac should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don't need to make one. Your download should begin automatically.  
-> - Once the installer is downloaded, double click on it and LibreOffice should install.
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). See the Git [installation video tutorial](https://www.youtube.com/watch?v=9LQhwETCdwY) for an example on how to open the Terminal. You may want to keep Terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
->  - Install LibreOffice by going to [the installation page](https://www.libreoffice.org/download/libreoffice-fresh/). The version for Linux should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don't need to make one. Your download should begin automatically.  
-> - Once the installer is downloaded, double click on it and LibreOffice should install.
+>  - The default shell is usually Bash and there is usually no need to install anything. To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with '/bash' then your default is something else and you can run Bash by typing bash.
 {: .solution}
 
-## Option A (**Recommended**): Using the lessons with Amazon Web Services (AWS)
 
-If you are signed up to take a Genomics Data Carpentry workshop, you do *not* need to worry about setting up an AMI instance. The Carpentries
+## Option A: Using the lessons with Amazon Web Services (AWS)
+
+If you are signed up to take a Metaggenomics Data Carpentry workshop, you do *not* need to worry about setting up an AMI instance. The Carpentries
 staff will create an instance for you and this will be provided to you at no cost. This is true for both self-organized and centrally-organized workshops. Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
 
 If you would like to work through these lessons independently, outside of a workshop, you will need to start your own AMI instance. 
-Follow these [instructions on creating an Amazon instance](https://datacarpentry.org/genomics-workshop/AMI-setup/). Use the AMI `ami-0985860a69ae4cb3d` (Data Carpentry Genomics Beta 2.0 (April 2019)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this
-cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information.
+Follow these [instructions on creating an Amazon instance](https://datacarpentry.org/genomics-workshop/AMI-setup/). Use the AMI `ami-0478bdae4d294d131` (Metagenomics (The Carpentries Incubator)(April 2019)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
+
+After the genomic instace is setup you need to addition the metagenomics environment. First create the file `metagenomics.yml`
+with the following content:  
+~~~
+$ cat metagenomics.yml
+~~~
+{: .bash}
+~~~
+name: metagenomics                                                                
+dependencies:                                      
+  - kraken2 
+  - krona             
+  - maxbin2
+  - spades
+  - kraken-biom
+  - checkm-genome
+
+~~~
+{: .output}
+
+Then create the metagenomics conda environment using the metagenomics.yml file.  
+~~~
+$ conda env create -f metagenomics.yml
+~~~
+{: .bash}  
+
+Finally execute some remaining installation scripts.  
+~~~
+bash /home/dcuser/.miniconda3/envs/metagenomics/opt/krona/updateTaxonomy.sh                                
+wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz 
+tar -xzf taxdump.tar.gz 
+mkdir .taxonkit
+cp names.dmp nodes.dmp delnodes.dmp merged.dmp /home/dcuser/.taxonkit
+rm *dmp readme.txt taxdump.tar.gz gc.prt 
+~~~
+{: .bash}  
+
+### Data
+
+The data used in this workshop are available on Zenodo. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the Zenodo page linked below for information about the data and access to the data files. 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285901.svg)](https://doi.org/10.5281/zenodo.4285901)
+
+
+More information about these data will be presented in the [first lesson of the workshop](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
+
 
 ## Option B: Using the lessons on your local machine
 
@@ -79,10 +119,12 @@ More information about these data will be presented in the [first lesson of the 
 | -------- | ------------ | ------ | ------------- | ----------- |
 | [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | 0.11.7 | [Link](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, MacOS, Windows | Quality control tool for high throughput sequence data. |
 | [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | 0.38 | [Link](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf) | Linux, MacOS, Windows | A flexible read trimming tool for Illumina NGS data. |
-| [BWA](http://bio-bwa.sourceforge.net/) | 0.7.17 | [Link](http://bio-bwa.sourceforge.net/bwa.shtml) | Linux, MacOS | Mapping DNA sequences against reference genome. |
-| [SAMtools](http://samtools.sourceforge.net/) | 1.9 | [Link](http://www.htslib.org/doc/samtools.html) | Linux, MacOS | Utilities for manipulating alignments in the SAM format. |
-| [BCFtools](https://samtools.github.io/bcftools/) | 1.8 | [Link](https://samtools.github.io/bcftools/bcftools.html) | Linux, MacOS | Utilities for variant calling and manipulating VCFs and BCFs. |
-| [IGV](http://software.broadinstitute.org/software/igv/home) | [Link](https://software.broadinstitute.org/software/igv/download) | [Link](https://software.broadinstitute.org/software/igv/UserGuide) | Linux, MacOS, Windows | Visualization and interactive exploration of large genomics datasets. |
+|[Kraken](http://ccb.jhu.edu/software/kraken2/)|2.1.1|[Link](https://github.com/DerrickWood/kraken2/wiki/Manual)|Available for|A tool for taxonomic assignation for reads from metagenomics|
+|[KronaTools](https://github.com/marbl/Krona/wiki) |2.7.1|help link|A tool for taxonomic visualization in hierarchical pie graphs.|
+|[MaxBin2]()|2.2.7|help link|Available for| Tool for MAGs reconstruction|
+|[Spades](https://cab.spbu.ru/software/spades/)|v3.14.1 |[Link](https://github.com/ablab/spades/blob/spades_3.15.2/README.md#meta)|Linux & MacOS| Tool for assemblies|
+|[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|1.0.1|help link|Available for|Tool to convert kraken reports in R readable files|
+|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|v1.1.3 |help link|Available for|Tool to check completeness and contamination in MAGs |
 
 ### QuickStart Software Installation Instructions
 
@@ -216,126 +258,5 @@ $ java -jar ~/src/Trimmomatic-0.38/trimmomatic-0.38.jar
 > {: .bash}
 {: .solution}
 
-### BWA
-
-> ## MacOS
->
->~~~
->conda install -c bioconda bwa=0.7.17=ha92aebf_3
->~~~
->{: .bash}
-{: .solution}
-
-> ## BWA Source Code Installation
->
-> If you prefer to install from source, follow the instructions below:
->
-> ~~~
-> $ cd ~/src
-> $ curl -OL http://sourceforge.net/projects/bio-bwa/files/bwa-0.7.17.tar.bz2
-> $ tar jxvf bwa-0.7.17.tar.bz2
-> $ cd bwa-0.7.17
-> $ make
-> $ export PATH=~/src/bwa-0.7.17:$PATH
-> ~~~
-> {: .bash}
-{: .solution}
-
-**Test your installation by running:**
-
-~~~
-$ bwa
-~~~
-{: .bash}
-
-### SAMtools
-
-> ## MacOS
->
->~~~
->$ conda install -c bioconda samtools=1.9=h8ee4bcc_1
->~~~
->{: .bash}
-{: .solution}
-
-> ## SAMtools Versions
-> SAMtools has changed the command line invocation (for the better). But this means that most of the tutorials
-> on the web indicate an older and obsolete usage.
->
-> Using SAMtools version 1.9 is important to work with the commands we present in these lessons.
-{: .callout}
-
-> ## SAMtools Source Code Installation
->
-> If you prefer to install from source, follow the instructions below:
->
-> ~~~
-> $ cd ~/src
-> $ curl -OkL https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
-> $ tar jxvf samtools-1.9.tar.bz2
-> $ cd samtools-1.9
-> $ make
-> ~~~
-> {: .bash}
->
-> Add directory to the path if necessary:
->
-> ~~~
-> $ echo export `PATH=~/src/samtools-1.9:$PATH` >> ~/.bashrc
-> $ source ~/.bashrc
-> ~~~
-> {: .bash}
-{: .solution}
-
-**Test your installation by running:**
-
-~~~
-$ samtools
-~~~
-{: .bash}
 
 
-### BCFtools
-
-> ## MacOS
->
->~~~
->$ conda install -c bioconda bcftools=1.8=h4da6232_3 
->~~~
->{: .bash}
-{: .solution}
-
-> ## BCF tools Source Code Installation
->
-> If you prefer to install from source, follow the instructions below:
->
-> ~~~
-> $ cd ~/src
-> $ curl -OkL https://github.com/samtools/bcftools/releases/download/1.8/bcftools-1.8.tar.bz2
-> $ tar jxvf bcftools-1.8.tar.bz2
-> $ cd bcftools-1.8
-> $ make
-> ~~~
-> {: .bash}
->
-> Add directory to the path if necessary:
->
-> ~~~
-> $ echo export `PATH=~/src/bcftools-1.8:$PATH` >> ~/.bashrc
-> $ source ~/.bashrc
-> ~~~
-> {: .bash}
-{: .solution}
-
-**Test your installation by running:**
-
-~~~
-$ bcftools
-~~~
-{: .bash}
-
-
-### IGV
-
-- [Download the IGV installation files](https://software.broadinstitute.org/software/igv/download)
-- Install and run IGV using the [instructions for your operating system](https://software.broadinstitute.org/software/igv/download).
