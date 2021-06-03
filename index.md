@@ -44,7 +44,8 @@ were we will be happy to help you!
 >environment, a pond from the Cuatro Ciénegas Basin (CCB), and the same microbial 
 >community under a fertilization treatment.
 >
-> All of the data used in this workshop can be [downloaded from Zenodo](Zenodo). 
+> All of the data used in this workshop can be downloaded from
+>  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285901.svg)](https://doi.org/10.5281/zenodo.4285901)
 > More information about this data is available on the [Data page](https://datacarpentry.org/organization-genomics/data/).
 {: .prereq} 
 
