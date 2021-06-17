@@ -5,10 +5,11 @@ title: "Instructor Notes"
 
 ## Workshop Structure
 
-This Workshop is devided in 3 lessons: 
+This Workshop is devided in 4 lessons: 
 1. Project organization and management.
 2. Introduction to the command line.
-3. Data processing and visualization for metagenomics. 
+3. Introduction to R for metagenomics.
+4. Data processing and visualization for metagenomics. 
 
 ## Technical tips and tricks
 
