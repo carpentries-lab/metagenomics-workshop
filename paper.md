@@ -1,23 +1,44 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'Software Carpentry metagenomic workshop'
 tags:
-  - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - Shotgun Metagenomics
+  - bash
+  - R
+  - data processing 
+  - visualization
 authors:
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
+  - name: Diego Garfias-Gallegos
+    affiliation: 1
+  - name: Claudia Zirión-Martínez
+    affiliation: 1
+  - name:  Tania Vanessa Arellano-Fernandez
+    affiliation: "3, 6"
+    - name: Aarón Espinosa-Jaime
+    affiliation: 6
+  - name: Edder D Bustos-Díaz
     affiliation: 2
+  - name:  José Abel Lovaco-Flores
+    affiliation: "4, 6"
+  - name: J Abraham Avelar-Rivas
+    affiliation: "3, 4"
+  - name: Nelly Sélem-Mojica
+    orcid: 0000-0003-1697-3862
+    affiliation: "4, 5" # (Multiple affiliations must be quoted)
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: Laboratorio de Genómica Ecológica y Evolutiva, Langebio, Cinvestav, México.
    index: 1
- - name: Institution 2
+ - name: Laboratorio de Evolución de la Diversidad Metabólica, Langebio, Cinvestav, México.  
    index: 2
-date: 13 August 2017
+ - name: Laboratorio de Sistemas Genéticos, Langebio, Cinvestav, México. 
+   index: 3
+ - name: BetterLab - C3. Irapuato, México.  
+   index: 4
+ - name: Centro de Ciencias Matemáticas. UNAM, México.
+   index: 5
+ - name:Escuela Nacional de Estudios Superiores, Unidad León, UNAM, México.
+   index: 6
+   
+date: 08 July 2021
 bibliography: paper.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
@@ -27,33 +48,9 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
+Metagenomics uses next-generation sequencing to study all of the genomic diversity present in a specific habitat. The analysis of such experiments requires extensive biological knowledge and the usage of informatics tools, including programming languages and software platforms. Although each tool is released with full tutorials, beginners struggle to build a pipeline that goes from raw data to useful biological insights. With this in mind, we created a workshop on The Carpentries’s lesson incubator. The Carpentries is an organization that already hosts worldwide-used open lessons for Genomics, Ecology, and specific programming languages, but a guide for metagenomics was missing. The purpose of the workshop is to take someone with no previous programming knowledge through a comprehensive workflow.
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
-
-``Gala`` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for ``Gala`` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. ``Gala`` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the ``Astropy`` package [@astropy] (``astropy.units`` and
-``astropy.coordinates``).
-
-``Gala`` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
+[@Binney:2008]. The combination of speed,
 design, and support for Astropy functionality in ``Gala`` will enable exciting
 scientific explorations of forthcoming data releases from the *Gaia* mission
 [@gaia] by students and experts alike.
