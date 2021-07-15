@@ -83,11 +83,11 @@ Project organization
   - Assign the MAGs to different taxa with Kraken
   -Visualize the taxonomy using Krona and Pavian
 - R
-- Learn how R works and knowing their different data types 
-- Become able to manage different libraries and their functions 
-- A useful tool for script writing 
-- Calculate diversity species indexes
-- Visualize the graphics and improve the aesthetics 
+  - Learn how R works and knowing their different data types 
+  - Become able to manage libraries and their functions 
+  - A useful tool for script writing 
+  - Calculate diversity species indexes
+  - Visualize the graphics and improve the aesthetics 
 
 # Mathematics
 
