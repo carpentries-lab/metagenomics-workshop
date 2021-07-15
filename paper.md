@@ -64,6 +64,26 @@ design, and support for Astropy functionality in ``Gala`` will enable exciting
 scientific explorations of forthcoming data releases from the *Gaia* mission
 [@gaia] by students and experts alike.
 
+# Learning objectives
+- Command-line 
+  - Know the basic unix command-line commands to process and manage big amount of files and automate repetitive tasks
+  - Use and know about different alternatives to increse power computing as amazon web services
+  - Understand the use of an environment in conda
+Project organization
+  - Basic knowledge about organizing and carrying out a metagenomic project
+  - Interpret and explain how FASTQ file encodes per-base quality scores
+- Cleaning data is essential
+  - Know how to clean and filter your sequencing data
+  - Use trimmomatic for cleaning and trimming read process
+- Assembly
+  - Understand the basis of an assembly 
+  - Run a metagenomic assembly with MetaSPAdes 
+  - Obtain Metagenome-Assembled Genomes (MAGs) and check their quality using CheckM
+- Taxonomy
+  - Assign the MAGs to different taxa with Kraken
+  -Visualize the taxonomy using Krona and Pavian
+- R
+- 
 # Mathematics
 
 Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
