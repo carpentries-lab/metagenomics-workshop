@@ -48,7 +48,16 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
-Metagenomics uses next-generation sequencing to study all of the genomic diversity present in a specific habitat. The analysis of such experiments requires extensive biological knowledge and the usage of informatics tools, including programming languages and software platforms. Although each tool is released with full tutorials, beginners struggle to build a pipeline that goes from raw data to useful biological insights. With this in mind, we created a workshop on The Carpentries’s lesson incubator. The Carpentries is an organization that already hosts worldwide-used open lessons for Genomics, Ecology, and specific programming languages, but a guide for metagenomics was missing. The purpose of the workshop is to take someone with no previous programming knowledge through a comprehensive workflow.
+Metagenomics uses next-generation sequencing to study all of the genomic diversity 
+present in a specific habitat. The analysis of such experiments requires extensive 
+biological knowledge and the usage of informatics tools, including programming languages 
+and software platforms. Although each tool is released with full tutorials, beginners 
+struggle to build a pipeline that goes from raw data to useful biological insights. 
+With this in mind, we created a workshop on The Carpentries’s lesson incubator. 
+The Carpentries is an organization that already hosts worldwide-used open lessons for 
+Genomics, Ecology, and specific programming languages, but a guide for metagenomics 
+was missing. The purpose of the workshop is to take someone with no previous programming 
+knowledge through a comprehensive workflow.
 
 [@Binney:2008]. The combination of speed,
 design, and support for Astropy functionality in ``Gala`` will enable exciting
