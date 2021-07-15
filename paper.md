@@ -71,8 +71,8 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
   - Understand the use of an environment in conda
 Project organization
   - Basic knowledge about organizing and carrying out a metagenomic project
-  - Interpret and explain how FASTQ file encodes per-base quality scores
-- Cleaning data is essential
+  - Interpret and explain how the FASTQ file encodes per-base quality scores
+- Cleaning data is essential before starting to manage our sequences 
   - Know how to clean and filter your sequencing data
   - Use trimmomatic for cleaning and trimming read process
 - Assembly
@@ -83,7 +83,12 @@ Project organization
   - Assign the MAGs to different taxa with Kraken
   -Visualize the taxonomy using Krona and Pavian
 - R
-- 
+- Learn how R works and knowing their different data types 
+- Become able to manage different libraries and their functions 
+- A useful tool for script writing 
+- Calculate diversity species indexes
+- Visualize the graphics and improve the aesthetics 
+
 # Mathematics
 
 Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
