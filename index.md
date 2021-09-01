@@ -46,7 +46,7 @@ were we will be happy to help you!
 >
 > All of the data used in this workshop can be downloaded from
 >  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285901.svg)](https://doi.org/10.5281/zenodo.4285901)
-> More information about this data is available on the [Data page](https://github.com/carpentries-incubator/organization-metagenomics/_extras/data.md).
+> More information about this data is available on the [Data page](https://carpentries-incubator.github.io/organization-metagenomics/data/index.html).
 {: .prereq} 
 
 # Workshop Overview 
