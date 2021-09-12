@@ -62,8 +62,9 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
 # Content and Learning Objectives
 
 The curriculum comprises four lessons (Fig 1). It does not assume previous experience in coding but expects that students understand basic concepts of molecular biology and ecology. The first two lessons are adapted from the Genomics’ Data Carpentry curriculum and introduce planning and organizing metagenomics projects and coding in bash [@becker_datacarpentrygenomics-workshop:2019]. The third part includes a brief introduction to R, and the fourth lesson teaches a complete shotgun metagenomics workflow using public data [@okie_genomic:2020]. 
+![alt text](https://github.com/carpentries-incubator/metagenomics-workshop/blob/gh-pages/fig_paper/JOSE_Fig1.jfif)
 
-
+Fig 1. The four lessons in the curriculum for a metagenomics workshop.
 
 # Learning objectives
 
