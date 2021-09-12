@@ -59,22 +59,29 @@ design, and support for Astropy functionality in ``Gala`` will enable exciting
 scientific explorations of forthcoming data releases from the *Gaia* mission
 [@gaia] by students and experts alike.
 
+# Content and Learning Objectives
+
+The curriculum comprises four lessons (Fig 1). It does not assume previous experience in coding but expects that students understand basic concepts of molecular biology and ecology. The first two lessons are adapted from the Genomics’ Data Carpentry curriculum and introduce planning and organizing metagenomics projects and coding in bash [@becker_datacarpentrygenomics-workshop_2019]. The third part includes a brief introduction to R, and the fourth lesson teaches a complete shotgun metagenomics workflow using public data [@okie_genomic_2020]. 
+
+
 # Learning objectives
+
 Project organization and management for metagenomics
 - Plan, structure, organize and document metagenomics data, metadata, and bioinformatics workflow.
 - Access to public data on the NCBI sequence read archive (SRA) database.
 
 Introduction to the command-line for metagenomics 
-Identify the benefits of the command line. 
-Navigate the file system, create, copy, move, and remove files and directories.
-Work with files.
-Combine commands and automate repetitive tasks.
-Make an organized file system for a bioinformatics project.
+- Identify the benefits of the command line. 
+- Navigate the file system, create, copy, move, and remove files and directories.
+- Work with files.
+- Combine commands and automate repetitive tasks.
+- Make an organized file system for a bioinformatics project.
+
 Introduction to R for metagenomics
--Familiarize with Rstudio and R functionality.
--Distinguish the different data types. 
--Create and manipulate data-frames.
--Use and find help in R libraries.
+- Familiarize with Rstudio and R functionality.
+- Distinguish the different data types. 
+- Create and manipulate data-frames.
+- Use and find help in R libraries.
  
 Data processing and visualization for metagenomics
 - Know the data and metadata for these lessons.
@@ -87,18 +94,17 @@ Data processing and visualization for metagenomics
 - Discover more resources for metagenomics projects.
 
 
-#Instructional Design
+# Instructional Design
 The workshop includes 16 hours of content with live coding, formative assessment practice, and other supportive elements. During the development of the lessons, we considered three axes of teaching: cloud setup, standardized episodes, and teaching strategies.
 
-###Cloud setup: We set up remote machines to standardize the learning environment and teaching experience. This setup lowers entry barriers for students without experience in technical installations and provides enough computing power regardless of individual configuration. Students only need a computer with internet access and the installation of a terminal. We also enlist the instructions for setting up the remote machines and an alternative installation guide to be used by people who prefer to follow the lessons on a different computer. 
-###Standardized episodes: Following The Carpentries instructional design, each episode contains the questions to be answered and the learning objectives and ends with concrete, clear messages of the learned content.
+1. Cloud setup: We set up remote machines to standardize the learning environment and teaching experience. This setup lowers entry barriers for students without experience in technical installations and provides enough computing power regardless of individual configuration. Students only need a computer with internet access and the installation of a terminal. We also enlist the instructions for setting up the remote machines and an alternative installation guide to be used by people who prefer to follow the lessons on a different computer. 
+2. Standardized episodes: Following The Carpentries instructional design, each episode contains the questions to be answered and the learning objectives and ends with concrete, clear messages of the learned content.
+3. Teaching strategies
+    - Live-coding: Programming simultaneously with students gives a practical coding experience with examples of mistakes occurring and getting solved.
+    - Exercises and discussion in small groups: Allowing the learners to solve problems with peers incentivizes participation while applying what they learned to strengthen the new knowledge and skills. 
+    - Content review: At the end and beginning of each session, we ask learners to revisit, enlist and explain the content taught in past lessons. We use a collaborative document where simultaneous written and spoken review helps to reaffirm the content.  
 
-Teaching strategies
-Live-coding: Programming simultaneously with students gives a practical coding experience with examples of mistakes occurring and getting solved.
-Exercises and discussion in small groups: Allowing the learners to solve problems with peers incentivizes participation while applying what they learned to strengthen the new knowledge and skills. 
-Content review: At the end and beginning of each session, we ask learners to revisit, enlist and explain the content taught in past lessons. We use a collaborative document where simultaneous written and spoken review helps to reaffirm the content.  
-
-#Teaching Experience  
+# Teaching Experience  
 Our teaching team gathers undergraduate and graduate students, postdocs, and professors, each with different perspectives that enrich the discussion of the lesson. We found it adequate to have two instructors for the online workshops, plus one helper for every five students. We have greatly appreciated that we have recruited new helpers from the attendees of previous workshops, enlarging and enriching our teaching community.  
 To promote an interactive learning experience, we use a collaborative live document and small groups to do exercises and discussions. In this way, there are fewer barriers for student’s participation, and they gain practical experience of the different solutions bioinformatic problems can have. We include bonus exercises around the lessons that are not meant to be solved by all the learners but are an opportunity for advanced participants to tackle more challenging tasks. They help to leverage the background and learning speed of the learners and provide opportunities to practice and reinforce the content learned. Another strength of our workshop structure is introducing programming languages followed by a practical example of their usage, so the metagenomic analysis grows while coding skills learning becomes meaningful. The lessons are helpful even if the student’s primary goal is to learn coding rather than metagenomics. We ask the attendees to fill surveys before, during, and after the workshops to adapt our teaching strategies to the current and future learning groups. With them, we have been able to improve the curriculum’s content, explanations, and exercises. 
 
