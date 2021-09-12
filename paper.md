@@ -40,11 +40,6 @@ affiliations:
    
 date: 08 July 2021
 bibliography: paper.bib
-
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
@@ -114,6 +109,6 @@ To promote an interactive learning experience, we use a collaborative live docum
 # Story of the Project
 Creating a lesson that comprised all of the steps required to process and analyze metagenomics data came to be when one of us wanted to learn to understand metagenomics data but found it overwhelming even to decide where to start. Being someone who already used and knew the advantages of the resources offered by The Carpentries, she acknowledged the absence of a curriculum about metagenomics on this platform. When she learned of the project of Carpentries Incubator, she reached out to a fellow student that had experience on the subject and started building the episodes. Little by little other students in the same institute, who were also working on metagenomics, started contributing with the pipelines they were learning. Other team members were recruited as helpers after attending a workshop and later began collaborating to develop the episodes.
 
-# Acknowedgments
+# Acknowledgments
 Diana Oaxaca, Alejandro Pereira Santana, Angélica Ruiz, Brian Bwanya, Ahmed Moustafa and Israel Pichardo, for enriching content and teaching strategy. Angélica Cibrián-Jaramillo, Francisco Barona-Gómez, and Harumi Shimada enable and promote the delivery of these lessons among their communities. Developers of Genomics Data Carpentry for their work and ideas. Toby Hodges and Erin Becker for their technical support during the development and delivery of the lessons. Students for their feedback and enthusiasm.
 
