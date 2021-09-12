@@ -48,16 +48,11 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
-Metagenomics uses next-generation sequencing to study all of the genomic diversity 
-present in a specific habitat. The analysis of such experiments requires extensive 
-biological knowledge and the usage of informatics tools, including programming languages 
-and software platforms. Although each tool is released with full tutorials, beginners 
-struggle to build a pipeline that goes from raw data to useful biological insights. 
-With this in mind, we created a workshop on The Carpentries’s lesson incubator. 
-The Carpentries is an organization that already hosts worldwide-used open lessons for 
-Genomics, Ecology, and specific programming languages, but a guide for metagenomics 
-was missing. The purpose of the workshop is to take someone with no previous programming 
-knowledge through a comprehensive workflow.
+Metagenomic analyses aim to explore the genomic diversity of communities in specific habitats by processing their DNA-sequencing data with specialized bioinformatics tools, which often require previous coding experience. Furthermore, beginners can struggle to build a pipeline that goes from raw data to valuable biological insights. The Carpentries platform hosts worldwide-used open lessons to analyze specialized datasets for beginners; nevertheless, a complete metagenomics guide was missing. We created a Metagenomics curriculum on The Carpentries’ incubator comprising a coding introduction, allowing learners to run commands with the software needed for completing metagenomics analyses. This curriculum taught in three 16-hour online workshops improved the content and exercises. We expect to continuously enhance this lesson, which we hope is helpful for new instructors in the field and a guide for metagenomic analyses from scratch.
+  
+# Statement of Need  
+Bioinformatic tools are nowadays used to understand biological systems. Open lessons for general coding languages and specialized topics such as genomics, ecology, and even metagenomics are already available [@darling_data_2019], [@noauthor_lessons_nodate], [@kruchten_curricular_2020-1]. Nevertheless, a complete guide for shotgun metagenomics, assuming no prior knowledge of coding and provided hardware and software solutions, was missing.  We introduce a curriculum that teaches bash and R programming in a pre-installed remote server to fill this gap by offering lessons to conduct a comprehensive metagenomics workflow. Open lessons for general coding languages and specialized topics such as genomics, ecology, and even metagenomics are already available [@darling_data_2019], [@noauthor_lessons_nodate], [@kruchten_curricular_2020-1]. 
+
 
 [@Binney:2008]. The combination of speed,
 design, and support for Astropy functionality in ``Gala`` will enable exciting
@@ -65,29 +60,32 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
 [@gaia] by students and experts alike.
 
 # Learning objectives
-- Command-line 
-  - Know the basic unix command-line commands to process and manage big amount of files and automate repetitive tasks
-  - Use and know about different alternatives to increse power computing as amazon web services
-  - Understand the use of an environment in conda
-Project organization
-  - Basic knowledge about organizing and carrying out a metagenomic project
-  - Interpret and explain how the FASTQ file encodes per-base quality scores
-- Cleaning data is essential before starting to manage our sequences 
-  - Know how to clean and filter your sequencing data
-  - Use trimmomatic for cleaning and trimming read process
-- Assembly
-  - Understand the basis of an assembly 
-  - Run a metagenomic assembly with MetaSPAdes 
-  - Obtain Metagenome-Assembled Genomes (MAGs) and check their quality using CheckM
-- Taxonomy
-  - Assign the MAGs to different taxa with Kraken
-  -Visualize the taxonomy using Krona and Pavian
-- R
-  - Learn how R works and knowing their different data types 
-  - Become able to manage libraries and their functions 
-  - A useful tool for script writing 
-  - Calculate diversity species indexes
-  - Visualize the graphics and improve the aesthetics 
+Project organization and management for metagenomics
+- Plan, structure, organize and document metagenomics data, metadata, and bioinformatics workflow.
+- Access to public data on the NCBI sequence read archive (SRA) database.
+
+Introduction to the command-line for metagenomics 
+Identify the benefits of the command line. 
+Navigate the file system, create, copy, move, and remove files and directories.
+Work with files.
+Combine commands and automate repetitive tasks.
+Make an organized file system for a bioinformatics project.
+Introduction to R for metagenomics
+-Familiarize with Rstudio and R functionality.
+-Distinguish the different data types. 
+-Create and manipulate data-frames.
+-Use and find help in R libraries.
+ 
+Data processing and visualization for metagenomics
+- Know the data and metadata for these lessons.
+- Assess the quality of the sequencing data.
+- Trimm and filter the sequences to improve their quality.
+- Perform a metagenomic assembly.
+- Obtain Metagenome-Assembled Genomes and check their quality.
+- Assign and visualize a taxonomy of reads and contigs.
+- Explore the diversity and calculate diversity estimates.
+- Discover more resources for metagenomics projects.
+
 
 # Mathematics
 
