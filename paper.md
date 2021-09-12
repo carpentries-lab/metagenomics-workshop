@@ -87,16 +87,26 @@ Data processing and visualization for metagenomics
 - Discover more resources for metagenomics projects.
 
 
-# Mathematics
+#Instructional Design
+The workshop includes 16 hours of content with live coding, formative assessment practice, and other supportive elements. During the development of the lessons, we considered three axes of teaching: cloud setup, standardized episodes, and teaching strategies.
 
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
+###Cloud setup: We set up remote machines to standardize the learning environment and teaching experience. This setup lowers entry barriers for students without experience in technical installations and provides enough computing power regardless of individual configuration. Students only need a computer with internet access and the installation of a terminal. We also enlist the instructions for setting up the remote machines and an alternative installation guide to be used by people who prefer to follow the lessons on a different computer. 
+###Standardized episodes: Following The Carpentries instructional design, each episode contains the questions to be answered and the learning objectives and ends with concrete, clear messages of the learned content.
 
-Double dollars make self-standing equations:
+Teaching strategies
+Live-coding: Programming simultaneously with students gives a practical coding experience with examples of mistakes occurring and getting solved.
+Exercises and discussion in small groups: Allowing the learners to solve problems with peers incentivizes participation while applying what they learned to strengthen the new knowledge and skills. 
+Content review: At the end and beginning of each session, we ask learners to revisit, enlist and explain the content taught in past lessons. We use a collaborative document where simultaneous written and spoken review helps to reaffirm the content.  
 
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
+#Teaching Experience  
+Our teaching team gathers undergraduate and graduate students, postdocs, and professors, each with different perspectives that enrich the discussion of the lesson. We found it adequate to have two instructors for the online workshops, plus one helper for every five students. We have greatly appreciated that we have recruited new helpers from the attendees of previous workshops, enlarging and enriching our teaching community.  
+To promote an interactive learning experience, we use a collaborative live document and small groups to do exercises and discussions. In this way, there are fewer barriers for student’s participation, and they gain practical experience of the different solutions bioinformatic problems can have. We include bonus exercises around the lessons that are not meant to be solved by all the learners but are an opportunity for advanced participants to tackle more challenging tasks. They help to leverage the background and learning speed of the learners and provide opportunities to practice and reinforce the content learned. Another strength of our workshop structure is introducing programming languages followed by a practical example of their usage, so the metagenomic analysis grows while coding skills learning becomes meaningful. The lessons are helpful even if the student’s primary goal is to learn coding rather than metagenomics. We ask the attendees to fill surveys before, during, and after the workshops to adapt our teaching strategies to the current and future learning groups. With them, we have been able to improve the curriculum’s content, explanations, and exercises. 
+
+# Story of the Project
+Creating a lesson that comprised all of the steps required to process and analyze metagenomics data came to be when one of us wanted to learn to understand metagenomics data but found it overwhelming even to decide where to start. Being someone who already used and knew the advantages of the resources offered by The Carpentries, she acknowledged the absence of a curriculum about metagenomics on this platform. When she learned of the project of Carpentries Incubator, she reached out to a fellow student that had experience on the subject and started building the episodes. Little by little other students in the same institute, who were also working on metagenomics, started contributing with the pipelines they were learning. Other team members were recruited as helpers after attending a workshop and later began collaborating to develop the episodes.
+
+# Acknowedgments
+Diana Oaxaca, Alejandro Pereira Santana, Angélica Ruiz, Brian Bwanya, Ahmed Moustafa and Israel Pichardo, for enriching content and teaching strategy. Angélica Cibrián-Jaramillo, Francisco Barona-Gómez, and Harumi Shimada enable and promote the delivery of these lessons among their communities. Developers of Genomics Data Carpentry for their work and ideas. Toby Hodges and Erin Becker for their technical support during the development and delivery of the lessons. Students for their feedback and enthusiasm.
 
 
 # Citations
