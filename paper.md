@@ -62,7 +62,8 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
 # Content and Learning Objectives
 
 The curriculum comprises four lessons (Fig 1). It does not assume previous experience in coding but expects that students understand basic concepts of molecular biology and ecology. The first two lessons are adapted from the Genomics’ Data Carpentry curriculum and introduce planning and organizing metagenomics projects and coding in bash [@becker_datacarpentrygenomics-workshop:2019]. The third part includes a brief introduction to R, and the fourth lesson teaches a complete shotgun metagenomics workflow using public data [@okie_genomic:2020]. 
-![alt text](https://github.com/carpentries-incubator/metagenomics-workshop/blob/gh-pages/fig_paper/JOSE_Fig1.jfif)
+
+![Fig 1.](https://github.com/carpentries-incubator/metagenomics-workshop/blob/gh-pages/fig_paper/JOSE_Fig1.jfif)
 
 Fig 1. The four lessons in the curriculum for a metagenomics workshop.
 
@@ -116,25 +117,3 @@ Creating a lesson that comprised all of the steps required to process and analyz
 # Acknowedgments
 Diana Oaxaca, Alejandro Pereira Santana, Angélica Ruiz, Brian Bwanya, Ahmed Moustafa and Israel Pichardo, for enriching content and teaching strategy. Angélica Cibrián-Jaramillo, Francisco Barona-Gómez, and Harumi Shimada enable and promote the delivery of these lessons among their communities. Developers of Genomics Data Carpentry for their work and ideas. Toby Hodges and Erin Becker for their technical support during the development and delivery of the lessons. Students for their feedback and enthusiasm.
 
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this: ![Example figure.](figure.png)
-
-# Acknowledgements
-
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
-
-# References
