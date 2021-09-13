@@ -49,11 +49,6 @@ Metagenomic analyses aim to explore the genomic diversity of communities in spec
 Bioinformatic tools are nowadays used to understand biological systems. Open lessons for general coding languages and specialized topics such as genomics, ecology, and even metagenomics are already available [@darling_data:2019], [@noauthor_lessons_nodate], [@kruchten_curricular:2020-1]. Nevertheless, a complete guide for shotgun metagenomics, assuming no prior knowledge of coding and provided hardware and software solutions, was missing.  We introduce a curriculum that teaches bash and R programming in a pre-installed remote server to fill this gap by offering lessons to conduct a comprehensive metagenomics workflow. Open lessons for general coding languages and specialized topics such as genomics, ecology, and even metagenomics are already available [@darling_data:2019], [@noauthor_lessons_nodate], [@kruchten_curricular:2020-1]. 
 
 
-[@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in ``Gala`` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
-
 # Content and Learning Objectives
 
 The curriculum comprises four lessons (Fig 1). It does not assume previous experience in coding but expects that students understand basic concepts of molecular biology and ecology. The first two lessons are adapted from the Genomics’ Data Carpentry curriculum and introduce planning and organizing metagenomics projects and coding in bash [@becker_datacarpentrygenomics-workshop:2019]. The third part includes a brief introduction to R, and the fourth lesson teaches a complete shotgun metagenomics workflow using public data [@okie_genomic:2020]. 
