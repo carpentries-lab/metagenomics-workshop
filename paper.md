@@ -1,5 +1,5 @@
 ---
-title: 'Software Carpentry metagenomic workshop'
+title: 'A Data Carpentry style metagenomic workshop'
 tags:
   - Shotgun Metagenomics
   - bash
@@ -43,7 +43,7 @@ bibliography: paper.bib
 ---
 
 # Summary
-Metagenomic analyses aim to explore the genomic diversity of communities in specific habitats by processing their DNA-sequencing data with specialized bioinformatics tools, which often require previous coding experience. Furthermore, beginners can struggle to build a pipeline that goes from raw data to valuable biological insights. The Carpentries platform hosts worldwide-used open lessons to analyze specialized datasets for beginners; nevertheless, a complete metagenomics guide was missing. We created a Metagenomics curriculum on The Carpentries’ incubator comprising a coding introduction, allowing learners to run commands with the software needed for completing metagenomics analyses. This curriculum taught in three 16-hour online workshops improved the content and exercises. We expect to continuously enhance this lesson, which we hope is helpful for new instructors in the field and a guide for metagenomic analyses from scratch.
+Metagenomic analyses aim to explore the genomic diversity of communities in specific habitats by processing their DNA-sequencing data with specialized bioinformatics tools, which often require previous coding experience. Furthermore, beginners can struggle to build a pipeline that goes from raw data to valuable biological insights. [The Carpentries](https://carpentries.org)  hosts worldwide-used open lessons to analyze specialized datasets for beginners; nevertheless, a complete metagenomics lesson was missing. We created a Metagenomics curriculum in [The Carpentries Incubator](https://carpentries-incubator.org) comprising a coding introduction, allowing learners to run commands with the software needed for completing metagenomics analyses. This curriculum taught in three 16-hour online workshops improved the content and exercises. We expect to continuously enhance this lesson, which we hope is helpful for new instructors in the field and a guide for metagenomic analyses from scratch.
   
 # Statement of Need  
 Bioinformatic tools are nowadays used to understand biological systems. Open lessons for general coding languages and specialized topics such as genomics, ecology, and even metagenomics are already available [@darling_data:2019], [@noauthor_lessons_nodate], [@kruchten_curricular:2020-1]. Nevertheless, a complete guide for shotgun metagenomics, assuming no prior knowledge of coding and provided hardware and software solutions, was missing.  We introduce a curriculum that teaches bash and R programming in a pre-installed remote server to fill this gap by offering lessons to conduct a comprehensive metagenomics workflow. Open lessons for general coding languages and specialized topics such as genomics, ecology, and even metagenomics are already available [@darling_data:2019], [@noauthor_lessons_nodate], [@kruchten_curricular:2020-1]. 
@@ -51,7 +51,7 @@ Bioinformatic tools are nowadays used to understand biological systems. Open les
 
 # Content and Learning Objectives
 
-The curriculum comprises four lessons (Fig 1). It does not assume previous experience in coding but expects that students understand basic concepts of molecular biology and ecology. The first two lessons are adapted from the Genomics’ Data Carpentry curriculum and introduce planning and organizing metagenomics projects and coding in bash [@becker_datacarpentrygenomics-workshop:2019]. The third part includes a brief introduction to R, and the fourth lesson teaches a complete shotgun metagenomics workflow using public data [@okie_genomic:2020]. 
+The curriculum comprises four lessons (Fig 1). It does not assume previous experience in coding but expects that students understand basic concepts of molecular biology and ecology. The first two lessons are adapted from the Data Carpentry Genomics curriculum and introduce planning and organizing metagenomics projects and coding in bash [@becker_datacarpentrygenomics-workshop:2019]. The third part includes a brief introduction to R, and the fourth lesson teaches a complete shotgun metagenomics workflow using public data [@okie_genomic:2020]. 
 
 ![Fig 1.](https://github.com/carpentries-incubator/metagenomics-workshop/blob/gh-pages/fig_paper/JOSE_Fig1.jfif)
 
@@ -71,7 +71,7 @@ Introduction to the command-line for metagenomics
 - Make an organized file system for a bioinformatics project.
 
 Introduction to R for metagenomics
-- Familiarize with Rstudio and R functionality.
+- Familiarize with RStudio and R functionality.
 - Distinguish the different data types. 
 - Create and manipulate data-frames.
 - Use and find help in R libraries.
