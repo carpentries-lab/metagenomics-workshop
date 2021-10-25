@@ -2,8 +2,8 @@
 ---
 
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools for working
-with data so that they can get more done in less time, and with less pain. This workshop
-teaches data management and analysis for metagenomics research including: 
+with data so that they can get more done in less time, and with less pain. This workshop uses Data Carpentry's approach to
+teach data management and analysis for metagenomics research including: 
 best practices for organization of bioinformatics projects and data, use of command-line 
 utilities, use of command-line tools to analyze sequence quality, use of R studio and
 use of R libraries to compare diversity between samples, and connecting to and using cloud 
