@@ -12,7 +12,9 @@ carpentry: "incubator"
 # Overall title for pages.
 title: "Metagenomics Workshop Overview"
 
+
 life_cycle: "beta"
+
 #------------------------------------------------------------
 # Generic settings (should not need to change).
 #------------------------------------------------------------
