@@ -13,7 +13,7 @@ authors:
     affiliation: 1
   - name:  Tania Vanessa Arellano-Fernandez
     affiliation: "3, 6"
-    - name: Aarón Espinosa-Jaime
+  - name: Aarón Espinosa-Jaime
     affiliation: 6
   - name: Edder D Bustos-Díaz
     affiliation: 2
@@ -35,7 +35,7 @@ affiliations:
    index: 4
  - name: Centro de Ciencias Matemáticas. UNAM, México.
    index: 5
- - name:Escuela Nacional de Estudios Superiores, Unidad León, UNAM, México.
+ - name: Escuela Nacional de Estudios Superiores, Unidad León, UNAM, México.
    index: 6
 
 date: 08 July 2021
