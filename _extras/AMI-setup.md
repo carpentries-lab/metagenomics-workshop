@@ -9,8 +9,8 @@ title: Launching your own AMI instances
 > 
 > - teaching at or attending a centrally organized Data 
 Carpentry workshop, 
-> - a Maintainer for one of the Genomics lessons, or
-> - contributing to the Genomics lessons,
+> - a Maintainer for one of the Metagenomics lessons, or
+> - contributing to the Metagenomics lessons,
 > 
 > The Carpentries staff will create AMI instances for you. Please contact
 > team@carpentries.org. 
@@ -49,7 +49,7 @@ Carpentry workshop,
 
 <img src="../fig/logging-onto-cloud_1.png" width="500">
 
-3\. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for the AMI listed on this curriculum's [Setup page](https://datacarpentry.org/genomics-workshop/setup.html); select that image  
+3\. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for the AMI listed on this curriculum's [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html); select that image  
 
 <img src="../fig/logging-onto-cloud_2.png" width="500">
 
@@ -58,8 +58,8 @@ Carpentry workshop,
 <img src="../fig/logging-onto-cloud_3.png" width="500">  
 
 5\. Click on "6. Configure Security Group" in the top navigation menu. If this is your first time working with this AMI on your
-AWS account, choose "create a new security group". Name your security group something descriptive (for example "DC-genomics-AMI") 
-and enter a description into the description box (for example "to use with DC genomics AMI"). 
+AWS account, choose "create a new security group". Name your security group something descriptive (for example "DC-metagenomics-AMI") 
+and enter a description into the description box (for example "to use with DC metagenomics AMI"). 
 
 Your security group should now look like this: 
 
