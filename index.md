@@ -69,6 +69,9 @@ were we will be happy to help you!
 | [16S genomics](https://datacarpentry.org/genomics-r-intro/) | Use R to analyze and visualize between-sample variation. |
 !-->
 
+# Lessons Reference
+Three of the lessons presented on this workshop are adapted from lessons on the [Data Carpenty Genomics Workshop](https://datacarpentry.org/genomics-workshop/).
+
 # Teaching Platform
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
 instances. All the software and data used in the workshop are hosted on an Amazon Machine Image (AMI).
