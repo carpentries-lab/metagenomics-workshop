@@ -12,7 +12,8 @@ carpentry: "incubator"
 # Overall title for pages.
 title: "Metagenomics Workshop Overview"
 
-life_cycle: "alpha"
+
+life_cycle: "beta"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -92,4 +93,3 @@ highlighter: rouge
 
 # Remote theme
 remote_theme: carpentries/carpentries-theme
-
