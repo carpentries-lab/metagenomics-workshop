@@ -24,6 +24,8 @@ Current maintainers of this lesson are
 
 The Metagenomics workshop overview is authored and maintained by the [community](https://github.com/datacarpentry/genomics-workshop/network/members).
 
+A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
+
 ## Citation
 
 Please cite as:
