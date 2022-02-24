@@ -70,7 +70,7 @@ were we will be happy to help you!
 !-->
 
 # Lessons Reference
-Three of the lessons presented on this workshop are adapted from lessons on the [Data Carpenty Genomics Workshop](https://datacarpentry.org/genomics-workshop/).
+The content of this page and three of the lessons presented on this workshop are adapted from lessons on the [Data Carpenty Genomics Workshop](https://datacarpentry.org/genomics-workshop/).
 
 # Teaching Platform
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
