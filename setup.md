@@ -96,7 +96,7 @@ The data used in this workshop are available on Zenodo. Because this workshop wo
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6251246.svg)](https://doi.org/10.5281/zenodo.6251246)
 
 
-More information about these data will be presented in the [first lesson of the workshop](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
+More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
 
 ## Option B: Using the lessons on your local machine
@@ -104,14 +104,6 @@ More information about these data will be presented in the [first lesson of the 
 While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
 AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.
-
-### Data
-
-The data used in this workshop is available on FigShare. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the FigShare page linked below for information about the data and access to the data files.
-
-[FigShare Data Carpentry Genomics Beta 2.0](https://figshare.com/articles/Data_Carpentry_Genomics_beta_2_0/7726454)
-
-More information about these data will be presented in the [first lesson of the workshop](http://www.datacarpentry.org/organization-genomics/data/).
 
 ### Software
 
