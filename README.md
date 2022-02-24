@@ -11,7 +11,6 @@ All participants should agree to abide by [The Carpentries Code of Conduct](http
 ## Maintainer(s)
 
 Current maintainers of this lesson are
-
 * [Nelly Selem][nselem]
 
 ## Authors
