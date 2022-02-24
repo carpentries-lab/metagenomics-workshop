@@ -93,7 +93,7 @@ rm *dmp readme.txt taxdump.tar.gz gc.prt
 ### Data
 
 The data used in this workshop are available on Zenodo. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the Zenodo page linked below for information about the data and access to the data files. 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285901.svg)](https://doi.org/10.5281/zenodo.4285901)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6251246.svg)](https://doi.org/10.5281/zenodo.6251246)
 
 
 More information about these data will be presented in the [first lesson of the workshop](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
