@@ -48,7 +48,7 @@ were we will be happy to help you!
 >community under a fertilization treatment.
 >
 > All of the data used in this workshop can be downloaded from
->  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285901.svg)](https://doi.org/10.5281/zenodo.4285901)
+>  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6251246.svg)](https://doi.org/10.5281/zenodo.6251246)
 > More information about this data is available on the [Data page](https://carpentries-incubator.github.io/organization-metagenomics/data/index.html).
 {: .prereq} 
 
