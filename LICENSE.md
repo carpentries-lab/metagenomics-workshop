@@ -48,7 +48,8 @@ Notices:
 ## Software
 
 Except where otherwise noted, the example programs and other software
-provided by Software Carpentry and Data Carpentry are made available under the
+provided by Claudia Zirion, Diego Garfias, Vanessa Arellano, Aaron Jaime, 
+Abel Lovaco, Daniel Díaz, Abraham Avelar, Nelly Sélem are made available under the
 [OSI][osi]-approved
 [MIT license][mit-license].
 
