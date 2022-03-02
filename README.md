@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3260309.svg)](https://doi.org/10.5281/zenodo.3260309)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6251246.svg)](https://doi.org/10.5281/zenodo.6251246)
 
 # Metagenomics Workshop
 
@@ -19,6 +19,7 @@ Current maintainers of this lesson are
 * [Diego Garfias Gallegos](https://github.com/Bedxxe)
 * [Jesus Abraham Avelar Rivas](https://github.com/AbrahamAvelar)
 * [Tania Vanessa Arellano Fernandez](https://github.com/Vanessaarfer)
+* [Edder D. Bustos-Díaz](https://github.com/EdderDaniel)
 
 ## Authors
 
@@ -29,4 +30,5 @@ A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
 ## Citation
 
 Please cite as:
-Pending Set Version and Data in Zenodo
+
+Nelly Sélem Mojica; Diego Garfias Gallegos; Claudia Zirión Martínez; Jesús Abraham Avelar Rivas; Aaron Jaime Espinosa; Abel Lovaco Flores; Tania Vanessa Arellano Fernandez (2022, Jan). Metagenomics for Software Carpentry lesson, Jan 2022. Zenodo. https://doi.org/10.5281/zenodo.6251246
