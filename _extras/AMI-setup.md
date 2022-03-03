@@ -99,15 +99,9 @@ for connecting to and terminating your Amazon Instance.
 > 
 > 2. You should see that you have one instance. To proceed, the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running).
 > 
-><a href="{{ page.root }}/fig/logging-onto-cloud_5.png">
->  <img src="{{ page.root }}/fig/logging-onto-cloud_5.png" alt="" />
-> </a>
 > 
 > 3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.)  
 > 
-> <a href="{{ page.root }}/fig/logging-onto-cloud_6.png">
->  <img src="{{ page.root }}/fig/logging-onto-cloud_6.png" alt="" />
-></a>
 > 
 > 4. Open the terminal application on your computer. Use the following commands to navigate to your Desktop and modify the file
 > permissions for your key pair file. 
@@ -146,15 +140,9 @@ for connecting to and terminating your Amazon Instance.
 > 
 > 3. You should see that you have one instance, make sure instance state is 'running' (if you just launched the instance it will take <5 min for the instance to start running)  
 >
-> <a href="{{ page.root }}/fig/logging-onto-cloud_5.png">
->  <img src="{{ page.root }}/fig/logging-onto-cloud_5.png" alt="" />
-></a>
 > 
 > 4. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish to make a note of it as you will need this each time you connect.)  
 > 
-> <a href="{{ page.root }}/fig/logging-onto-cloud_6.png">
->  <img src="{{ page.root }}/fig/logging-onto-cloud_6.png" alt="Location of Instances and Launch instance button" />
-></a>
 > 
 > 5. Start PuTTY. In the section 'Specify the destination you want to connect to' for 'Host Name (or IP address)' paste in the DNS address and click 'Open'
 > 
