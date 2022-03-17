@@ -46,7 +46,7 @@ This lesson requires a working spreadsheet program. If you don't have a spreadsh
 
 ## Option A: Using the lessons with Amazon Web Services (AWS)
 
-If you are signed up to take a Metaggenomics Data Carpentry workshop, you do *not* need to worry about setting up an AMI instance. The Carpentries
+If you are signed up to take a Metagenomics Data Carpentry Workshop, you do *not* need to worry about setting up an AMI instance. The Carpentries
 staff will create an instance for you and this will be provided to you at no cost. This is true for both self-organized and centrally-organized workshops. Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
 
 If you would like to work through these lessons independently, outside of a workshop, you will need to start your own AMI instance. 
@@ -54,8 +54,17 @@ Follow these [instructions on creating an Amazon instance](https://carpentries-i
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
-After the genomic instace is setup you need to addition the metagenomics environment. First create the file `metagenomics.yml`
-with the following content:  
+After the basic software of the genomic instace is setup you need to add the metagenomics environment. 
+Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file.txt) with the exact versions of each tool in this environment. You can use the spec file as follows:  
+> ~~~
+> $ conda create --name myenv --file spec-file.txt
+> ~~~
+>{: .bash}
+
+More information about how to use environments and spec file is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
+This environment can be modified by adding or deleting tools in a file `metagenomics.yml`, 
+original metagenomics.yml file had the following content:  
 ~~~
 $ cat metagenomics.yml
 ~~~
@@ -63,17 +72,17 @@ $ cat metagenomics.yml
 ~~~
 name: metagenomics                                                                
 dependencies:                                      
-  - kraken2=2.1.1 
-  - krona=2.7.1             
-  - maxbin2=2.2.7
-  - spades=v3.14.1
-  - kraken-biom=1.0.1
-  - checkm-genome=v1.1.3
+  - kraken2 
+  - krona             
+  - maxbin2
+  - spades
+  - kraken-biom
+  - checkm-genome
 
 ~~~
 {: .output}
 
-Then create the metagenomics conda environment using the metagenomics.yml file.  
+Then you can create your own metagenomics conda environment using the metagenomics.yml file.  
 ~~~
 $ conda env create -f metagenomics.yml
 ~~~
@@ -107,6 +116,8 @@ dataset. Instructions for doing this are below.
 
 ### Software
 
+#### Software for Bash:
+
 | Software | Version | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
 | [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | 0.11.7 | [Link](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, MacOS, Windows | Quality control tool for high throughput sequence data. |
@@ -117,6 +128,47 @@ dataset. Instructions for doing this are below.
 |[Spades](https://cab.spbu.ru/software/spades/)|v3.14.1 |[Link](https://github.com/ablab/spades/blob/spades_3.15.2/README.md#meta)|Linux & MacOS| Tool for assemblies|
 |[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|1.0.1|help link|Available for|Tool to convert kraken reports in R readable files|
 |[CheckM-genome](https://ecogenomics.github.io/CheckM/)|v1.1.3 |help link|Available for|Tool to check completeness and contamination in MAGs |
+
+#### R and RStudio:
+
+R and RStudio are two separate pieces of software:
+
+R is a programming language that is especially powerful for data exploration, visualization, and statistical analysis
+RStudio is an integrated development environment (IDE) that makes using R easier. In this course we use RStudio to interact with R.
+
+> ## Mac OS X
+> -  Download R from the [CRAN website](https://cran.r-project.org/bin/macosx/).
+> + Select the .pkg file for the latest R version
+> + Double click on the downloaded file to install R
+> + It is also a good idea to install [XQuartz](https://www.xquartz.org/) (needed by some packages)
+> + Go to the [RStudio download](https://www.rstudio.com/products/rstudio/download/#download) page
+> + Under Installers select RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit) (where x, y, and z represent version numbers)
+> + Double click the file to install RStudio
+> + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+{: .solution}
+
+> ## Windows
+> -  Download R from the [CRAN website](https://cran.r-project.org/bin/windows/base/release.htm).
+> + Run the .exe file that was just downloaded
+> + Go to the [RStudio download page](https://www.rstudio.com/products/rstudio/download/#download)
+> + Under Installers select RStudio x.yy.zzz - Windows Vista/7/8/10 (where x, y, and z represent version numbers)
+> + Double click the file to install it
+> + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+{: .solution}
+
+> ## Linux
+> - Follow the instructions for your distribution from [CRAN](https://cloud.r-project.org/bin/linux), they provide information to get the most recent version of R for common distributions. For most distributions, you could use your package manager (e.g., for Debian/Ubuntu run sudo apt-get install r-base, and for Fedora sudo yum install R), but we don’t recommend this approach as the versions provided by this are usually out of date. In any case, make sure you have at least R 3.3.1.
+> + Go to the [RStudio](https://www.rstudio.com/products/rstudio/download/#download) download page
+> + Under Installers select the version that matches your distribution, and install it with your preferred method (e.g., with Debian/Ubuntu ´sudo dpkg -i rstudio-x.yy.zzz-amd64.deb´ at the terminal).
+> + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+{: .solution}
+
+#### Software(packages) for R:
+
+| Software | Version | Manual | Description |
+| -------- | ------------ | ------ | ------------- | ----------- |
+| [phyloseq](https://github.com/joey711/phyloseq) | 1.36.0 | [Link](https://joey711.github.io/phyloseq/) | Explore, manipulate and analyze microbiome profiles with R |
+| [ggplot2](https://cloud.r-project.org/web/packages/ggplot2/index.html) | 3.3.3 | [Link](https://ggplot2.tidyverse.org/) | System for declaratively creating graphics, based on The Grammar of Graphics |
 
 ### QuickStart Software Installation Instructions
 
@@ -249,6 +301,4 @@ $ java -jar ~/src/Trimmomatic-0.38/trimmomatic-0.38.jar
 > ~~~
 > {: .bash}
 {: .solution}
-
-
 
