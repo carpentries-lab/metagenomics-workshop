@@ -27,10 +27,11 @@ were we will be happy to help you!
 
 > ## Getting Started
 >
-> This lesson assumes that learners have no prior experience with the tools covered in the workshop. 
+> This lesson assumes that learners have no prior experience with the tools covered in the workshop.   
+> 
 > However, learners are expected to have some familiarity with biological concepts,
 > including the 
-> concept of microbiome. Participants should bring their own laptops and plan to participate actively. 
+> concept of DNA sequencing, nucleotide abreviations, genome, microbiome and taxonomy. Participants should bring their own laptops and plan to participate actively.  
 > 
 > To get started, follow the directions in the [Setup](setup.html) tab to 
 > get access to the required software and data for this workshop.
