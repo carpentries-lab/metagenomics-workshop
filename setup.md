@@ -20,9 +20,14 @@ This lesson requires a working spreadsheet program. If you don't have a spreadsh
 >   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
 >   + Select "Use the nano editor by default" and click on "Next".
 >   + Keep "Use Git from the Windows Command Prompt" selected and click on "Next". If you forgot to do this programs that you need for the workshop will not work properly. If this happens rerun the installer and select the appropriate option.
->   + Click on "Next".
+>   + Select on "Use bundled OpenSSH" and click on "Next".
+>   + Select on "Use the OpenSSL Library" and click "Next".
 >   + Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
 >   + Select "Use Windows' default console window" and click on "Next".
+>   + Select "Default (fast-forward on merge)" and click on "Next".
+>   + Select "None" (Do not use a credential helper) and click on "Next".
+>   + Select "Enable file system caching" and click on "Next".
+>   + Ignore "Configuring experimental options" and click on "Install".
 >   + Click on "Install".
 >   + Click on "Finish".
 >   + If your "HOME" environment variable is not set (or you don't know what this is):
@@ -30,13 +35,17 @@ This lesson requires a working spreadsheet program. If you don't have a spreadsh
 >   + Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
 >   + Press [Enter], you should see `SUCCESS: Specified value was saved.`
 >   + Quit command prompt by typing `exit` then pressing [Enter]
+>   + See the [video tutorial](https://youtu.be/yo7Z-BEG62A) for an example on how to install Git on Windows 11.
+>   
 > - An **alternative option** is to install PuTTY
 >  by going to the [the installation page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version. If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi. If you aren't sure whether you need the 64 or 32 bit version, you can check your laptop version by following [the instructions here](https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq). Once the installer is downloaded, double click on it, and PuTTY should install.
-> - **Another alternative option** is to use the Ubuntu Subsystem for Windows. This option is only available for Windows 10 - detailed [instructions are available here](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+> - **Another alternative option** is to use the Windows Subsystem Linux (WSL). This option is available for Windows 10 and Windows 11 - detailed [instructions are available here](https://learn.microsoft.com/en-us/windows/wsl/install).
+> See the [video tutorial](https://youtu.be/YoNdTuN-YWk) for an example on how to install WSL with Ubuntu 22.04 on Windows 11.
+> 
 {: .solution}
 
-> ## Mac OS X
-> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). See the Git [installation video tutorial](https://www.youtube.com/watch?v=9LQhwETCdwY) for an example on how to open the Terminal. You may want to keep Terminal in your dock for this workshop.
+> ## macOS
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). See the [video tutorial](https://youtu.be/FuNsWg%5C_VzeQ) for an example on how to open the Terminal. You may want to keep Terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
@@ -55,36 +64,56 @@ Follow these [instructions on creating an Amazon instance](https://carpentries-i
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
 After the basic software of the genomic instace is setup you need to add the metagenomics environment. 
-Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file.txt) with the exact versions of each tool in this environment. You can use the spec file as follows:  
+Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 with the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
-> $ conda create --name myenv --file spec-file.txt
+> $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
 > ~~~
 >{: .bash}
 
 More information about how to use environments and spec file is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
-This environment can be modified by adding or deleting tools in a file `metagenomics.yml`, 
-original metagenomics.yml file had the following content:  
+This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
+
+This is the original [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) file working on Ubuntu 22.04. See the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
+
+
+The file had the following content:  
 ~~~
-$ cat metagenomics.yml
+$ cat metagenomics-Ubuntu22.yml
 ~~~
 {: .bash}
 ~~~
-name: metagenomics                                                                
+name: metagenomics  
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
 dependencies:                                      
-  - kraken2 
-  - krona             
-  - maxbin2
-  - spades
-  - kraken-biom
-  - checkm-genome
+  - checkm-genome=1.2.1=pyhdfd78af_0
+  - fastqc=0.11.9=hdfd78af_1         
+  - kraken-biom=1.2.0=pyh5e36f6f_0
+  - kraken2=2.1.2=pl5321h9f5acd7_2
+  - krona=2.8.1=pl5321hdfd78af_1
+  - maxbin2=2.2.7=he1b5a44_17e_0
+  - spades=3.14.1=h95f258a_2
+  - trimmomatic=0.39=hdfd78af_2
 
 ~~~
 {: .output}
 
-Then you can create your own metagenomics conda environment using the metagenomics.yml file.  
+Has been difficult to find compatibility between all the dependencies of each package installed in the metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be installed, but it does not fully work at the time of use.
+
+[metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
+
+In the case of WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
+
+[metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
+
+See the [video tutorial](https://youtu.be/kHYmffZYxcI)
+
+Then you can create your own metagenomics conda environment using the .yml file according to your operating system.
 ~~~
-$ conda env create -f metagenomics.yml
+$ conda env create -f metagenomics-Ubuntu22.yml
 ~~~
 {: .bash}  
 
@@ -120,14 +149,14 @@ dataset. Instructions for doing this are below.
 
 | Software | Version | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | 0.11.7 | [Link](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, MacOS, Windows | Quality control tool for high throughput sequence data. |
-| [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | 0.38 | [Link](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf) | Linux, MacOS, Windows | A flexible read trimming tool for Illumina NGS data. |
-|[Kraken](http://ccb.jhu.edu/software/kraken2/)|2.1.1|[Link](https://github.com/DerrickWood/kraken2/wiki/Manual)|Available for|A tool for taxonomic assignation for reads from metagenomics|
-|[KronaTools](https://github.com/marbl/Krona/wiki) |2.7.1|help link|A tool for taxonomic visualization in hierarchical pie graphs.|
-|[MaxBin2]()|2.2.7|help link|Available for| Tool for MAGs reconstruction|
-|[Spades](https://cab.spbu.ru/software/spades/)|v3.14.1 |[Link](https://github.com/ablab/spades/blob/spades_3.15.2/README.md#meta)|Linux & MacOS| Tool for assemblies|
-|[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|1.0.1|help link|Available for|Tool to convert kraken reports in R readable files|
-|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|v1.1.3 |help link|Available for|Tool to check completeness and contamination in MAGs |
+| [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [0.11.9](https://anaconda.org/bioconda/fastqc) | [Help](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, macOS, Windows | Quality control tool for high throughput sequence data.|
+| [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | [0.39](https://anaconda.org/bioconda/trimmomatic) | [GitHub](https://github.com/usadellab/Trimmomatic) | Linux, macOS, Windows | A flexible read trimming tool for Illumina NGS data. |
+|[Kraken](http://ccb.jhu.edu/software/kraken2/)| [2.1.2](https://anaconda.org/bioconda/kraken2)|[GitHub](https://github.com/DerrickWood/kraken2/wiki/Manual)|Linux, macOS|A tool for taxonomic assignation for reads from metagenomics|
+|[KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub](https://github.com/marbl/Krona/tree/master/KronaTools)|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
+|[MaxBin2](http://downloads.jbei.org/data/microbial\_communities/MaxBin/MaxBin.html)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
+|[Spades](https://cab.spbu.ru/software/spades/)|[3.15.2](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades)|Linux, macOS| Tool for assemblies|
+|[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
+|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |
 
 #### R and RStudio:
 
@@ -166,9 +195,9 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 #### Software(packages) for R:
 
 | Software | Version | Manual | Description |
-| -------- | ------------ | ------ | ------------- | ----------- |
-| [phyloseq](https://github.com/joey711/phyloseq) | 1.36.0 | [Link](https://joey711.github.io/phyloseq/) | Explore, manipulate and analyze microbiome profiles with R |
-| [ggplot2](https://cloud.r-project.org/web/packages/ggplot2/index.html) | 3.3.3 | [Link](https://ggplot2.tidyverse.org/) | System for declaratively creating graphics, based on The Grammar of Graphics |
+| -------- | ------------ | ------ | ------------- |
+| [phyloseq](https://github.com/joey711/phyloseq) | 1.39.1 | [GitHub](https://github.com/joey711/phyloseq) | Explore, manipulate and analyze microbiome profiles with R |
+| [ggplot2](https://ggplot2.tidyverse.org/) | 3.3.6 | [GitHub](https://github.com/tidyverse/ggplot2) | System for declaratively creating graphics, based on The Grammar of Graphics |
 
 ### QuickStart Software Installation Instructions
 
@@ -178,127 +207,32 @@ We have installed software using [miniconda](https://docs.conda.io/en/latest/min
 
 ### Miniconda3
 
-> ## MacOS
+> ## Linux
 > 
->To install miniconda3, type:
->
+>To install miniconda3, see the [video tutorial](https://youtu.be/0PqwShSDH20)
+
+Or in a terminal type:
 >~~~
 >$ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 >$ bash Miniconda3-latest-MacOSX-x86_64.sh
 >~~~
 >{: .bash}
-> Then, follow the instructions that you are prompted with on the screen to install Miniconda3. 
+>Then, follow the instructions that you are prompted with on the screen to install Miniconda3.
+>See the video tutorial, [installing Miniconda3 on WSL Ubuntu](https://youtu.be/owQgZoE-GrY)
+>
 {: .solution}
 
 
-### FastQC
+### Installing packages on Miniconda3 environment
 
-> ## MacOS
+> ## Terminal of active environment
 >
->To install FastQC, type:
->
-> ~~~
-> $ conda install -c bioconda fastqc=0.11.7=5
-> ~~~
->{: .bash}
-{: .solution}
-
-> ## FastQC Source Code Installation
->
-> If you prefer to install from source, follow the directions below:
+>To install a bioconda package, type:
 >
 > ~~~
-> $ cd ~/src
-> $ curl -O http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.7.zip
-> $ unzip fastqc_v0.11.7.zip
+> $ conda install -c bioconda package_name
 > ~~~
-> {: .bash}
->
-> Link the fastqc executable to the ~/bin folder that
-> you have already added to the path.
->
-> ~~~
-> $ ln -sf ~/src/FastQC/fastqc ~/bin/fastqc
-> ~~~
-> {: .bash}
->
-> Due to what seems a packaging error
-> the executable flag on the fastqc program is not set.
-> We need to set it ourselves.
->
-> ~~~
-> $ chmod +x ~/bin/fastqc
-> ~~~
-> {: .bash}
-{: .solution}
-
-**Test your installation by running:**
-
-~~~
-$ fastqc -h
-~~~
+> 
 {: .bash}
-
-### Trimmomatic
-
-> ## MacOS
->
-> ~~~
-> conda install -c bioconda trimmomatic=0.38=0
-> ~~~
->{: .bash}
-{: .solution}
-
-> ## Trimmomatic Source Code Installation
->
-> If you prefer to install from source, follow the directions below:
->
-> ~~~
-> $ cd ~/src
-> $ curl -O http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.38.zip
-> $ unzip Trimmomatic-0.38.zip
-> ~~~
-> {: .bash}
->
-> The program can be invoked via:
->
-> ~~~
-> $ java -jar ~/src/Trimmomatic-0.38/trimmomatic-0.38.jar
-> ~~~
->
-> The ~/src/Trimmomatic-0.38/adapters/ directory contains
-> Illumina specific adapter sequences.
->
-> ~~~
-> $ ls ~/src/Trimmomatic-0.38/adapters/
-> ~~~
-> {: .bash}
-{: .solution}
-
-**Test your installation by running:** (assuming things are installed in ~/src)
-
-~~~
-$ java -jar ~/src/Trimmomatic-0.38/trimmomatic-0.38.jar
-~~~
-{: .bash}
-
-
-> ## Simplify the Invocation, or to Test your installation if you installed with miniconda3:
->
-> To simplify the invocation you could also create a script in the ~/bin folder:
->
-> ~~~
-> $ echo '#!/bin/bash' > ~/bin/trimmomatic
-> $ echo 'java -jar ~/src/Trimmomatic-0.36/trimmomatic-0.36.jar $@' >> ~/bin/trimmomatic
-> $ chmod +x ~/bin/trimmomatic
-> ~~~
-> {: .bash}
->
-> Test your script by running:
->
-> ~~~
-> $ trimmomatic
-> ~~~
-> {: .bash}
 {: .solution}
 
