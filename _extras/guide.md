@@ -52,14 +52,18 @@ This workshop is designed to be run on pre-imaged Amazon Web Services (AWS) inst
 teaching these lessons, and would like an AWS instance to practice on, please contact [team@carpentries.org](mailto: team@carpentries.org).
 
 ## Common problems
+This workshop introduces an analysis pipeline, where each step in 
+that pipeline is dependent on the previous step. If a learner gets behind, 
+or one of the steps doesn't work for them, they may not be able to 
+catch up with the rest of the class. To help ensure that all learners 
+are able to work through the whole process, we provide the solution files. 
+This includes all of the output files for each step in the data processing 
+pipeline, as well as the scripts that the learners write collaboratively
+with the Instructors throughout the workshop. These files are available on 
+the hidden `.backup_dc_workshop`directory.
 
-This workshop introduces an analysis pipeline, where each step in that pipeline is dependent on the previous step.
-If a learner gets behind, or one of the steps doesn't work for them, they may not be able to catch up with the rest of the class. 
-To help ensure that all learners are able to work through the whole process, we provide the solution files. This includes all
-of the output files for each step in the data processing pipeline, as well as the scripts that the learners write collaboratively
-with the Instructors throughout the workshop. These files are available on the hidden `.backup_dc_workshop`directory.
-
-Make sure to tell your helpers about the `.backup_dc_workshop` directory so that they can use these resources to help
+Make sure to tell your helpers about the `.backup_dc_workshop` directory 
+so that they can use these resources to help
 learners catch up during the workshop. 
 
 
@@ -82,13 +86,15 @@ have data in spreadsheets.
 this is the foundation of their research practice. Without organized and clean
 data, it will be difficult for them to apply the things we're teaching in the
 rest of the workshop to their data.
-* Much of their lives as a researcher will be spent on this 'data wrangling' stage, but
-some of it can be prevented with good strategies for data collection up front.
+* Much of their lives as a researcher will be spent on this
+ 'data wrangling' stage, but some of it can be prevented with good strategies 
+ for data collection up front.
 * Tell that we're not teaching data analysis or plotting in spreadsheets, because it's
 very manual and also not reproducible. That's why we're teaching bash shell scripting!
 * Now let's talk about spreadsheets, and when we say spreadsheets, we mean any program that
 does spreadsheets like Excel, LibreOffice, OpenOffice. Most learners are probably using Excel.
-* Ask the audience any things they've accidentally done in spreadsheets. Talk about an example of your own, like that you accidentally sorted only a single column and not the rest.
+* Ask the audience any things they've accidentally done in spreadsheets. Talk about an example 
+of your own, like that you accidentally sorted only a single column and not the rest.
 of the data in the spreadsheet. What are the pain points!?
 * As people answer, highlight some of these issues with spreadsheets.
 * Go through the point about keeping track of your steps and keeping raw data raw.
@@ -97,7 +103,8 @@ of the data in the spreadsheet. What are the pain points!?
 
 #### [Planning for NGS projects](../02-project-planning/)
 
-* This episode depends on learners discussing exercises with one another. Be sure to give plenty of time for this discussion.
+* This episode depends on learners discussing exercises with one another. 
+Be sure to give plenty of time for this discussion.
 
 #### [Examining Data on the NCBI SRA Database](../03-ncbi-sra/)
 
@@ -111,7 +118,9 @@ rest of the workshop.
 
 ## Working with participants' level of expertise
 
-Learners may be taking this lesson for many reasons - they may be just thinking of maybe doing a sequencing experiment, they may be trying to analyse public data, they may have already generated their own data, they may be speculatively acquiring new skills.
+Learners may be taking this lesson for many reasons - they may be just thinking of 
+maybe doing a sequencing experiment, they may be trying to analyse public data, 
+they may have already generated their own data, they may be speculatively acquiring new skills.
 
 You should feel free to "read the room", and it can be helpful to ask more specifics in a pre-workshop survey.
 
@@ -227,4 +236,16 @@ FIXME: Add
 In episode [Starting a metagenomics project](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html)
 we suggest to use a zoom of first image while explaining what is metagenomics. The image can be zoomed in by clicking on it. 
 
-FIXME: Add more
+## Plots when using CCM UNAM server  
+The National University of México, in its Center for Mathematical Science has available upon request a learning server for this lesson. When using this server, plots are not displayed directly on R studio. To see the plots, they must be saved with the following instructions: 
+
+- ggplot and other plots  
+    `pdf("plot_abundances.pdf",width = 15, height = 5)`  
+        `plot (your plot ...)`  
+        `ggplot (your plot...)`  
+    `dev.off()`  
+
+Particularly when graphics were generated with ggplot you can use `ggsave` function to save figures in svg, png or jpg format.  
+  `myplot<-ggplot2(....)`  
+  `ggsave(file "~/myplot.png", myplot) `   
+  
