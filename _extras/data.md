@@ -5,7 +5,9 @@ title: Data
 
 # Features of the dataset  
 
-FIXME
+dc_workshop.zip
+MGRAST_MetaData_JP.xlsx
+
 
 # Introduction to the dataset  
 
