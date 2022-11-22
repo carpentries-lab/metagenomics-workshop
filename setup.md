@@ -22,11 +22,37 @@ If you are in an The Carpentries-Workshop, you do not even need to install a bas
 the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
 Instead of connecting by ssh users can simply use the R-studio AMI terminal. 
 
-## Running the lesson by yourself   
+## Running the lesson by yourself (Not in a The Carpentries Workshop)
 ### Required  software  
-If you are not in a The Carpentries workshop:
-  Directions to install are included for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
+If you are not in a The Carpentries workshop the metagenomics specific software that you will need is:  
 
+| Software | Version | Manual | Available for | Description |
+| -------- | ------------ | ------ | ------------- | ----------- |
+| [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [0.11.9](https://anaconda.org/bioconda/fastqc) | [Help](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, macOS, Windows | Quality control tool for high throughput sequence data.|
+| [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | [0.39](https://anaconda.org/bioconda/trimmomatic) | [GitHub](https://github.com/usadellab/Trimmomatic) | Linux, macOS, Windows | A flexible read trimming tool for Illumina NGS data. |
+|[Kraken](http://ccb.jhu.edu/software/kraken2/)| [2.1.2](https://anaconda.org/bioconda/kraken2)|[GitHub](https://github.com/DerrickWood/kraken2/wiki/Manual)|Linux, macOS|A tool for taxonomic assignation for reads from metagenomics|
+|[KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub](https://github.com/marbl/Krona/tree/master/KronaTools)|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
+|[MaxBin2](http://downloads.jbei.org/data/microbial\_communities/MaxBin/MaxBin.html)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
+|[Spades](https://cab.spbu.ru/software/spades/)|[3.15.2](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades)|Linux, macOS| Tool for assemblies|
+|[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
+|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
+
+You can get this software by two options. Option A is by renting a ready-to-use Amazon Web Services instance
+and option B is by installing a conda environment and some R libraries.  Instructions for both options are written next. 
+
+#### Option A: Using the lessons with Amazon Web Services (AWS)
+
+If you would like to work through these lessons independently, outside of a workshop, you will need to start your own AMI instance. 
+Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
+
+If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
+
+In this instances you can use the terminal available in R studio and users wont need
+to install their own terminals or use ssh (see instructor notes). If nevertheless you
+prefer that the users install their own terminals, directions to install them are included 
+for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
+
+##### Installing a linux terminal  
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
 >   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
@@ -64,23 +90,20 @@ If you are not in a The Carpentries workshop:
 >  - The default shell is usually Bash and there is usually no need to install anything. To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with '/bash' then your default is something else and you can run Bash by typing bash.
 {: .solution}
 
-
-### Option A: Using the lessons with Amazon Web Services (AWS)
-
-If you would like to work through these lessons independently, outside of a workshop, you will need to start your own AMI instance. 
-Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
-
-If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
-
-### Option B: Using the lessons on your local machine
-
+### Option B: Using the lessons on your local machine  
 While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
 AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
-dataset. Instructions for doing this are below.
+dataset. Instructions for doing this are below.  
 
-#### Software
+#### Data   
+The data used in this workshop are available on Zenodo. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the Zenodo page linked below for information about the data and access to the data files. 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
-After the basic software of the genomic instace is setup you need to add the metagenomics environment. 
+
+More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
+#### Required Software 
+##### Metagenomics conda environments 
+You need to install and activate the metagenomics environment. 
 Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 with the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
 > $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
@@ -144,28 +167,6 @@ cp names.dmp nodes.dmp delnodes.dmp merged.dmp /home/dcuser/.taxonkit
 rm *dmp readme.txt taxdump.tar.gz gc.prt 
 ~~~
 {: .bash}  
-
-### Data
-
-The data used in this workshop are available on Zenodo. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the Zenodo page linked below for information about the data and access to the data files. 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
-
-
-More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
-
-
-##### Software for Bash:
-
-| Software | Version | Manual | Available for | Description |
-| -------- | ------------ | ------ | ------------- | ----------- |
-| [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [0.11.9](https://anaconda.org/bioconda/fastqc) | [Help](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, macOS, Windows | Quality control tool for high throughput sequence data.|
-| [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | [0.39](https://anaconda.org/bioconda/trimmomatic) | [GitHub](https://github.com/usadellab/Trimmomatic) | Linux, macOS, Windows | A flexible read trimming tool for Illumina NGS data. |
-|[Kraken](http://ccb.jhu.edu/software/kraken2/)| [2.1.2](https://anaconda.org/bioconda/kraken2)|[GitHub](https://github.com/DerrickWood/kraken2/wiki/Manual)|Linux, macOS|A tool for taxonomic assignation for reads from metagenomics|
-|[KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub](https://github.com/marbl/Krona/tree/master/KronaTools)|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
-|[MaxBin2](http://downloads.jbei.org/data/microbial\_communities/MaxBin/MaxBin.html)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
-|[Spades](https://cab.spbu.ru/software/spades/)|[3.15.2](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades)|Linux, macOS| Tool for assemblies|
-|[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
-|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |
 
 ##### R and RStudio:
 
