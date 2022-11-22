@@ -5,15 +5,27 @@ title: Setup
 
 # Overview
 
+## In a The Carpentries Workshop  
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
-instances. With the exception of a spreadsheet program, all of the command line software and data used in the workshop are hosted on an Amazon 
-Machine Image (AMI). Please follow the instructions below to prepare your computer for the workshop:
+instances. With the exception of a spreadsheet program, all of the command 
+line software and data used in the workshop are hosted on an Amazon 
+Machine Image (AMI). This lesson requires a working spreadsheet program. 
+If you don't have a spreadsheet program already, you can use LibreOffice. 
+It's a free, open source spreadsheet program.If you are signed up to take 
+a Metagenomics Data Carpentry Workshop, you do *not* need to worry about setting
+up an AMI instance. The Carpentries staff will create an instance 
+for you and this will be provided to you at no cost. 
+This is true for both self-organized and centrally-organized workshops. 
+Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
 
+If you are in an The Carpentries-Workshop, you do not even need to install a bash terminal, 
+the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
+Instead of connecting by ssh users can simply use the R-studio AMI terminal. 
 
-
-## Required  software
-
-This lesson requires a working spreadsheet program. If you don't have a spreadsheet program already, you can use LibreOffice. It's a free, open source spreadsheet program.  Directions to install are included for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
+## Running the lesson by yourself   
+### Required  software  
+If you are not in a The Carpentries workshop:
+  Directions to install are included for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
@@ -53,23 +65,20 @@ This lesson requires a working spreadsheet program. If you don't have a spreadsh
 {: .solution}
 
 
-## Option A: Using the lessons with Amazon Web Services (AWS)
-
-If you are signed up to take a Metagenomics Data Carpentry Workshop, you do *not* need to worry about setting up an AMI instance. The Carpentries
-staff will create an instance for you and this will be provided to you at no cost. This is true for both self-organized and centrally-organized workshops. Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
+### Option A: Using the lessons with Amazon Web Services (AWS)
 
 If you would like to work through these lessons independently, outside of a workshop, you will need to start your own AMI instance. 
 Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
-## Option B: Using the lessons on your local machine
+### Option B: Using the lessons on your local machine
 
 While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
 AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.
 
-### Software
+#### Software
 
 After the basic software of the genomic instace is setup you need to add the metagenomics environment. 
 Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 with the exact versions of each tool in this environment. You can use the spec file as follows:  
@@ -145,7 +154,7 @@ The data used in this workshop are available on Zenodo. Because this workshop wo
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
 
-#### Software for Bash:
+##### Software for Bash:
 
 | Software | Version | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
@@ -158,7 +167,7 @@ More information about these data will be presented in the [first episode of the
 |[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
 |[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |
 
-#### R and RStudio:
+##### R and RStudio:
 
 R and RStudio are two separate pieces of software:
 
