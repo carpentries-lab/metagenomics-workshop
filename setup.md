@@ -63,6 +63,14 @@ Follow these [instructions on creating an Amazon instance](https://carpentries-i
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
+## Option B: Using the lessons on your local machine
+
+While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
+AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
+dataset. Instructions for doing this are below.
+
+### Software
+
 After the basic software of the genomic instace is setup you need to add the metagenomics environment. 
 Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 with the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
@@ -136,14 +144,6 @@ The data used in this workshop are available on Zenodo. Because this workshop wo
 
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
-
-## Option B: Using the lessons on your local machine
-
-While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
-AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
-dataset. Instructions for doing this are below.
-
-### Software
 
 #### Software for Bash:
 
