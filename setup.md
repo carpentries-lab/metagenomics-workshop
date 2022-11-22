@@ -3,8 +3,6 @@ layout: page
 title: Setup
 ---
 
-# Overview
-
 ## In a The Carpentries Workshop  
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
 instances. With the exception of a spreadsheet program, all of the command 
@@ -23,6 +21,7 @@ the R-studio terminal provided in the AWS-AMI is enough to run all the commands 
 Instead of connecting by ssh users can simply use the R-studio AMI terminal. 
 
 ## Running the lesson by yourself (Not in a The Carpentries Workshop)
+
 ### Required  software  
 If you are not in a The Carpentries workshop the metagenomics specific software that you will need is:  
 
@@ -38,21 +37,21 @@ If you are not in a The Carpentries workshop the metagenomics specific software 
 |[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
 
 You can get this software by two options. Option A is by renting a ready-to-use Amazon Web Services instance
-and option B is by installing a conda environment and some R libraries.  Instructions for both options are written next. 
+and option B is by installing a Conda environment and some R libraries. Instructions for both options are written next. 
 
-#### Option A: Using the lessons with Amazon Web Services (AWS)
+### Option A: Using the lessons with Amazon Web Services (AWS)
 
-If you would like to work through these lessons independently, outside of a workshop, you will need to start your own AMI instance. 
 Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
-In this instances you can use the terminal available in R studio and users wont need
-to install their own terminals or use ssh (see instructor notes). If nevertheless you
+In this instances you can use the terminal available in R studio and users won't need
+to install their own terminals or use `ssh` (see instructor notes). If nevertheless you
 prefer that the users install their own terminals, directions to install them are included 
 for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
-##### Installing a linux terminal  
+#### Installing a linux terminal 
+
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
 >   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
@@ -91,19 +90,18 @@ for each Windows, Mac OS X, and Linux systems below. For Windows, you will also 
 {: .solution}
 
 ### Option B: Using the lessons on your local machine  
-While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
-AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
+If you trust that your computer is powerfull enough and want to have all the programs installed you can follow all the workshop without using and
+AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.  
 
 #### Data   
 The data used in this workshop are available on Zenodo. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the Zenodo page linked below for information about the data and access to the data files. 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
-
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
-#### Required Software 
-##### Metagenomics conda environments 
-You need to install and activate the metagenomics environment. 
+
+#### Conda environment 
+Follow this instructions to install and activate the metagenomics environment. 
 Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 with the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
 > $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
@@ -116,8 +114,6 @@ This environment can be modified by adding or deleting tools in a file `metageno
 
 This is the original [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) file working on Ubuntu 22.04. See the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
 
-
-The file had the following content:  
 ~~~
 $ cat metagenomics-Ubuntu22.yml
 ~~~
@@ -141,17 +137,17 @@ dependencies:
 ~~~
 {: .output}
 
-Has been difficult to find compatibility between all the dependencies of each package installed in the metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be installed, but it does not fully work at the time of use.
+It has been difficult to find compatibility between all the dependencies of each package installed in the metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be installed, but it does not fully work at the time of use.
 
 [metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
 
-In the case of WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
+In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
 
 [metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
 
 See the [video tutorial](https://youtu.be/kHYmffZYxcI)
 
-Then you can create your own metagenomics conda environment using the .yml file according to your operating system.
+Then you can create your own metagenomics conda environment using the `.yml` file according to your operating system.
 ~~~
 $ conda env create -f metagenomics-Ubuntu22.yml
 ~~~
@@ -168,7 +164,7 @@ rm *dmp readme.txt taxdump.tar.gz gc.prt
 ~~~
 {: .bash}  
 
-##### R and RStudio:
+#### R and RStudio:
 
 R and RStudio are two separate pieces of software:
 
