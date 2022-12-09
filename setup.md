@@ -5,7 +5,7 @@ title: Setup
 
 ## In a The Carpentries Workshop  
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
-instances. With the exception of a spreadsheet program, all of the command 
+instances. With the exception of a spreadsheet program and an internet browser, all of the command 
 line software and data used in the workshop are hosted on an Amazon 
 Machine Image (AMI). This lesson requires a working spreadsheet program. 
 If you don't have a spreadsheet program already, you can use LibreOffice. 
