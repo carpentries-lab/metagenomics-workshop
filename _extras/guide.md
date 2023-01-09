@@ -231,6 +231,12 @@ FIXME: Add
 
 # Notes for the Data processing and visualization for metagenomics lesson
 
+## About the Data
+Throughout the lesson only 2 samples are used, but for the part of making the beta diversity graph it needs 
+to be 3. That is why there are 3 Kraken reports available on the data provided. When downloading the reports 
+in the Taxonomic Assignment episode, before the Pavian part, the 3 reports will be downloaded, although only 2
+are used for that part.
+
 ## Technical tips and tricks
 
 In episode [Starting a metagenomics project](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html)
