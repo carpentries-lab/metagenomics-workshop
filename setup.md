@@ -90,7 +90,7 @@ for each Windows, Mac OS X, and Linux systems below. For Windows, you will also 
 {: .solution}
 
 ### Option B: Using the lessons on your local machine  
-If you trust that your computer is powerfull enough and want to have all the programs installed you can follow all the workshop without using and
+If you trust that your computer is powerfull enough and want to have all the programs installed you can follow all the workshop without using an
 AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.  
 
