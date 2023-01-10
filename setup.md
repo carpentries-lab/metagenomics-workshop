@@ -3,15 +3,14 @@ layout: page
 title: Setup
 ---
 
-## In a The Carpentries Workshop  
+## In a Data Carpentry Workshop  
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
-instances. With the exception of a spreadsheet program and an internet browser, all of the command 
+instances (a computer with all the required programs and files to which you will have access from your computer). 
+With the exception of a spreadsheet program and an internet browser, all of the command 
 line software and data used in the workshop are hosted on an Amazon 
-Machine Image (AMI). This lesson requires a working spreadsheet program. 
-If you don't have a spreadsheet program already, you can use LibreOffice. 
-It's a free, open source spreadsheet program.If you are signed up to take 
-a Metagenomics Data Carpentry Workshop, you do *not* need to worry about setting
-up an AMI instance. The Carpentries staff will create an instance 
+Machine Image (AMI). If you are signed up to take 
+a Metagenomics Data Carpentry Workshop, **you do not need to worry about setting
+up an AMI instance.** The Carpentries staff will create an instance 
 for you and this will be provided to you at no cost. 
 This is true for both self-organized and centrally-organized workshops. 
 Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
@@ -20,10 +19,14 @@ If you are in an The Carpentries-Workshop, you do not even need to install a bas
 the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
 Instead of connecting by ssh users can simply use the R-studio AMI terminal. 
 
-## Running the lesson by yourself (Not in a The Carpentries Workshop)
+This lesson requires a working spreadsheet program. 
+If you don't have a spreadsheet program already, you can use LibreOffice. 
+It's a free, open source spreadsheet program.
+
+## Running the lesson by yourself (Not in a Data Carpentry Workshop)
 
 ### Required  software  
-If you are not in a The Carpentries workshop the metagenomics specific software that you will need is:  
+If you are not in a Data Carpentry Workshop the metagenomics specific software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
 
 | Software | Version | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
@@ -46,8 +49,8 @@ Follow these [instructions on creating an Amazon instance](https://carpentries-i
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
 In this instances you can use the terminal available in R studio and users won't need
-to install their own terminals or use `ssh` (see instructor notes). If nevertheless you
-prefer that the users install their own terminals, directions to install them are included 
+to install their own terminals nor use `ssh` (see instructor notes). **If nevertheless you
+prefer that the users install their own terminals**, directions to install them are included 
 for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
 #### Installing a linux terminal 
@@ -89,7 +92,7 @@ for each Windows, Mac OS X, and Linux systems below. For Windows, you will also 
 >  - The default shell is usually Bash and there is usually no need to install anything. To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with '/bash' then your default is something else and you can run Bash by typing bash.
 {: .solution}
 
-### Option B: Using the lessons on your local machine  
+### Option B: Following the lessons on your local machine  
 If you trust that your computer is powerfull enough and want to have all the programs installed you can follow all the workshop without using an
 AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.  
@@ -100,58 +103,93 @@ The data used in this workshop are available on Zenodo. Because this workshop wo
 
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
-#### Conda environment 
-Follow this instructions to install and activate the metagenomics environment. 
-Here is a link to [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 with the exact versions of each tool in this environment. You can use the spec file as follows:  
+#### Install programs using a Conda environment
+**This instructions assume familiarity with the command line and with installation in general.** As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
+
+To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend to install the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
+
+### Miniconda3
+
+FIXME
+> ## Linux
+> 
+> To install miniconda3, see the [video tutorial](https://youtu.be/0PqwShSDH20)
+> Or in a terminal type:
+> ~~~
+> $ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+> $ bash Miniconda3-latest-MacOSX-x86_64.sh
+> ~~~
+> {: .bash}
+> Then, follow the instructions that you are prompted with on the screen to install Miniconda3.
+> See the video tutorial, [installing Miniconda3 on WSL Ubuntu](https://youtu.be/owQgZoE-GrY)
+>
+{: .solution}
+
+
+### Installing packages on Miniconda3 environment
+
+> ## Terminal of active environment
+>
+>To install a bioconda package, type:
+>
+> ~~~
+> $ conda install -c bioconda package_name
+> ~~~
+> 
+{: .bash}
+{: .solution}
+
+Once you have your Miniconda3 ready, follow this instructions to install and activate the metagenomics environment. 
+The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 which has the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
 > $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
 > ~~~
 >{: .bash}
 
-More information about how to use environments and spec file is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+More information about how to use environments and spec files is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
-This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
-
-This is the original [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) file working on Ubuntu 22.04. See the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
-
-~~~
-$ cat metagenomics-Ubuntu22.yml
-~~~
-{: .bash}
-~~~
-name: metagenomics  
-channels:
-  - bioconda
-  - conda-forge
-  - defaults
-dependencies:                                      
-  - checkm-genome=1.2.1=pyhdfd78af_0
-  - fastqc=0.11.9=hdfd78af_1         
-  - kraken-biom=1.2.0=pyh5e36f6f_0
-  - kraken2=2.1.2=pl5321h9f5acd7_2
-  - krona=2.8.1=pl5321hdfd78af_1
-  - maxbin2=2.2.7=he1b5a44_17e_0
-  - spades=3.14.1=h95f258a_2
-  - trimmomatic=0.39=hdfd78af_2
-
-~~~
-{: .output}
-
-It has been difficult to find compatibility between all the dependencies of each package installed in the metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be installed, but it does not fully work at the time of use.
-
-[metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
-
-In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
-
-[metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
-
-See the [video tutorial](https://youtu.be/kHYmffZYxcI)
-
-Then you can create your own metagenomics conda environment using the `.yml` file according to your operating system.
-~~~
-$ conda env create -f metagenomics-Ubuntu22.yml
-~~~
-{: .bash}  
+> ## Conda YMLs for optional modifications of the environment
+> 
+> This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
+> 
+> This is the original [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) file working on Ubuntu 22.04. See the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
+> 
+> ~~~
+> name: metagenomics  
+> channels:
+>   - bioconda
+>   - conda-forge
+>   - defaults
+> dependencies:                                      
+>   - checkm-genome=1.2.1=pyhdfd78af_0
+>   - fastqc=0.11.9=hdfd78af_1         
+>   - kraken-biom=1.2.0=pyh5e36f6f_0
+>   - kraken2=2.1.2=pl5321h9f5acd7_2
+>   - krona=2.8.1=pl5321hdfd78af_1
+>   - maxbin2=2.2.7=he1b5a44_17e_0
+>   - spades=3.14.1=h95f258a_2
+>   - trimmomatic=0.39=hdfd78af_2
+> ~~~
+> {: .output}
+> 
+> It has been difficult to find compatibility between all the dependencies of each package installed in the 
+> metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be 
+> installed, but it does not fully work at the time of use.
+> 
+> [metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
+> 
+>In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
+> 
+> [metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
+> 
+> See the [video tutorial](https://youtu.be/kHYmffZYxcI)
+> 
+> Then you can create your own metagenomics conda environment using the `.yml` file according to your operating > system.
+> ~~~
+> $ conda env create -f metagenomics-Ubuntu22.yml
+> ~~~
+> {: .bash}  
+{: .prereq} 
 
 Finally execute some remaining installation scripts.  
 ~~~
@@ -204,41 +242,3 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 | -------- | ------------ | ------ | ------------- |
 | [phyloseq](https://github.com/joey711/phyloseq) | 1.39.1 | [GitHub](https://github.com/joey711/phyloseq) | Explore, manipulate and analyze microbiome profiles with R |
 | [ggplot2](https://ggplot2.tidyverse.org/) | 3.3.6 | [GitHub](https://github.com/tidyverse/ggplot2) | System for declaratively creating graphics, based on The Grammar of Graphics |
-
-### QuickStart Software Installation Instructions
-
-These are the QuickStart installation instructions. They assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
-
-We have installed software using [miniconda](https://docs.conda.io/en/latest/miniconda.html). Miniconda is a package manager that simplifies the installation process. Please first install miniconda3 (installation instructions below), and then proceed to the installation of individual tools. 
-
-### Miniconda3
-
-> ## Linux
-> 
->To install miniconda3, see the [video tutorial](https://youtu.be/0PqwShSDH20)
-
-Or in a terminal type:
->~~~
->$ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
->$ bash Miniconda3-latest-MacOSX-x86_64.sh
->~~~
->{: .bash}
->Then, follow the instructions that you are prompted with on the screen to install Miniconda3.
->See the video tutorial, [installing Miniconda3 on WSL Ubuntu](https://youtu.be/owQgZoE-GrY)
->
-{: .solution}
-
-
-### Installing packages on Miniconda3 environment
-
-> ## Terminal of active environment
->
->To install a bioconda package, type:
->
-> ~~~
-> $ conda install -c bioconda package_name
-> ~~~
-> 
-{: .bash}
-{: .solution}
-
