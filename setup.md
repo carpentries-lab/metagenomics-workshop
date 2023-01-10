@@ -104,7 +104,7 @@ The data used in this workshop are available on Zenodo. Because this workshop wo
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
 #### Install programs using a Conda environment
-**This instructions assume familiarity with the command line and with installation in general.** As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
+This instructions assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
 
 To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend to install the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
 
@@ -130,7 +130,7 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 {: .solution}
 
 
-* **2)Installing the metagenomics environment**
+* **2) Installing the metagenomics environment**
 
 Once you have your Miniconda3 ready, follow this instructions to install and activate the metagenomics environment. 
 
@@ -152,27 +152,33 @@ Once you have your Miniconda3 ready, follow this instructions to install and act
 > to your computer and follow the instruction sin the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
 {: .solution}
 
- 
-It has been difficult to find compatibility between all the dependencies of each package installed in the 
-metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be 
-installed, but it does not fully work at the time of use.
-
-[metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
- 
-In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
- 
-[metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
- 
-See the [video tutorial](https://youtu.be/kHYmffZYxcI)
- 
- Then you can create your own metagenomics conda environment using the `.yml` file according to your operating > system.
+> ## MacOSX
+> It has been difficult to find compatibility between all the dependencies of each package installed in the
+> metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be 
+> installed, but it does not fully work at the time of use.
+> Copy the file [metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml) in your computer and run: 
 > ~~~
-> $ conda env create -f metagenomics-Ubuntu22.yml
+> $ conda env create -f metagenomics-macOS.yml
+> ~~~
+> {: .bash}  
+{: .solution}
+
+> ## WSL
+> In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility 
+> with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and 
+> create its own environment with the file([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)).
+> The file for the metagenomics environment is [metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
+> See the [video tutorial](https://youtu.be/kHYmffZYxcI)
+> ~~~
+> $ conda env create -f metagenomics-maxbin.yml
+> $ conda env create -f metagenomics-WSLUbuntu.yml
 > ~~~
 > {: .bash}  
 {: .prereq} 
 
-Finally execute some remaining installation scripts.  
+* **3) Finally execute some remaining installation scripts**
+Change `dcuser` with you own username.
+And run all this lines:
 ~~~
 bash /home/dcuser/.miniconda3/envs/metagenomics/opt/krona/updateTaxonomy.sh                                
 wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz 
@@ -183,7 +189,7 @@ rm *dmp readme.txt taxdump.tar.gz gc.prt
 ~~~
 {: .bash}  
 
-#### R and RStudio:
+#### Install R and RStudio:
 
 R and RStudio are two separate pieces of software:
 
