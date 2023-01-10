@@ -108,83 +108,64 @@ More information about these data will be presented in the [first episode of the
 
 To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend to install the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
 
-### Miniconda3
+* **1) Install Miniconda3**
 
-FIXME
 > ## Linux
 > 
 > To install miniconda3, see the [video tutorial](https://youtu.be/0PqwShSDH20)
-> Or in a terminal type:
+{: .solution}
+
+> ## MacOSX
+> In a terminal type:
 > ~~~
 > $ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 > $ bash Miniconda3-latest-MacOSX-x86_64.sh
 > ~~~
 > {: .bash}
 > Then, follow the instructions that you are prompted with on the screen to install Miniconda3.
+{: .solution}
+
+> ## WSL
 > See the video tutorial, [installing Miniconda3 on WSL Ubuntu](https://youtu.be/owQgZoE-GrY)
->
 {: .solution}
 
 
-### Installing packages on Miniconda3 environment
-
-> ## Terminal of active environment
->
->To install a bioconda package, type:
->
-> ~~~
-> $ conda install -c bioconda package_name
-> ~~~
-> 
-{: .bash}
-{: .solution}
+* **2)Installing the metagenomics environment**
 
 Once you have your Miniconda3 ready, follow this instructions to install and activate the metagenomics environment. 
-The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) for Linux Ubuntu 22.04 which has the exact versions of each tool in this environment. You can use the spec file as follows:  
+
+> ## Linux: option 1
+> The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
+> for Linux Ubuntu 22.04 which has the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
 > $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
 > ~~~
->{: .bash}
+> {: .bash}
+> More information about how to use environments and spec files is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+{: .solution}
 
-More information about how to use environments and spec files is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-
-> ## Conda YMLs for optional modifications of the environment
-> 
+> ## Linux: option 2
+> Another way to create an environment is with a `ỳml` file.
 > This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
 > 
-> This is the original [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) file working on Ubuntu 22.04. See the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
-> 
-> ~~~
-> name: metagenomics  
-> channels:
->   - bioconda
->   - conda-forge
->   - defaults
-> dependencies:                                      
->   - checkm-genome=1.2.1=pyhdfd78af_0
->   - fastqc=0.11.9=hdfd78af_1         
->   - kraken-biom=1.2.0=pyh5e36f6f_0
->   - kraken2=2.1.2=pl5321h9f5acd7_2
->   - krona=2.8.1=pl5321hdfd78af_1
->   - maxbin2=2.2.7=he1b5a44_17e_0
->   - spades=3.14.1=h95f258a_2
->   - trimmomatic=0.39=hdfd78af_2
-> ~~~
-> {: .output}
-> 
-> It has been difficult to find compatibility between all the dependencies of each package installed in the 
-> metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be 
-> installed, but it does not fully work at the time of use.
-> 
-> [metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
-> 
->In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
-> 
-> [metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
-> 
-> See the [video tutorial](https://youtu.be/kHYmffZYxcI)
-> 
-> Then you can create your own metagenomics conda environment using the `.yml` file according to your operating > system.
+> In Ubuntu 22.04 copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
+> to your computer and follow the instruction sin the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
+{: .solution}
+
+ 
+It has been difficult to find compatibility between all the dependencies of each package installed in the 
+metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be 
+installed, but it does not fully work at the time of use.
+
+[metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml)
+ 
+In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and create its own ([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)) environment.
+ 
+[metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
+ 
+See the [video tutorial](https://youtu.be/kHYmffZYxcI)
+ 
+ Then you can create your own metagenomics conda environment using the `.yml` file according to your operating > system.
 > ~~~
 > $ conda env create -f metagenomics-Ubuntu22.yml
 > ~~~
