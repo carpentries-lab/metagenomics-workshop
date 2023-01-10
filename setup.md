@@ -174,9 +174,9 @@ Once you have your Miniconda3 ready, follow this instructions to install and act
 > $ conda env create -f metagenomics-WSLUbuntu.yml
 > ~~~
 > {: .bash}  
-{: .prereq} 
+{: .solution} 
 
-* **3) Finally execute some remaining installation scripts**
+* **3) Finally execute some remaining installation scripts**  
 Change `dcuser` with you own username.
 And run all this lines:
 ~~~
