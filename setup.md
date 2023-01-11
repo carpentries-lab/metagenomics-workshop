@@ -98,15 +98,20 @@ AWS remote machine. To do this, you will need to install all of the software use
 dataset. Instructions for doing this are below.  
 
 #### Data   
-The data used in this workshop are available on Zenodo. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the Zenodo page linked below for information about the data and access to the data files. 
+The data used in this workshop are available on Zenodo. Because this workshop works 
+with real data, be aware that file sizes for the data are large. Please read the Zenodo 
+page linked below for information about the data and access to the data files. 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
 #### Install programs using a Conda environment
-This instructions assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
+This instructions assume familiarity with the command line and with installation 
+in general. As there are different operating systems and many different versions
+of operating systems and environments, these may not work on your computer. If an 
+installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
 
-To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend to install the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
+To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend to install the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
 
 * **1) Install Miniconda3**
 
