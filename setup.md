@@ -56,7 +56,7 @@ AWS remote machine. To do this, you will need to install all of the software use
 dataset. Instructions for doing this are below.  
 
 
-#### Data   
+#### **Data**   
 The data used in this workshop are available on Zenodo. Because this workshop works 
 with real data, be aware that file sizes for the data are large. Please read the Zenodo 
 page linked below for information about the data and access to the data files. 
@@ -65,7 +65,7 @@ page linked below for information about the data and access to the data files.
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
 
-#### Installa Bash terminal 
+#### **Install a Bash terminal** 
 
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
@@ -105,7 +105,7 @@ More information about these data will be presented in the [first episode of the
 {: .solution}
 
 
-#### Install Miniconda3
+#### **Install Miniconda3**
 
 These instructions assume familiarity with the command line and with installation 
 in general. As there are different operating systems and many different versions
@@ -135,7 +135,7 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 {: .solution}
 
 
-#### Install the metagenomics environment
+#### **Install the metagenomics environment**
 
 Once you have your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
 
@@ -182,7 +182,7 @@ Once you have your Miniconda3 ready, follow these instructions to install and ac
 {: .solution} 
 
 
-#### Execute some remaining installation scripts  
+#### **Execute some remaining installation scripts**  
 
 Change `dcuser` with your own username.
 And run all these lines:
@@ -196,7 +196,7 @@ rm *dmp readme.txt taxdump.tar.gz gc.prt
 ~~~
 {: .bash}  
 
-#### Install R and RStudio:
+#### **Install R and RStudio**
 
 R and RStudio are two separate pieces of software:
 
@@ -230,9 +230,16 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 > + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
 {: .solution}
 
-#### Software(packages) for R:
+#### R libraries:
 
 | Software | Version | Manual | Description |
 | -------- | ------------ | ------ | ------------- |
 | [phyloseq](https://github.com/joey711/phyloseq) | 1.39.1 | [GitHub](https://github.com/joey711/phyloseq) | Explore, manipulate and analyze microbiome profiles with R |
 | [ggplot2](https://ggplot2.tidyverse.org/) | 3.3.6 | [GitHub](https://github.com/tidyverse/ggplot2) | System for declaratively creating graphics, based on The Grammar of Graphics |
+
+Type these command in your console:
+~~~
+> install.packages("phyloseq")
+> install.packages("ggplot2")
+~~~
+{: .language-R}
