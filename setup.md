@@ -6,7 +6,7 @@ title: Setup
 ## In a Data Carpentry Workshop  
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
 instances (a computer with all the required programs and files to which you will have access from your computer). 
-With the exception of a spreadsheet program and an internet browser, all of the command 
+Except for a spreadsheet program and an internet browser, all of the command 
 line software and data used in the workshop are hosted on an Amazon 
 Machine Image (AMI). If you are signed up to take 
 a Metagenomics Data Carpentry Workshop, **you do not need to worry about setting
@@ -15,18 +15,18 @@ for you and this will be provided to you at no cost.
 This is true for both self-organized and centrally-organized workshops. 
 Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
 
-If you are in an The Carpentries-Workshop, you do not even need to install a bash terminal, 
+If you are in The Carpentries-Workshop, you do not even need to install a bash terminal, 
 the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
 Instead of connecting by ssh users can simply use the R-studio AMI terminal. 
 
 This lesson requires a working spreadsheet program. 
 If you don't have a spreadsheet program already, you can use LibreOffice. 
-It's a free, open source spreadsheet program.
+It's a free, open-source spreadsheet program.
 
 ## Running the lesson by yourself (Not in a Data Carpentry Workshop)
 
 ### Required  software  
-If you are not in a Data Carpentry Workshop the metagenomics specific software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
+If you are not in a Data Carpentry Workshop the metagenomics-specific software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
 
 | Software | Version | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
@@ -39,29 +39,29 @@ If you are not in a Data Carpentry Workshop the metagenomics specific software t
 |[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
 |[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
 
-You can get this software by two options. Option A is by renting a ready-to-use Amazon Web Services instance
+You can get this software with two options. Option A is by renting a ready-to-use Amazon Web Services instance
 and option B is by installing a Conda environment and some R libraries. Instructions for both options are written next. 
 
 ### Option A: Using the lessons with Amazon Web Services (AWS)
 
-Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
+Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
 In this instances you can use the terminal available in R studio and users won't need
-to install their own terminals nor use `ssh` (see instructor notes). **If nevertheless you
+to install their own terminals or use `ssh` (see instructor notes). **If nevertheless, you
 prefer that the users install their own terminals**, directions to install them are included 
-for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
+for each Windows, Mac OS X, and Linux system below. For Windows, you will need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
-#### Installing a linux terminal 
+#### Installing a Linux terminal 
 
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
 >   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
 >   + Select "Use the nano editor by default" and click on "Next".
 >   + Keep "Use Git from the Windows Command Prompt" selected and click on "Next". If you forgot to do this programs that you need for the workshop will not work properly. If this happens rerun the installer and select the appropriate option.
->   + Select on "Use bundled OpenSSH" and click on "Next".
->   + Select on "Use the OpenSSL Library" and click "Next".
+>   + Select "Use bundled OpenSSH" and click on "Next".
+>   + Select "Use the OpenSSL Library" and click "Next".
 >   + Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
 >   + Select "Use Windows' default console window" and click on "Next".
 >   + Select "Default (fast-forward on merge)" and click on "Next".
@@ -73,19 +73,19 @@ for each Windows, Mac OS X, and Linux systems below. For Windows, you will also 
 >   + If your "HOME" environment variable is not set (or you don't know what this is):
 >   + Open command prompt (Open Start Menu then type `cmd` and press [Enter])
 >   + Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
->   + Press [Enter], you should see `SUCCESS: Specified value was saved.`
->   + Quit command prompt by typing `exit` then pressing [Enter]
->   + See the [video tutorial](https://youtu.be/yo7Z-BEG62A) for an example on how to install Git on Windows 11.
+>   + Press [Enter], and you should see `SUCCESS: Specified value was saved.`
+>   + Quit the command prompt by typing `exit` and then pressing [Enter]
+>   + See the [video tutorial](https://youtu.be/yo7Z-BEG62A) for an example of how to install Git on Windows 11.
 >   
 > - An **alternative option** is to install PuTTY
->  by going to the [the installation page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version. If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi. If you aren't sure whether you need the 64 or 32 bit version, you can check your laptop version by following [the instructions here](https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq). Once the installer is downloaded, double click on it, and PuTTY should install.
+>  by going to the [the installation page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version. If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi. If you aren't sure whether you need the 64 or 32-bit version, you can check your laptop version by following [the instructions here](https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq). Once the installer is downloaded, double-click on it, and PuTTY should install.
 > - **Another alternative option** is to use the Windows Subsystem Linux (WSL). This option is available for Windows 10 and Windows 11 - detailed [instructions are available here](https://learn.microsoft.com/en-us/windows/wsl/install).
-> See the [video tutorial](https://youtu.be/YoNdTuN-YWk) for an example on how to install WSL with Ubuntu 22.04 on Windows 11.
+> See the [video tutorial](https://youtu.be/YoNdTuN-YWk) for an example of how to install WSL with Ubuntu 22.04 on Windows 11.
 > 
 {: .solution}
 
 > ## macOS
-> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). See the [video tutorial](https://youtu.be/FuNsWg%5C_VzeQ) for an example on how to open the Terminal. You may want to keep Terminal in your dock for this workshop.
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). See the [video tutorial](https://youtu.be/FuNsWg%5C_VzeQ) for an example of how to open the Terminal. You may want to keep Terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
@@ -93,7 +93,7 @@ for each Windows, Mac OS X, and Linux systems below. For Windows, you will also 
 {: .solution}
 
 ### Option B: Following the lessons on your local machine  
-If you trust that your computer is powerfull enough and want to have all the programs installed you can follow all the workshop without using an
+If you trust that your computer is powerful enough and want to have all the programs installed you can follow all the workshops without using an
 AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.  
 
@@ -106,12 +106,12 @@ page linked below for information about the data and access to the data files.
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
 
 #### Install programs using a Conda environment
-This instructions assume familiarity with the command line and with installation 
+These instructions assume familiarity with the command line and with installation 
 in general. As there are different operating systems and many different versions
 of operating systems and environments, these may not work on your computer. If an 
 installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
 
-To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend to install the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
+To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend installing the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
 
 * **1) Install Miniconda3**
 
@@ -137,7 +137,7 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 
 * **2) Installing the metagenomics environment**
 
-Once you have your Miniconda3 ready, follow this instructions to install and activate the metagenomics environment. 
+Once you have your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
 
 > ## Linux: option 1
 > The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
@@ -154,7 +154,7 @@ Once you have your Miniconda3 ready, follow this instructions to install and act
 > This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
 > 
 > In Ubuntu 22.04 copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
-> to your computer and follow the instruction sin the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
+> to your computer and follow the instructions in the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
 {: .solution}
 
 > ## MacOSX
@@ -182,8 +182,8 @@ Once you have your Miniconda3 ready, follow this instructions to install and act
 {: .solution} 
 
 * **3) Finally execute some remaining installation scripts**  
-Change `dcuser` with you own username.
-And run all this lines:
+Change `dcuser` with your own username.
+And run all these lines:
 ~~~
 bash /home/dcuser/.miniconda3/envs/metagenomics/opt/krona/updateTaxonomy.sh                                
 wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz 
@@ -199,16 +199,16 @@ rm *dmp readme.txt taxdump.tar.gz gc.prt
 R and RStudio are two separate pieces of software:
 
 R is a programming language that is especially powerful for data exploration, visualization, and statistical analysis
-RStudio is an integrated development environment (IDE) that makes using R easier. In this course we use RStudio to interact with R.
+RStudio is an integrated development environment (IDE) that makes using R easier. In this course, we use RStudio to interact with R.
 
 > ## Mac OS X
 > -  Download R from the [CRAN website](https://cran.r-project.org/bin/macosx/).
 > + Select the .pkg file for the latest R version
-> + Double click on the downloaded file to install R
+> + Double-click on the downloaded file to install R
 > + It is also a good idea to install [XQuartz](https://www.xquartz.org/) (needed by some packages)
 > + Go to the [RStudio download](https://www.rstudio.com/products/rstudio/download/#download) page
 > + Under Installers select RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit) (where x, y, and z represent version numbers)
-> + Double click the file to install RStudio
+> + Double-click the file to install RStudio
 > + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
 {: .solution}
 
@@ -217,7 +217,7 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 > + Run the .exe file that was just downloaded
 > + Go to the [RStudio download page](https://www.rstudio.com/products/rstudio/download/#download)
 > + Under Installers select RStudio x.yy.zzz - Windows Vista/7/8/10 (where x, y, and z represent version numbers)
-> + Double click the file to install it
+> + Double-click the file to install it
 > + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
 {: .solution}
 
