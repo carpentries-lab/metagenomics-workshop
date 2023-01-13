@@ -26,7 +26,7 @@ It's a free, open-source spreadsheet program.
 ## Running the lesson by yourself (Not in a Data Carpentry Workshop)
 
 ### Required  software  
-If you are not in a Data Carpentry Workshop the metagenomics-specific software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
+If you are not in a Data Carpentry Workshop, the software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
 
 | Software | Version | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
@@ -39,21 +39,33 @@ If you are not in a Data Carpentry Workshop the metagenomics-specific software t
 |[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
 |[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
 
-You can get this software with two options. Option A is by renting a ready-to-use Amazon Web Services instance
-and option B is by installing a Conda environment and some R libraries. Instructions for both options are written next. 
-
 ### Option A: Using the lessons with Amazon Web Services (AWS)
 
 Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0e7fb76a881ab5e09` (Metagenomics - 18 March (The Carpentries Incubator)) listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
 
-In this instances you can use the terminal available in R studio and users won't need
-to install their own terminals or use `ssh` (see instructor notes). **If nevertheless, you
+In this instances you can use the terminal available in RStudio and users won't need
+to install their own terminals or use `ssh` (see [Instructor Notes](https://carpentries-incubator.github.io/metagenomics-workshop/guide/index.html)). **If nevertheless, you
 prefer that the users install their own terminals**, directions to install them are included 
-for each Windows, Mac OS X, and Linux system below. For Windows, you will need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
+for each Windows, Mac OS X, and Linux below in the Option B section. For Windows, you will need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
-#### Installing a Linux terminal 
+### Option B: Following the lessons on your local machine  
+If you trust that your computer is powerful enough and want to have all the programs installed you can follow all the workshop without using an
+AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
+dataset. Instructions for doing this are below.  
+
+
+#### Data   
+The data used in this workshop are available on Zenodo. Because this workshop works 
+with real data, be aware that file sizes for the data are large. Please read the Zenodo 
+page linked below for information about the data and access to the data files. 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
+
+More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
+
+
+#### Installa Bash terminal 
 
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
@@ -89,31 +101,19 @@ for each Windows, Mac OS X, and Linux system below. For Windows, you will need t
 {: .solution}
 
 > ## Linux
->  - The default shell is usually Bash and there is usually no need to install anything. To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with '/bash' then your default is something else and you can run Bash by typing bash.
+>  - The default shell is usually Bash and there is usually no need to install anything. To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with `/bash` then your default is something else and you can run Bash by typing `bash`.
 {: .solution}
 
-### Option B: Following the lessons on your local machine  
-If you trust that your computer is powerful enough and want to have all the programs installed you can follow all the workshops without using an
-AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
-dataset. Instructions for doing this are below.  
 
-#### Data   
-The data used in this workshop are available on Zenodo. Because this workshop works 
-with real data, be aware that file sizes for the data are large. Please read the Zenodo 
-page linked below for information about the data and access to the data files. 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
+#### Install Miniconda3
 
-More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
-
-#### Install programs using a Conda environment
 These instructions assume familiarity with the command line and with installation 
 in general. As there are different operating systems and many different versions
 of operating systems and environments, these may not work on your computer. If an 
 installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
+If you have difficulties with the installations or find better ways to install things in your operating system please raise an [Issue](https://github.com/carpentries-incubator/metagenomics/issues) to let us know.
 
 To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend installing the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
-
-* **1) Install Miniconda3**
 
 > ## Linux
 > 
@@ -135,11 +135,11 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 {: .solution}
 
 
-* **2) Installing the metagenomics environment**
+#### Install the metagenomics environment
 
 Once you have your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
 
-> ## Linux: option 1
+> ## Linux: option 1 (recommended)
 > The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
 > for Linux Ubuntu 22.04 which has the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
@@ -181,7 +181,9 @@ Once you have your Miniconda3 ready, follow these instructions to install and ac
 > {: .bash}  
 {: .solution} 
 
-* **3) Finally execute some remaining installation scripts**  
+
+#### Execute some remaining installation scripts  
+
 Change `dcuser` with your own username.
 And run all these lines:
 ~~~
