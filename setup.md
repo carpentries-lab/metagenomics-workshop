@@ -230,7 +230,7 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 > + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
 {: .solution}
 
-#### R libraries:
+#### **Install R libraries**
 
 | Software | Version | Manual | Description |
 | -------- | ------------ | ------ | ------------- |
