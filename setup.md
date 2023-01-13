@@ -97,7 +97,7 @@ More information about these data will be presented in the [first episode of the
 {: .solution}
 
 > ## macOS
-> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). See the [video tutorial](https://youtu.be/FuNsWg%5C_VzeQ) for an example of how to open the Terminal. You may want to keep Terminal in your dock for this workshop.
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). You may want to keep Terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
