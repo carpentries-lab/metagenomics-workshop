@@ -28,16 +28,16 @@ It's a free, open-source spreadsheet program.
 ### Required  software  
 If you are not in a Data Carpentry Workshop, the software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
 
-| Software | Version | Manual | Available for | Description |
+| Software website | Used Version in Conda| Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
 | [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [0.11.9](https://anaconda.org/bioconda/fastqc) | [Help](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, macOS, Windows | Quality control tool for high throughput sequence data.|
 | [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | [0.39](https://anaconda.org/bioconda/trimmomatic) | [GitHub](https://github.com/usadellab/Trimmomatic) | Linux, macOS, Windows | A flexible read trimming tool for Illumina NGS data. |
 |[Kraken](http://ccb.jhu.edu/software/kraken2/)| [2.1.2](https://anaconda.org/bioconda/kraken2)|[GitHub](https://github.com/DerrickWood/kraken2/wiki/Manual)|Linux, macOS|A tool for taxonomic assignation for reads from metagenomics|
-|[KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub](https://github.com/marbl/Krona/tree/master/KronaTools)|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
-|[MaxBin2](http://downloads.jbei.org/data/microbial\_communities/MaxBin/MaxBin.html)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
-|[Spades](https://cab.spbu.ru/software/spades/)|[3.15.2](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades)|Linux, macOS| Tool for assemblies|
+|[KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub]([https://github.com/marbl/Krona/tree/master/KronaTools](https://github.com/Ecogenomics/CheckM/wiki/Quick-Start#typical-workflow))|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
+|[MaxBin2](https://sourceforge.net/projects/maxbin2/)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
+|[Spades](https://cab.spbu.ru/software/spades/)|[3.15.2](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades#sec3)|Linux, macOS| Tool for assemblies|
 |[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
-|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
+|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki/Quick-Start#typical-workflow)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
 
 ### Option A: Using the lessons with Amazon Web Services (AWS)
 
@@ -97,7 +97,7 @@ More information about these data will be presented in the [first episode of the
 {: .solution}
 
 > ## macOS
-> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal (found in /Applications/Utilities). You may want to keep Terminal in your dock for this workshop.
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal Application (found in /Applications/Utilities). See how to open the terminal in the [video tutorial](https://www.youtube.com/watch?v=FuNsWg_VzeQ). You may want to keep Terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
