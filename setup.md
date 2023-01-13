@@ -237,7 +237,7 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 | [phyloseq](https://github.com/joey711/phyloseq) | 1.39.1 | [GitHub](https://github.com/joey711/phyloseq) | Explore, manipulate and analyze microbiome profiles with R |
 | [ggplot2](https://ggplot2.tidyverse.org/) | 3.3.6 | [GitHub](https://github.com/tidyverse/ggplot2) | System for declaratively creating graphics, based on The Grammar of Graphics |
 
-Type these command in your console:
+Type these commands in your console:
 ~~~
 > install.packages("phyloseq")
 > install.packages("ggplot2")
