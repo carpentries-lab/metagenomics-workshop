@@ -198,6 +198,9 @@ the bash shell). They will learn how to navigate their file system, computationa
 This lesson is meant to be taught in its entirety. For novice learners, schedule around 4 hours for this lesson. If your learners are 
 already somewhat familiar with the bash shell, the earlier episodes can be condensed. 
 
+#### Redirection episode
+Even when the output of `grep -B1 -A2 NNNNNNNNNN JC1A_R2.fastq > bad_reads.txt`  is a FastQ file, the output is stored in .txt because later in the episode, the instruction `grep -B1 -A2 NNNNNNNNNN *.fastq >> bad_reads.txt` would rise a warning and unintended consequences if the file was `bad_reads.fastq`.  
+
 ## Technical tips and tricks
 
 #### Command Prompt Editing
