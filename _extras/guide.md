@@ -312,7 +312,7 @@ In episode [Starting a metagenomics project](https://carpentries-incubator.githu
 we suggest to use a zoom of first image while explaining what is metagenomics. The image can be zoomed in by clicking on it. 
 
 ## Plots when using CCM UNAM server  
-The National University of México, in its Center for Mathematical Science has available upon request a learning server for this lesson. When using this server, plots are not displayed directly on R studio. To see the plots, they must be saved with the following instructions: 
+The National Automous University of Mexico, in its Center for Mathematical Sciences has available upon request a learning server for this lesson. When using this server, plots are not displayed directly on R studio. To see the plots, they must be saved with the following instructions: 
 
 - ggplot and other plots  
     `pdf("plot_abundances.pdf",width = 15, height = 5)`  
