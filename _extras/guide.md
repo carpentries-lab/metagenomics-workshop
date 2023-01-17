@@ -20,17 +20,78 @@ Here you can found instructor notes for all of those lessons.
 The parent directory of everything that we will be using during the lesson is `/home/dcuser/dc_workshop`. At the beginning of the workshop make sure it looks like this:
 
 ~~~
-$ tree dc_workshop
+$ tree -a dc_workshop
 ~~~
 {: .bash} 
 ~~~
 dc_workshop
+├── .backup_dc_workshop
+│   ├── data
+│   │   ├── trimmed_fastq
+│   │   │   ├── JC1A_R1.trim.fastq.gz
+│   │   │   ├── JC1A_R1un.trim.fastq.gz
+│   │   │   ├── JC1A_R2.trim.fastq.gz
+│   │   │   ├── JC1A_R2un.trim.fastq.gz
+│   │   │   ├── JP4D_R1.trim.fastq.gz
+│   │   │   ├── JP4D_R1un.trim.fastq.gz
+│   │   │   ├── JP4D_R2.trim.fastq.gz
+│   │   │   └── JP4D_R2un.trim.fastq.gz
+│   │   └── untrimmed_fastq
+│   │       ├── JC1A_R1.fastq.gz
+│   │       ├── JC1A_R2.fastq.gz
+│   │       ├── JP4D_R1.fastq.gz
+│   │       ├── JP4D_R2.fastq.gz
+│   │       └── TruSeq3-PE.fa
+│   ├── docs
+│   │   └── fastqc_summaries.txt
+│   ├── .hidden
+│   │   └── youfoundit.txt
+│   ├── mags
+│   │   ├── CHECKM
+│   │   │   ├── Bacteria.ms
+│   │   │   └── quality_JP4D.tsv
+│   │   ├── JP4D_contigs.fasta
+│   │   └── MAXBIN
+│   │       ├── JP4D.001.fasta
+│   │       ├── JP4D.002.fasta
+│   │       ├── JP4D.003.fasta
+│   │       ├── JP4D.004.fasta
+│   │       ├── JP4D.log
+│   │       └── JP4D.summary
+│   ├── results
+│   │   ├── assembly_JC1A
+│   │   │   ├── JC1A_contigs.fasta
+│   │   │   └── JC1A_scaffolds.fasta
+│   │   └── fastqc_untrimmed_reads
+│   │       ├── JC1A_R1_fastqc.html
+│   │       ├── JC1A_R1_fastqc.zip
+│   │       ├── JC1A_R2_fastqc.html
+│   │       ├── JC1A_R2_fastqc.zip
+│   │       ├── JP4D_R1_fastqc.html
+│   │       ├── JP4D_R1_fastqc.zip
+│   │       ├── JP4D_R2_fastqc.html
+│   │       └── JP4D_R2_fastqc.zip
+│   └── taxonomy
+│       ├── cuatroc.biom
+│       ├── JC1A.kraken
+│       ├── JC1A.report
+│       ├── JP41.report
+│       ├── JP4D.kraken
+│       ├── JP4D.report
+│       └── mags_taxonomy
+│           ├── JP4D.001.kraken
+│           ├── JP4D.001.krona.input
+│           ├── JP4D.001.krona.out.html
+│           └── JP4D.001.report
 ├── data
 │   └── untrimmed_fastq
 │       ├── JC1A_R1.fastq.gz
 │       ├── JC1A_R2.fastq.gz
 │       ├── JP4D_R1.fastq.gz
-│       └── JP4D_R2.fastq.gz
+│       ├── JP4D_R2.fastq.gz
+│       └── TruSeq3-PE.fa
+├── .hidden
+│   └── youfoundit.txt
 ├── mags
 │   └── JP4D_contigs.fasta
 └── taxonomy
@@ -42,8 +103,13 @@ dc_workshop
     └── mags_taxonomy
         ├── JP4D.001.kraken
         └── JP4D.001.report
+
 ~~~
 {: .output} 
+
+Here you can see there is a **hidden backup directory** called `.backup_dc_workshop`. It has all the relevant 
+resulting files. If a participant is not able to generate a file needed to continue with the lesson, 
+they can take it from here.
 
 ## Installation
 
