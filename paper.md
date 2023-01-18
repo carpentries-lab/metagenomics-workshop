@@ -7,9 +7,9 @@ tags:
   - data processing
   - visualization
 authors:
-  - name: Diego Garfias-Gallegos
-    affiliation: 1
   - name: Claudia Zirión-Martínez
+    affiliation: 1
+  - name: Diego Garfias-Gallegos
     affiliation: 1
   - name:  Tania Vanessa Arellano-Fernandez
     affiliation: "3, 6"
