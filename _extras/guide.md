@@ -296,7 +296,7 @@ This Instructor notes are based on the [corresponding page](https://datacarpentr
 
 # Notes for the Introduction to R for Metagenomics lesson
 
-FIXME: Add
+We recommend taking a survey about the experience in coding and programming languages of the participants before preparing for the workshop. If the participants already know R (or even Python), this lesson may be skipped.
 
 # Notes for the Data processing and visualization for metagenomics lesson
 
@@ -308,8 +308,8 @@ are used for that part.
 
 ## Technical tips and tricks
 
-In episode [Starting a metagenomics project](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html)
-we suggest to use a zoom of first image while explaining what is metagenomics. The image can be zoomed in by clicking on it. 
+Images can be zoomed in by clicking on them to show them more clearly while explaining. But you need to click on the backwards arrow 
+of the browser to return to the episode.
 
 ## Plots when using CCM UNAM server  
 The National Automous University of Mexico, in its Center for Mathematical Sciences has available upon request a learning server for this lesson. When using this server, plots are not displayed directly on R studio. To see the plots, they must be saved with the following instructions: 
@@ -324,3 +324,6 @@ Particularly when graphics were generated with ggplot you can use `ggsave` funct
   `myplot<-ggplot2(....)`  
   `ggsave(file "~/myplot.png", myplot) `   
   
+# Improving the workshop
+
+If you give this workshop and find more recommendations that can be useful to other instructors please make a **pull request** to [this page](https://github.com/carpentries-incubator/metagenomics-workshop/edit/gh-pages/_extras/guide.md).
