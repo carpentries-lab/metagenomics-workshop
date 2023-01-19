@@ -326,4 +326,4 @@ Particularly when graphics were generated with ggplot you can use `ggsave` funct
   
 # Improving the workshop
 
-If you give this workshop and find more recommendations that can be useful to other instructors please make a **pull request** to [this page](https://github.com/carpentries-incubator/metagenomics-workshop/edit/gh-pages/_extras/guide.md).
+If you give this workshop and find more recommendations that can be useful to other instructors please make a **pull request** to [this page](https://github.com/carpentries-incubator/metagenomics-workshop/blob/gh-pages/_extras/guide.md).
