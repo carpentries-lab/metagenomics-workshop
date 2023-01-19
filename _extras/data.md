@@ -2,8 +2,14 @@
 layout: page
 title: Data
 ---
+## Download data
+Data are stored in Zenodo, you can get it from a command line using the following command.  
+~~~
+wget https://zenodo.org/record/7010950/files/dc_workshop.zip?download=1
+~~~
+:{.bash}  
 
-# Features of the dataset  
+## Features of the dataset  
 The dataset in Zenodo contains two files:  
 `dc_workshop.zip`  Three samples from Cuatro Ciénegas sediments with their corresponding taxonomic assignation files.  
 `MGRAST_MetaData_JP.xlsx` Metadata about our three Cuatro Cienegas samples accepted by MGRAST 
