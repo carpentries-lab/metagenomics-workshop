@@ -51,34 +51,34 @@ Carpentry workshop,
   <img src="{{ page.root }}/fig/ami_setup_1.png" alt="Location of Instances and Launch instance button are highlighted" />
 </a>
 
-3\. A new page will apear, scroll down to "Application and OS Images (Amazon Machine Image)" then, in the bar enter the code **0f58e878fa70cc201** 
+3\. A new page will appear, scroll down to "Application and OS Images (Amazon Machine Image)" then, in the bar enter the code **0f58e878fa70cc201** 
 and click Enter. This image is the AMI listed on this curriculum's 
 [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html).
 <a href="{{ page.root }}/fig/ami_setup_2.png">
   <img src="{{ page.root }}/fig/ami_setup_2.png" alt="Location of the select button is highlighted." />
 </a>
 
-4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will apear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. 
+4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will appear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. 
 Click Select in that box.
 
 <a href="{{ page.root }}/fig/ami_setup_3.png">
   <img src="{{ page.root }}/fig/ami_setup_3.png" alt="Location of the bar where the code is written is highlighted." />
 </a>    
 
-5\. In the next page go to the box Instance Type and select **t2.medium**; then click FIXME
+5\. In the next page go to the box Instance Type and select **t2.medium**.
 
 <a href="{{ page.root }}/fig/ami_setup_4.png">
   <img src="{{ page.root }}/fig/ami_setup_4.png" alt="Choose and Instance Type page showing t2.medium in the box." />
 </a>
 
-6\. Create Key Pair. Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and 
-"Private key file format" sections, respectively. And click on "Create key pair".
+6\. In the same page, scroll down to create Key Pair. Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and 
+"Private key file format" sections, respectively. And click on "Create key pair". Your key pair should be automatically downloaded, is a file with `.pem` enxtension. Move it from your Downloads folder to a stable location on your computer.
 
 <a href="{{ page.root }}/fig/ami_setup_5.png">
   <img src="{{ page.root }}/fig/ami_setup_5.png" alt="Boxes for key pair name, RSA key pair type and .pem Private key file format highlighted. And Create key pair button highlighted." />
 </a>
 
-7\. FIXME In the box "Network settings" select "Create security group" and "Allow SSH traffic from" and choose "Anywhere" in the box. FIXME
+7\. To configure R studio port, in the box "Network settings" select "add new rule"
 
 <a href="{{ page.root }}/fig/ami_setup_6.png">
   <img src="{{ page.root }}/fig/ami_setup_6.png" alt="Create security group and Allow SSH trafic from box highlighted." />
@@ -89,38 +89,6 @@ Click Select in that box.
 <a href="{{ page.root }}/fig/ami_setup_7.png">
   <img src="{{ page.root }}/fig/ami_setup_7.png" alt="Boxes for Type Custom TCP, source type Anywhere and Port range 8787 highlighted." />
 </a>
-
-# ERASE FROM HERE
-5\. Click on "6. Configure Security Group" in the top navigation menu. If this is your first time working with this AMI on your
-AWS account, choose "create a new security group". Name your security group something descriptive (for example "DC-metagenomics-AMI") 
-and enter a description into the description box (for example "to use with DC metagenomics AMI"). 
-
-Your security group should now look like this:
-
-<a href="{{ page.root }}/fig/logging-onto-cloud-security-group-1.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud-security-group-1.png" alt="Configure Security Group page" />
-</a>
-
-6\. Click "Add Rule". A new row will appear. Select "Custom TCP Rule" and enter "8787" into box labeled "Port Range". Under the
-"Source" box, select "Anywhere" for both security rules. Click "Review and Launch". You should now see a screen that looks like this:
-
-<a href="{{ page.root }}/fig/logging-onto-cloud-security-group-2.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud-security-group-2.png" alt="Review Instance Launch page" />
-</a>
-
-7\. Click "Launch". You will be asked to select an existing key pair or create a new key pair. Select "Create a new key pair" and enter a name for your key pair. 
-
-<a href="{{ page.root }}/fig/logging-onto-cloud-new-key-pair.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud-new-key-pair.png" alt="Window for Key pair name selection" />
-</a>
-
-8\. Then click "Download Key Pair". Your key pair file ends in `.pem`. Move it from your Downloads folder to a stable location on your 
-computer. For these instructions, we will move it to our Desktop. You can do this by dragging and dropping the file from your Downloads
-folder to your desktop. Then click "Launch Instance".
-
-You instance will now be launched. You should follow the links to 'Create billing alerts' and then the instructions below
-for connecting to and terminating your Amazon Instance.
-### ERASE UP TO HERE
 
 > ## Connect to your Amazon Instance (MacOS/Linux)
 > 
