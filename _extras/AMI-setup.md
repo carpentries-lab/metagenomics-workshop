@@ -57,14 +57,14 @@ named "The Carpentries Lab Metagenomics v1.0". This image is the AMI listed on t
 and click Enter.    
 
 <a href="{{ page.root }}/fig/ami_setup_2.png">
-  <img src="{{ page.root }}/fig/ami_setup_2.png.png" alt="Location of the bar where the code is written is highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_2.png" alt="Location of the select button is highlighted." />
 </a>
 
 4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will apear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. 
 Click Select in that box.
 
 <a href="{{ page.root }}/fig/ami_setup_3.png">
-  <img src="{{ page.root }}/fig/ami_setup_3.png.png" alt="Location of the bar where the code is written is highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_3.png" alt="Location of the bar where the code is written is highlighted." />
 </a>    
 
 5\. In the next page go to the box Instance Type and select **t2.medium**; then click FIXME
