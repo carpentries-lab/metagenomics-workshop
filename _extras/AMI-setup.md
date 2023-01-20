@@ -55,40 +55,70 @@ Carpentry workshop,
 and click Enter. This image is the AMI listed on this curriculum's 
 [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html).
 <a href="{{ page.root }}/fig/ami_setup_2.png">
-  <img src="{{ page.root }}/fig/ami_setup_2.png" alt="Location of the select button is highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_2.png" alt="The bar where the code must be inserted is highlighted." />
 </a>
 
 4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will appear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. 
-Click Select in that box.
+Click "Select" in that box.
 
 <a href="{{ page.root }}/fig/ami_setup_3.png">
-  <img src="{{ page.root }}/fig/ami_setup_3.png" alt="Location of the bar where the code is written is highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_3.png" alt="Location of the Select button is highlighted." />
 </a>    
 
 5\. In the next page go to the box Instance Type and select **t2.medium**.
 
 <a href="{{ page.root }}/fig/ami_setup_4.png">
-  <img src="{{ page.root }}/fig/ami_setup_4.png" alt="Choose and Instance Type page showing t2.medium in the box." />
+  <img src="{{ page.root }}/fig/ami_setup_4.png" alt="Instance Type page showing t2.medium in the box." />
 </a>
 
-6\. In the same page, scroll down to create Key Pair. Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and 
-"Private key file format" sections, respectively. And click on "Create key pair". Your key pair should be automatically downloaded, is a file with `.pem` enxtension. Move it from your Downloads folder to a stable location on your computer.
+6\. In the same page, scroll down to the box "Key pair (login)" and click in "Create new key pair" to create Key Pair. 
 
 <a href="{{ page.root }}/fig/ami_setup_5.png">
-  <img src="{{ page.root }}/fig/ami_setup_5.png" alt="Boxes for key pair name, RSA key pair type and .pem Private key file format highlighted. And Create key pair button highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_5.png" alt="Create new key pair highlighted in the Key pair box." />
 </a>
 
-7\. To configure R studio port, in the box "Network settings" select "add new rule"
+Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and 
+"Private key file format" sections, respectively. And click on "Create key pair". Your key pair should be automatically downloaded, is a file with `.pem` enxtension. Move it from your Downloads folder to a stable location on your computer.
 
 <a href="{{ page.root }}/fig/ami_setup_6.png">
-  <img src="{{ page.root }}/fig/ami_setup_6.png" alt="Create security group and Allow SSH trafic from box highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_6.png" alt="Create key pair box with the sections for Key pair name, key pair type and private key file format and the button Create key pair highlighted." />
 </a>
 
-8\. In the section "Security group rule 2", choose the Type "Custom TCP" and the Source type "Anywhere", and write "8787" in the "Port range" box. FIXME
+7\. In the same page scroll down and click "Edit" in the "Network settings" box, then click on "Add security group rule". 
+
 
 <a href="{{ page.root }}/fig/ami_setup_7.png">
-  <img src="{{ page.root }}/fig/ami_setup_7.png" alt="Boxes for Type Custom TCP, source type Anywhere and Port range 8787 highlighted." />
+  <img src="{{ page.root }}/fig/ami_setup_7.png" alt="Network settings box with the button Edit highlighted." />
 </a>
+
+<a href="{{ page.root }}/fig/ami_setup_8.png">
+  <img src="{{ page.root }}/fig/ami_setup_8.png" alt="Add security group rule button highlighted." />
+</a>
+
+In the section "Security group rule 2", keep selected the Type "Custom TCP" and select the Source type "Anywhere", and write "8787" in the "Port range" box. 
+
+<a href="{{ page.root }}/fig/ami_setup_9.png">
+  <img src="{{ page.root }}/fig/ami_setup_9.png" alt="Boxes for Type Custom TCP, source type Anywhere and Port range 8787 highlighted." />
+</a>
+
+8\. Scroll to the bottom of the page and click "Launch instance".
+
+<a href="{{ page.root }}/fig/ami_setup_10.png">
+  <img src="{{ page.root }}/fig/ami_setup_10.png" alt="Button Launch instance highlighted." />
+</a>
+
+9\. Scroll to the bottom of the page and click "View all instances".
+
+<a href="{{ page.root }}/fig/ami_setup_11.png">
+  <img src="{{ page.root }}/fig/ami_setup_11.png" alt="Button View all instances highlighted." />
+</a>
+
+10\. Use the latteral scroll to see the information of your instance. The **Public IPv4 DNS** is what you will use to conect.
+
+<a href="{{ page.root }}/fig/ami_setup_12.png">
+  <img src="{{ page.root }}/fig/ami_setup_12.png" alt="Public IPv4 highlighted." />
+</a>
+
 
 > ## Connect to your Amazon Instance (MacOS/Linux)
 > 
@@ -97,7 +127,7 @@ Click Select in that box.
 > 2. You should see that you have one instance. To proceed, the instance state must be 'running' (if you just launched the instance it will take <5 min for the instance to start running).
 > 
 > 
-> 3. At the bottom of the dashboard, you should see a **Public DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.)  
+> 3. At the bottom of the dashboard, you should see a **Public IPv4 DNS** which will look something like *ec2.12.2.45.678.compute-1.amazonaws.com*. Copy that address (you may wish make a note of it as you will need this each time you connect.)  
 > 
 > 
 > 4. Open the terminal application on your computer. Use the following commands to navigate to your Desktop and modify the file
@@ -172,13 +202,11 @@ When you are finished with your instance, you must terminate it to avoid unwante
 
 1. Sign into AWS and go to the EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 2. Under 'Resources' select 'Running Instances'
-3. Select the instance you wish to terminate, then click 'Actions'  
+3. Select the instance you wish to terminate, click on "Instance state" and in the menu select "Terminate".
 
-<a href="{{ page.root }}/fig/logging-onto-cloud_7.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud_7.png" alt="Click path to terminate the instances" />
+<a href="{{ page.root }}/fig/ami_setup_13.png">
+  <img src="{{ page.root }}/fig/ami_setup_13.png" alt="Click path to terminate the instances" />
 </a>
-
-4. Under 'Instance State' select terminate.
 
 > ## Warning
 > Terminating an instance will delete any data on this instance, so you must move any data you wish to save off the instance.
