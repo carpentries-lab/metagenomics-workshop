@@ -51,7 +51,7 @@ Carpentry workshop,
   <img src="{{ page.root }}/fig/logging-onto-cloud_1.png" alt="Location of Instances and Launch instance button" />
 </a>
 
-3\. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for the AMI listed on this curriculum's [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html); select that image  
+3\. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for the number 0f58e878fa70cc201, named "The Carpentries Lab Metagenomics v1.0". This image is the AMI listed on this curriculum's [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html); select that image  
 
 <a href="{{ page.root }}/fig/logging-onto-cloud_2.png">
   <img src="{{ page.root }}/fig/logging-onto-cloud_2.png" alt="Choose en Amazon Machine Image page" />
