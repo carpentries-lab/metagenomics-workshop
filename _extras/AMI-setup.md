@@ -51,37 +51,42 @@ Carpentry workshop,
   <img src="{{ page.root }}/fig/ami_setup_1.png" alt="Location of Instances and Launch instance button are highlighted" />
 </a>
 
-3\. A new page will apear, scroll down to "Application and OS Images (Amazon Machine Image)" and in the bar enter the code **0f58e878fa70cc201**, named "The Carpentries Lab Metagenomics v1.0". This image is the AMI listed on this curriculum's [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html) named "The Carpentries Lab Metagenomics v1.0"; and click Enter.    
+3\. A new page will apear, scroll down to "Application and OS Images (Amazon Machine Image)" and in the bar enter the code **0f58e878fa70cc201**, 
+named "The Carpentries Lab Metagenomics v1.0". This image is the AMI listed on this curriculum's 
+[Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html) named "The Carpentries Lab Metagenomics v1.0"; 
+and click Enter.    
 
 <a href="{{ page.root }}/fig/ami_setup_2.png">
   <img src="{{ page.root }}/fig/ami_setup_2.png.png" alt="Location of the bar where the code is written is highlighted." />
 </a>
 
-3.  A page with the title "Choose an Amazon Machine Image (AMI)" will apear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. Click Select in that box.
+4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will apear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. 
+Click Select in that box.
 
 <a href="{{ page.root }}/fig/ami_setup_3.png">
   <img src="{{ page.root }}/fig/ami_setup_3.png.png" alt="Location of the bar where the code is written is highlighted." />
-</a>  
+</a>    
 
-4\. In the next page go to the box Instance Type and select **t2.medium**; then click FIXME
+5\. In the next page go to the box Instance Type and select **t2.medium**; then click FIXME
 
 <a href="{{ page.root }}/fig/ami_setup_4.png">
   <img src="{{ page.root }}/fig/ami_setup_4.png" alt="Choose and Instance Type page showing t2.medium in the box." />
 </a>
 
-5\. Create Key Pair. Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and "Private key file format" sections, respectively. And click on "Create key pair".
+6\. Create Key Pair. Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and 
+"Private key file format" sections, respectively. And click on "Create key pair".
 
 <a href="{{ page.root }}/fig/ami_setup_5.png">
   <img src="{{ page.root }}/fig/ami_setup_5.png" alt="Boxes for key pair name, RSA key pair type and .pem Private key file format highlighted. And Create key pair button highlighted." />
 </a>
 
-6\. FIXME In the box "Network settings" select "Create security group" and "Allow SSH traffic from" and choose "Anywhere" in the box. FIXME
+7\. FIXME In the box "Network settings" select "Create security group" and "Allow SSH traffic from" and choose "Anywhere" in the box. FIXME
 
 <a href="{{ page.root }}/fig/ami_setup_6.png">
   <img src="{{ page.root }}/fig/ami_setup_6.png" alt="Create security group and Allow SSH trafic from box highlighted." />
 </a>
 
-7\. In the section "Security group rule 2", choose the Type "Custom TCP" and the Source type "Anywhere", and write "8787" in the "Port range" box. FIXME
+8\. In the section "Security group rule 2", choose the Type "Custom TCP" and the Source type "Anywhere", and write "8787" in the "Port range" box. FIXME
 
 <a href="{{ page.root }}/fig/ami_setup_7.png">
   <img src="{{ page.root }}/fig/ami_setup_7.png" alt="Boxes for Type Custom TCP, source type Anywhere and Port range 8787 highlighted." />
