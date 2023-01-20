@@ -45,29 +45,54 @@ Carpentry workshop,
 #### Sign into AWS and Launch an Instance
 1\. Sign into the AWS EC2 Dashboard: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 
-2\. Click on the 'Instances' word on the lefthand bar and then on the 'Launch Instance' button  
+2\. Click on the 'Instances' word on the lefthand bar and then on the 'Launch Instance' button in the middle.    
 
-<a href="{{ page.root }}/fig/logging-onto-cloud_1.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud_1.png" alt="Location of Instances and Launch instance button" />
+<a href="{{ page.root }}/fig/ami_setup_1.png">
+  <img src="{{ page.root }}/fig/ami_setup_1.png" alt="Location of Instances and Launch instance button are highlighted" />
 </a>
 
-3\. In 'Step 1' you will be asked to choose an Amazon Machine Image (AMI), on the lefthand side, look for 'Community AMIs' and then search for the number 0f58e878fa70cc201, named "The Carpentries Lab Metagenomics v1.0". This image is the AMI listed on this curriculum's [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html); select that image  
+3\. A new page will apear, scroll down to "Application and OS Images (Amazon Machine Image)" and in the bar enter the code **0f58e878fa70cc201**, named "The Carpentries Lab Metagenomics v1.0". This image is the AMI listed on this curriculum's [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html) named "The Carpentries Lab Metagenomics v1.0"; and click Enter.    
 
-<a href="{{ page.root }}/fig/logging-onto-cloud_2.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud_2.png" alt="Choose en Amazon Machine Image page" />
+<a href="{{ page.root }}/fig/ami_setup_2.png">
+  <img src="{{ page.root }}/fig/ami_setup_2.png.png" alt="Location of the bar where the code is written is highlighted." />
 </a>
 
-4\. For 'Choose an Instance Type' select **t2.medium**; then click 'Review and Launch'  
+3.  A page with the title "Choose an Amazon Machine Image (AMI)" will apear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. Click Select in that box.
 
-<a href="{{ page.root }}/fig/logging-onto-cloud_3.png">
-  <img src="{{ page.root }}/fig/logging-onto-cloud_3.png" alt="Choose and Instance Type page" />
+<a href="{{ page.root }}/fig/ami_setup_3.png">
+  <img src="{{ page.root }}/fig/ami_setup_3.png.png" alt="Location of the bar where the code is written is highlighted." />
+</a>  
+
+4\. In the next page go to the box Instance Type and select **t2.medium**; then click FIXME
+
+<a href="{{ page.root }}/fig/ami_setup_4.png">
+  <img src="{{ page.root }}/fig/ami_setup_4.png" alt="Choose and Instance Type page showing t2.medium in the box." />
 </a>
 
+5\. Create Key Pair. Give a name of your choice in the box "Key pair name", select "RSA" and ".pem" in the "Key pair type" and "Private key file format" sections, respectively. And click on "Create key pair".
+
+<a href="{{ page.root }}/fig/ami_setup_5.png">
+  <img src="{{ page.root }}/fig/ami_setup_5.png" alt="Boxes for key pair name, RSA key pair type and .pem Private key file format highlighted. And Create key pair button highlighted." />
+</a>
+
+6\. FIXME In the box "Network settings" select "Create security group" and "Allow SSH traffic from" and choose "Anywhere" in the box. FIXME
+
+<a href="{{ page.root }}/fig/ami_setup_6.png">
+  <img src="{{ page.root }}/fig/ami_setup_6.png" alt="Create security group and Allow SSH trafic from box highlighted." />
+</a>
+
+7\. In the section "Security group rule 2", choose the Type "Custom TCP" and the Source type "Anywhere", and write "8787" in the "Port range" box. FIXME
+
+<a href="{{ page.root }}/fig/ami_setup_7.png">
+  <img src="{{ page.root }}/fig/ami_setup_7.png" alt="Boxes for Type Custom TCP, source type Anywhere and Port range 8787 highlighted." />
+</a>
+
+# ERASE FROM HERE
 5\. Click on "6. Configure Security Group" in the top navigation menu. If this is your first time working with this AMI on your
 AWS account, choose "create a new security group". Name your security group something descriptive (for example "DC-metagenomics-AMI") 
 and enter a description into the description box (for example "to use with DC metagenomics AMI"). 
 
-Your security group should now look like this: 
+Your security group should now look like this:
 
 <a href="{{ page.root }}/fig/logging-onto-cloud-security-group-1.png">
   <img src="{{ page.root }}/fig/logging-onto-cloud-security-group-1.png" alt="Configure Security Group page" />
@@ -92,6 +117,7 @@ folder to your desktop. Then click "Launch Instance".
 
 You instance will now be launched. You should follow the links to 'Create billing alerts' and then the instructions below
 for connecting to and terminating your Amazon Instance.
+### ERASE UP TO HERE
 
 > ## Connect to your Amazon Instance (MacOS/Linux)
 > 
