@@ -7,6 +7,8 @@ Data are stored in Zenodo, you can get it with the command line using the follow
 
 ~~~
 wget https://zenodo.org/record/7010950/files/dc_workshop.zip?download=1
+mv dc_workshop.zip?download=1 dc_workshop.zip  
+unzip dc_workshop.zip  
 ~~~
 
 ## Features of the dataset  
