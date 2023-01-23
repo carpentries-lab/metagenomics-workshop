@@ -11,13 +11,12 @@ line software and data used in the workshop are hosted on an Amazon
 Machine Image (AMI). If you are signed up to take 
 a Metagenomics Data Carpentry Workshop, **you do not need to worry about setting
 up an AMI instance.** The Carpentries staff will create an instance 
-for you and this will be provided to you at no cost. 
-This is true for both self-organized and centrally-organized workshops. 
+for you, which will be provided at no cost. 
+This setup is true for both self-organized and centrally-organized workshops. 
 Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
 
-If you are in The Carpentries-Workshop, you do not even need to install a bash terminal, 
-the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
-Instead of connecting by ssh users can simply use the R-studio AMI terminal. 
+If you are in The Carpentries-Workshop, you do not even need to install a bash terminal; the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
+Instead of connecting by ssh, users can simply use the R-studio AMI terminal. 
 
 This lesson requires a working spreadsheet program. 
 If you don't have a spreadsheet program already, you can use LibreOffice. 
@@ -26,7 +25,7 @@ It's a free, open-source spreadsheet program.
 ## Running the lesson by yourself (Not in a Data Carpentry Workshop)
 
 ### Required  software  
-If you are not in a Data Carpentry Workshop, the software that you will need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
+If you are not in a Data Carpentry Workshop, the software you need is listed in the table below. Follow the instructions in Option A *or* Option B to have access to these programs.  
 
 | Software website | Used Version in Conda| Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
@@ -41,25 +40,25 @@ If you are not in a Data Carpentry Workshop, the software that you will need is 
 
 ### Option A: Using the lessons with Amazon Web Services (AWS)
 
-Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0f58e878fa70cc201` named `The Carpentries Lab Metagenomics v1.0` listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information. 
+Follow these [instructions on creating an Amazon instance](https://carpentries-incubator.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0f58e878fa70cc201` named `The Carpentries Lab Metagenomics v1.0` listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type, is very low (about USD $1.50 per user per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate without guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
-If you're an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us [team@carpentries.org](mailto:team@carpentries.org) and we will start instances for you. 
+If you're an Instructor or Maintainer or want to contribute to these lessons, please contact us at [team@carpentries.org](mailto:team@carpentries.org), and we will start instances for you. 
 
-In this instances you can use the terminal available in RStudio and users won't need
-to install their own terminals or use `ssh` (see [Instructor Notes](https://carpentries-incubator.github.io/metagenomics-workshop/guide/index.html)). **If nevertheless, you
+In this instance, you can use the terminal available in RStudio, and users won't need
+to install their own terminals or use `ssh` (see [Instructor Notes](https://carpentries-incubator.github.io/metagenomics-workshop/guide/index.html)). **If, nevertheless, you
 prefer that the users install their own terminals**, directions to install them are included 
 for each Windows, Mac OS X, and Linux below in the Option B section. For Windows, you will need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
 ### Option B: Following the lessons on your local machine  
-If you trust that your computer is powerful enough and want to have all the programs installed you can follow all the workshop without using an
+If you trust that your computer is powerful enough and want to have all the programs installed, you can follow all the workshops without using an
 AWS remote machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the
 dataset. Instructions for doing this are below.  
 
 
 #### **Data**   
-The data used in this workshop are available on Zenodo. Because this workshop works 
-with real data, be aware that file sizes for the data are large. Please read the Zenodo 
-page linked below for information about the data and access to the data files. 
+The data used in this workshop are available on Zenodo. Please read the Zenodo 
+page linked below for information about the data and access to the data files. Because this workshop works 
+with real data, be aware that file sizes for the data are large.information 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
@@ -69,9 +68,9 @@ More information about these data will be presented in the [first episode of the
 
 > ## Windows
 > - Download the [Git for Windows installer](https://git-for-windows.github.io/). Run the installer and follow the steps below:
->   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
+>   + Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the information, location, components, and start menu screens.
 >   + Select "Use the nano editor by default" and click on "Next".
->   + Keep "Use Git from the Windows Command Prompt" selected and click on "Next". If you forgot to do this programs that you need for the workshop will not work properly. If this happens rerun the installer and select the appropriate option.
+>   + Keep "Use Git from the Windows Command Prompt" selected and click on "Next". If you forget to do this, the programs that you need for the workshop will not work properly. If this happens, rerun the installer and select the appropriate option.
 >   + Select "Use bundled OpenSSH" and click on "Next".
 >   + Select "Use the OpenSSL Library" and click "Next".
 >   + Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
@@ -83,7 +82,7 @@ More information about these data will be presented in the [first episode of the
 >   + Click on "Install".
 >   + Click on "Finish".
 >   + If your "HOME" environment variable is not set (or you don't know what this is):
->   + Open command prompt (Open Start Menu then type `cmd` and press [Enter])
+>   + Open command prompt (Open Start Menu, then type `cmd` and press [Enter])
 >   + Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
 >   + Press [Enter], and you should see `SUCCESS: Specified value was saved.`
 >   + Quit the command prompt by typing `exit` and then pressing [Enter]
@@ -97,23 +96,23 @@ More information about these data will be presented in the [first episode of the
 {: .solution}
 
 > ## macOS
-> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal Application (found in /Applications/Utilities). See how to open the terminal in the [video tutorial](https://www.youtube.com/watch?v=FuNsWg_VzeQ). You may want to keep Terminal in your dock for this workshop.
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal Application (found in /Applications/Utilities). See how to open the terminal in the [video tutorial](https://www.youtube.com/watch?v=FuNsWg_VzeQ). You may want to keep the terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
->  - The default shell is usually Bash and there is usually no need to install anything. To see if your default shell is Bash type echo $SHELL in a terminal and press the Enter key. If the message printed does not end with `/bash` then your default is something else and you can run Bash by typing `bash`.
+>  - The default shell is usually Bash, and there is usually no need to install anything. To see if your default shell is Bash type, echo $SHELL in a terminal and press the Enter key. If the message printed does not end with `/bash`, then your default is something else, and you can run Bash by typing `bash`.
 {: .solution}
 
 
 #### **Install Miniconda3**
 
 These instructions assume familiarity with the command line and with installation 
-in general. As there are different operating systems and many different versions
-of operating systems and environments, these may not work on your computer. If an 
-installation doesn't work for you, please refer to the user guide for the tool, listed in the table above.
-If you have difficulties with the installations or find better ways to install things in your operating system please raise an [Issue](https://github.com/carpentries-incubator/metagenomics/issues) to let us know.
+in general. There are different operating systems and many different versions
+of operating systems and environments, so these may not work on your computer. If an 
+installation doesn't work for you, please refer to the user guide for the tool listed in the table above.
+If you have difficulties with the installations or find better ways to install things in your operating system, please raise an [Issue](https://github.com/carpentries-incubator/metagenomics/issues) to let us know.
 
-To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment first you need to install Conda, we recommend installing the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below), and then proceed to the installation of the environment.
+To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment, first, you need to install Conda. We recommend installing the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below) and then proceed to the installation of the environment.
 
 > ## Linux
 > 
@@ -137,11 +136,11 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 
 #### **Install the metagenomics environment**
 
-Once you have your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
+Once your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
 
-> ## Linux: option 1 (recommended)
+> ## Linux: Option 1 (recommended)
 > The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
-> for Linux Ubuntu 22.04 which has the exact versions of each tool in this environment. You can use the spec file as follows:  
+> for Linux Ubuntu 22.04, which has the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
 > $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
 > ~~~
@@ -153,7 +152,7 @@ Once you have your Miniconda3 ready, follow these instructions to install and ac
 > Another way to create an environment is with a `ỳml` file.
 > This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
 > 
-> In Ubuntu 22.04 copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
+> In Ubuntu 22.04, copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
 > to your computer and follow the instructions in the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
 {: .solution}
 
@@ -200,8 +199,7 @@ rm *dmp readme.txt taxdump.tar.gz gc.prt
 
 R and RStudio are two separate pieces of software:
 
-R is a programming language that is especially powerful for data exploration, visualization, and statistical analysis
-RStudio is an integrated development environment (IDE) that makes using R easier. In this course, we use RStudio to interact with R.
+R is a programming language that is especially powerful for data exploration, visualization, and statistical analysis RStudio is an integrated development environment (IDE) that makes using R easier. In this course, we use RStudio to interact with R.
 
 > ## Mac OS X
 > -  Download R from the [CRAN website](https://cran.r-project.org/bin/macosx/).
@@ -209,9 +207,9 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 > + Double-click on the downloaded file to install R
 > + It is also a good idea to install [XQuartz](https://www.xquartz.org/) (needed by some packages)
 > + Go to the [RStudio download](https://www.rstudio.com/products/rstudio/download/#download) page
-> + Under Installers select RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit) (where x, y, and z represent version numbers)
+> + Under Installers, select RStudio x.yy.zzz - Mac OS X 10.6+ (64-bit) (where x, y, and z represent version numbers)
 > + Double-click the file to install RStudio
-> + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+> + Once it’s installed, open RStudio to ensure it works and you don’t get any error messages.
 {: .solution}
 
 > ## Windows
@@ -220,14 +218,14 @@ RStudio is an integrated development environment (IDE) that makes using R easier
 > + Go to the [RStudio download page](https://www.rstudio.com/products/rstudio/download/#download)
 > + Under Installers select RStudio x.yy.zzz - Windows Vista/7/8/10 (where x, y, and z represent version numbers)
 > + Double-click the file to install it
-> + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+> + Once it’s installed, open RStudio to ensure it works and you don’t get any error messages.
 {: .solution}
 
 > ## Linux
-> - Follow the instructions for your distribution from [CRAN](https://cloud.r-project.org/bin/linux), they provide information to get the most recent version of R for common distributions. For most distributions, you could use your package manager (e.g., for Debian/Ubuntu run sudo apt-get install r-base, and for Fedora sudo yum install R), but we don’t recommend this approach as the versions provided by this are usually out of date. In any case, make sure you have at least R 3.3.1.
+> - Follow the instructions for your distribution from [CRAN](https://cloud.r-project.org/bin/linux). They provide information to get the most recent version of R for common distributions. For most distributions, you could use your package manager (e.g., for Debian/Ubuntu, run sudo apt-get install r-base, and for Fedora, sudo yum install R). However, we don’t recommend this approach as the versions provided by this are usually out of date. In any case, make sure you have at least R 3.3.1.
 > + Go to the [RStudio](https://www.rstudio.com/products/rstudio/download/#download) download page
-> + Under Installers select the version that matches your distribution, and install it with your preferred method (e.g., with Debian/Ubuntu ´sudo dpkg -i rstudio-x.yy.zzz-amd64.deb´ at the terminal).
-> + Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.
+> + Under Installers, select the version that matches your distribution, and install it with your preferred method (e.g., with Debian/Ubuntu ´sudo dpkg -i rstudio-x.yy.zzz-amd64.deb´ at the terminal).
+> + Once it’s installed, open RStudio to ensure it works and you don’t get any error messages.
 {: .solution}
 
 #### **Install R libraries**
