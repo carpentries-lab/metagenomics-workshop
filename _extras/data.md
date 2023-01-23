@@ -6,7 +6,7 @@ title: Data
 ## Introduction to the dataset  
 
 > ### Data
-> This workshop uses data from enviromental experiment: [Genomic adaptations in information 
+> This workshop uses data from the enviromental experiment: [Genomic adaptations in information 
 > processing underpin trophic strategy in a whole-ecosystem nutrient 
 > enrichment experiment](https://elifesciences.org/articles/49816), by Jordan G Okie et al. 2020
 > In this research, authors compared the differences between the microbial community 
