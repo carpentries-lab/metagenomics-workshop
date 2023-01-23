@@ -3,17 +3,17 @@
 
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools 
 for working
-with data so that they can get more done in less time, and with less pain. This workshop uses 
+with data so they can get more done in less time and with less pain. This workshop uses 
 Data Carpentry's approach to
-teach data management and analysis for metagenomics research including: 
-best practices for organization of bioinformatics projects and data, use
+teach data management and analysis for metagenomics research, including: 
+best practices for the organization of bioinformatics projects and data, use
 of command-line utilities, use of command-line tools to analyze sequence quality, 
 use of R studio and use of R libraries to compare diversity between samples, 
 and connecting to and using cloud computing. 
 This workshop is designed to be taught over two full days of instruction.
 
 **Please note that workshop materials for working with Metagenomics data are in “beta” development. 
-These lessons are available for review and for informal teaching experiences, but are not yet part 
+These lessons are available for review and informal teaching experiences but are not yet part 
 of The Carpentries’ official lesson offerings.**
 
 Interested in teaching these materials? We have an 
@@ -22,7 +22,7 @@ were we will be happy to help you!
 
 
 > ## Frequently Asked Questions
-> Read our [FAQ](/metagenomics-workshop/faq/) to learn more about Data Carpentry's Metagenomics workshop, as an Instructor or a workshop host.
+> Read our [FAQ](/metagenomics-workshop/faq/) to learn more about Data Carpentry's Metagenomics workshop as an Instructor or a workshop host.
 {: .callout}
 
 > ## Getting Started
@@ -31,7 +31,7 @@ were we will be happy to help you!
 > 
 > However, learners are expected to have some familiarity with biological concepts,
 > including the 
-> concept of DNA sequencing, nucleotide abreviations, genome, microbiome and taxonomy. Participants should bring their own laptops and plan to participate actively.  
+> concept of DNA sequencing, nucleotide abbreviations, genome, microbiome, and taxonomy. Participants should bring their own laptops and plan to participate actively.  
 > 
 > To get started, follow the directions in the [Setup](setup.html) tab to 
 > get access to the required software and data for this workshop.
@@ -40,8 +40,8 @@ were we will be happy to help you!
 
 > ## Data
 > 
-> This workshop uses data from enviromental experiment: [Genomic adaptations in information 
-> processing underpin trophic strategy in a whole-ecosystem nutrient 
+> This workshop uses data from the environmental experiment: [Genomic adaptations in information 
+> processing underpins trophic strategy in a whole-ecosystem nutrient 
 > enrichment experiment](https://elifesciences.org/articles/49816), by Jordan G Okie et al.
 > In this research, authors compared the differences between the microbial community 
 > in its natural, oligotrophic, phosphorus-deficient 
@@ -71,7 +71,7 @@ were we will be happy to help you!
 !-->
 
 # Lessons Reference
-The content of this page and three of the lessons presented on this workshop are adapted from lessons on the [Data Carpenty Genomics Workshop](https://datacarpentry.org/genomics-workshop/).
+The content of this page and three of the lessons presented in this workshop are adapted from lessons on the [Data Carpentry Genomics Workshop](https://datacarpentry.org/genomics-workshop/).
 
 # Teaching Platform
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
