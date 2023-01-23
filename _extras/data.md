@@ -3,11 +3,11 @@ layout: page
 title: Data
 ---
 ## Download data
-Data are stored in Zenodo, you can get it from a command line using the following command.  
+Data are stored in Zenodo, you can get it with the command line using the following command.  
+
 ~~~
 wget https://zenodo.org/record/7010950/files/dc_workshop.zip?download=1
 ~~~
-:{.bash}  
 
 ## Features of the dataset  
 The dataset in Zenodo contains two files:  
@@ -20,8 +20,11 @@ The dc_workshop.zip contains the following files.
                                                   contained in the compressed file dc_workshop.zip." />
 </a>
 
-The directories are: `hidden`, `data`, `mags` and `taxonomy`.  
+The directories are: `.backup_dc_workshop`,`hidden`, `data`, `mags`, and `taxonomy`.  
 
+## Directory `.backup_dc_workshop`  
+Contains all the files produced or needed while runing the lesson.  
+  
 ## Directory `hidden`
  `hidden` contains a hidden file that will be used in the lesson **Introduction to the Command Line for Metagenomics**
 episode _03 Navigating Files and Directories_ when learners will discover how to find hidden files.  
