@@ -5,8 +5,7 @@ title: Data
 
 ## Introduction to the dataset  
 
-> ### Data
-> 
+> # Data
 > This workshop uses data from enviromental experiment: [Genomic adaptations in information 
 > processing underpin trophic strategy in a whole-ecosystem nutrient 
 > enrichment experiment](https://elifesciences.org/articles/49816), by Jordan G Okie et al. 2020
@@ -20,7 +19,7 @@ title: Data
 {: .prereq} 
 
 ### Download data
-Data are stored in Zenodo, you can get it with the command line using the following command.  
+The following commands download data from Zenodo into your computer. Type it in your command line.   
 
 ~~~
 wget https://zenodo.org/record/7010950/files/dc_workshop.zip?download=1
@@ -30,9 +29,9 @@ unzip dc_workshop.zip
 
 ### Features of the dataset  
 The dataset in Zenodo contains two files:  
-`dc_workshop.zip`  Three samples from Cuatro Ciénegas sediments with their corresponding taxonomic assignation files.  
-`MGRAST_MetaData_JP.xlsx` Metadata about our three Cuatro Cienegas samples accepted by MGRAST 
-
+- `dc_workshop.zip`  Three samples from Cuatro Ciénegas sediments with their corresponding taxonomic assignation files.  
+- `MGRAST_MetaData_JP.xlsx` Metadata about our three Cuatro Cienegas samples accepted by MGRAST  
+  
 The dc_workshop.zip contains the following files. 
 <a href="{{ page.root }}/fig/dataset.png" >
   <img src="{{ page.root }}/fig/dataset.png" alt="A tree structure showind directories and files
