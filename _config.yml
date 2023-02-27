@@ -7,13 +7,16 @@
 # dc: Data Carpentry
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
-carpentry: "incubator"
+carpentry: "lab"
 
 # Overall title for pages.
 title: "Metagenomics Workshop Overview"
 
 
-life_cycle: "beta"
+life_cycle: "stable"
+
+doi: "
+https://doi.org/10.5281/zenodo.4285900"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
