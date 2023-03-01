@@ -1,5 +1,5 @@
 ---
-title: 'A Data Carpentry style metagenomic workshop'
+title: 'A Data Carpentry- Style Metagenomics Workshop'
 tags:
   - Shotgun Metagenomics
   - bash
@@ -17,8 +17,10 @@ authors:
     affiliation: 6
   - name: Edder D Bustos-Díaz
     affiliation: 2
-  - name:  José Abel Lovaco-Flores
+  - name: José Abel Lovaco-Flores
     affiliation: "4, 6"
+  - name: Luis Gerardo Tejero-Gómez
+    affiliation: 5
   - name: J Abraham Avelar-Rivas
     affiliation: "3, 4"
   - name: Nelly Sélem-Mojica
