@@ -12,10 +12,6 @@ use of R studio and use of R libraries to compare diversity between samples,
 and connecting to and using cloud computing. 
 This workshop is designed to be taught over two full days of instruction.
 
-**Please note that workshop materials for working with Metagenomics data are in “beta” development. 
-These lessons are available for review and informal teaching experiences but are not yet part 
-of The Carpentries’ official lesson offerings.**
-
 Interested in teaching these materials? We have an 
 [Slack channel](https://join.slack.com/t/metagenomicslesson/shared_invite/zt-pjaldgg7-BQVHxLTAqxlklkaH881xbA) 
 were we will be happy to help you!
