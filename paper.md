@@ -25,7 +25,7 @@ authors:
     affiliation: "3, 4"
   - name: Nelly Sélem-Mojica
     orcid: 0000-0003-1697-3862
-    affiliation: "4, 5" # (Multiple affiliations must be quoted)
+    affiliation: "5" # (Multiple affiliations must be quoted)
 affiliations:
  - name: Laboratorio de Genómica Ecológica y Evolutiva, Langebio, Cinvestav, México.
    index: 1
@@ -106,4 +106,6 @@ To promote an interactive learning experience, we use a collaborative live docum
 The idea to create a lesson comprising all of the steps required to process and analyze metagenomics data arose when one of the development team wanted to learn to understand metagenomics data but found it overwhelming even to decide where to start. As someone who already used and knew the advantages of the resources offered by The Carpentries, she recognised the absence of a curriculum about metagenomics on this platform. When she learned of the project of The Carpentries Incubator, she reached out to a fellow student that had experience on the subject and started building the episodes. Other students in the same institute, who were also working on metagenomics, started contributing with the pipelines they were learning. Further team members were recruited as helpers after attending a workshop and later began collaborating to develop the episodes.
 
 # Acknowledgments
-Diana Oaxaca, Alejandro Pereira Santana, Angélica Ruiz, Brian Bwanya, Ahmed Moustafa and Israel Pichardo, for enriching content and teaching strategy. Angélica Cibrián-Jaramillo, Francisco Barona-Gómez, and Harumi Shimada enable and promote the delivery of these lessons among their communities. Developers of Data Carpentry Genomics for their work and ideas. Toby Hodges and Erin Becker for their technical support during the development and delivery of the lessons. Students for their feedback and enthusiasm.
+Diana Oaxaca, Alejandro Pereira Santana, Angélica Ruiz, Brian Bwanya, Ahmed Moustafa and Israel Pichardo, for enriching content and teaching strategy. Angélica Cibrián-Jaramillo, Francisco Barona-Gómez, and Harumi Shimada enable and promote the delivery of these lessons among their communities. Developers of Data Carpentry Genomics for their work and ideas. Toby Hodges and Erin Becker for their technical support during the development and delivery of the lessons. Students for their feedback and enthusiasm. We thank UNAM for the funding in proyecto PAPIME "Desarrollo de material didáctico de Bioinformática con énfasis en metagenómica para las modalidades presencial y virtual"
+
+
