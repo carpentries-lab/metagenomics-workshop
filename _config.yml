@@ -15,8 +15,8 @@ title: "Metagenomics Workshop Overview"
 
 life_cycle: "stable"
 
-doi: "
-https://doi.org/10.5281/zenodo.4285900"
+# DOI URL for published lesson
+doi: "https://doi.org/10.5281/zenodo.7713380"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
