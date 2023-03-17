@@ -45,7 +45,7 @@ Follow these [instructions on creating an Amazon instance](https://carpentries-i
 If you're an Instructor or Maintainer or want to contribute to these lessons, please contact us at [team@carpentries.org](mailto:team@carpentries.org), and we will start instances for you. 
 
 In this instance, you can use the terminal available in RStudio, and users won't need
-to install their own terminals or use `ssh` (see [Instructor Notes](https://carpentries-incubator.github.io/metagenomics-workshop/guide/index.html)). **If, nevertheless, you
+to install their own terminals or use `ssh` (see [Instructor Notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html)). **If, nevertheless, you
 prefer that the users install their own terminals**, directions to install them are included 
 for each Windows, Mac OS X, and Linux below in the Option B section. For Windows, you will need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
