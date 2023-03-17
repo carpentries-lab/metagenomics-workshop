@@ -40,7 +40,7 @@ If you are not in a Data Carpentry Workshop, the software you need is listed in 
 
 ### Option A: Using the lessons with Amazon Web Services (AWS)
 
-Follow these [instructions on creating an Amazon instance](https://carpentries-lab.github.io.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0f58e878fa70cc201` named `The Carpentries Lab Metagenomics v1.0` listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type, is very low (about USD $2.00 per user per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate without guarantees. Please read AWS documentation on pricing for up-to-date information. 
+Follow these [instructions on creating an Amazon instance](https://carpentries-lab.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0f58e878fa70cc201` named `The Carpentries Lab Metagenomics v1.0` listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type, is very low (about USD $2.00 per user per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate without guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
 If you're an Instructor or Maintainer or want to contribute to these lessons, please contact us at [team@carpentries.org](mailto:team@carpentries.org), and we will start instances for you. 
 
@@ -61,7 +61,7 @@ page linked below for information about the data and access to the data files. B
 with real data, be aware that file sizes for the data are large.information 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
-More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-incubator.github.io/metagenomics/01-background-metadata/index.html).
+More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-lab.github.io/metagenomics/01-background-metadata/index.html).
 
 
 #### **Install a Bash terminal** 
@@ -110,7 +110,7 @@ These instructions assume familiarity with the command line and with installatio
 in general. There are different operating systems and many different versions
 of operating systems and environments, so these may not work on your computer. If an 
 installation doesn't work for you, please refer to the user guide for the tool listed in the table above.
-If you have difficulties with the installations or find better ways to install things in your operating system, please raise an [Issue](https://github.com/carpentries-incubator/metagenomics/issues) to let us know.
+If you have difficulties with the installations or find better ways to install things in your operating system, please raise an [Issue](https://github.com/carpentries-lab/metagenomics/issues) to let us know.
 
 To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment, first, you need to install Conda. We recommend installing the [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) version. Miniconda is a package manager that includes Conda and its dependencies and simplifies the installation process. Please first install Miniconda3 (installation instructions below) and then proceed to the installation of the environment.
 
@@ -139,7 +139,7 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 Once your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
 
 > ## Linux: Option 1 (recommended)
-> The easier way to install the environment is using the [specifications file](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
+> The easier way to install the environment is using the [specifications file](https://github.com/carpentries-lab/metagenomics/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
 > for Linux Ubuntu 22.04, which has the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
 > $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
@@ -152,7 +152,7 @@ Once your Miniconda3 ready, follow these instructions to install and activate th
 > Another way to create an environment is with a `ỳml` file.
 > This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
 > 
-> In Ubuntu 22.04, copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
+> In Ubuntu 22.04, copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-lab/metagenomics/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
 > to your computer and follow the instructions in the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
 {: .solution}
 
@@ -160,7 +160,7 @@ Once your Miniconda3 ready, follow these instructions to install and activate th
 > It has been difficult to find compatibility between all the dependencies of each package installed in the
 > metagenomics environment. In the case of the latest version of macOS (Monterey), the MaxBin2 package can be 
 > installed, but it does not fully work at the time of use.
-> Copy the file [metagenomics-macOS.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml) in your computer and run: 
+> Copy the file [metagenomics-macOS.yml](https://github.com/carpentries-lab/metagenomics/blob/gh-pages/files/metagenomics-macOS.yml) in your computer and run: 
 > ~~~
 > $ conda env create -f metagenomics-macOS.yml
 > ~~~
@@ -170,8 +170,8 @@ Once your Miniconda3 ready, follow these instructions to install and activate th
 > ## WSL
 > In the case of Windows Subsystem for Linux WSL Ubuntu 22.04, the MaxBin2 package has an incompatibility 
 > with the checkm-genome package, so we have decided to leave it out of the metagenomics environment and 
-> create its own environment with the file([metagenomics-maxbin.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)).
-> The file for the metagenomics environment is [metagenomics-WSLUbuntu.yml](https://github.com/carpentries-incubator/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
+> create its own environment with the file([metagenomics-maxbin.yml](https://github.com/carpentries-lab/metagenomics/blob/gh-pages/files/metagenomics-maxbin.yml)).
+> The file for the metagenomics environment is [metagenomics-WSLUbuntu.yml](https://github.com/carpentries-lab/metagenomics/blob/gh-pages/files/metagenomics-WSLUbuntu.yml)
 > See the [video tutorial](https://youtu.be/kHYmffZYxcI)
 > ~~~
 > $ conda env create -f metagenomics-maxbin.yml
