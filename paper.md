@@ -54,7 +54,7 @@ Bioinformatic tools are now essential to our understanding of biological systems
 
 The curriculum comprises four lessons (Fig 1). It assumes no previous programming experience but expects that students understand basic concepts of molecular biology and microbiology. The first two lessons, introductions to project planning and organization and programming in Bash respectively, are adapted from equivalent lessons in the Data Carpentry Genomics curriculum [@becker_datacarpentrygenomics-workshop:2019]. The third part includes a brief introduction to R, and the fourth teaches a complete shotgun metagenomics workflow using public data [@okie_genomic:2020].
 
-![Fig 1.](https://github.com/carpentries-lab/metagenomics-workshop/blob/gh-pages/fig_paper/JOSE_Fig1.jfif)
+![Fig 1.](https://github.com/carpentries-lab/metagenomics-workshop/blob/gh-pages/fig_paper/JOSE_Fig1.jpg)
 
 Fig 1. The four lessons in the curriculum for a metagenomics workshop.
 
