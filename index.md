@@ -18,7 +18,7 @@ were we will be happy to help you!
 
 
 > ## Frequently Asked Questions
-> Read our [FAQ](/metagenomics-workshop/faq/) to learn more about Data Carpentry's Metagenomics workshop as an Instructor or a workshop host.
+> Read our [FAQ](https://carpentries-lab.github.io/metagenomics-workshop/faq/index.html) to learn more about Data Carpentry's Metagenomics workshop as an Instructor or a workshop host.
 {: .callout}
 
 > ## Getting Started
@@ -29,7 +29,7 @@ were we will be happy to help you!
 > including the 
 > concept of DNA sequencing, nucleotide abbreviations, genome, microbiome, and taxonomy. Participants should bring their own laptops and plan to participate actively.  
 > 
-> To get started, follow the directions in the [Setup](setup.html) tab to 
+> To get started, follow the directions in the [Setup](https://carpentries-lab.github.io/metagenomics-workshop/setup.html) tab to 
 > get access to the required software and data for this workshop.
 > 
 {: .prereq}
@@ -45,8 +45,8 @@ were we will be happy to help you!
 >community under a fertilization treatment.
 >
 > All of the data used in this workshop can be downloaded from
->  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
-> More information about this data is available on the [Data page](https://carpentries-incubator.github.io/metagenomics-workshop/data/index.html).
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7010950.svg)](https://doi.org/10.5281/zenodo.7010950)
+> More information about this data is available on the [Data page](https://carpentries-lab.github.io/metagenomics-workshop/data/index.html).
 {: .prereq} 
 
 # Workshop Overview 
