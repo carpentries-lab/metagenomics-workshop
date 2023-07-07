@@ -143,7 +143,7 @@ quality control in a spreadsheet program.
 
 ## Lesson design
 
-#### [Data tidiness](../01-tidiness/)
+#### [Data tidiness](https://carpentries-lab.github.io/metagenomics-organization/01-tidiness/index.html)
 
 * Introduce that we're teaching data organization, and that we're using
 spreadsheets, because most people do data entry in spreadsheets or 
@@ -167,12 +167,12 @@ of the data in the spreadsheet. What are the pain points!?
 * Go through the cardinal rule of spreadsheets about columns, rows and cells.
 * Hand them a messy data file and have them pair up and work together to clean up the data.
 
-#### [Planning for NGS projects](../02-project-planning/)
+#### [Planning for NGS projects]([../02-project-planning/](https://carpentries-lab.github.io/metagenomics-organization/02-project-planning/index.html))
 
 * This episode depends on learners discussing exercises with one another. 
 Be sure to give plenty of time for this discussion.
 
-#### [Examining Data on the NCBI SRA Database](../03-ncbi-sra/)
+#### [Examining Data on the NCBI SRA Database](https://carpentries-lab.github.io/metagenomics-organization/03-ncbi-sra/index.html)
 
 * Learners should *not* actually download the ENA files in the "Downloading a few sequencing files: EMBL-EBI" section. 
 
@@ -190,7 +190,7 @@ they may have already generated their own data, they may be speculatively acquir
 
 You should feel free to "read the room", and it can be helpful to ask more specifics in a pre-workshop survey.
 
-#### [Data tidiness](../01-tidiness/)
+#### [Data tidiness]([../01-tidiness/](https://carpentries-lab.github.io/metagenomics-organization/01-tidiness/index.html))
 
 Discussion 1, "What kinds of data and information have you generated before you sent your DNA/RNA off for sequencing?" can go very differently depending on the participants' background. Many instructors make adjustments to this section, and they should, depending on the learners. 
 
@@ -257,7 +257,7 @@ either because there is no good alternative for the type of analysis they want t
 things manually on individual files is unfeasible. 
 
 This lesson will introduce learners to fundamental skills needed for working with their computers through a command-line interface (using
-the bash shell). They will learn how to navigate their file system, computationally manipulate their files (e.g. copying, moving, renaming), search files, redirect output and write shell scripts. By the end of the lesson, learners will be prepared to move on to using more advanced bioinformatics command line tools (see the lesson on [Data processinf and visualization for metagenomics](https://carpentries-incubator.github.io/metagenomics/)).
+the bash shell). They will learn how to navigate their file system, computationally manipulate their files (e.g. copying, moving, renaming), search files, redirect output and write shell scripts. By the end of the lesson, learners will be prepared to move on to using more advanced bioinformatics command line tools (see the lesson on [Data processing and visualization for metagenomics](https://carpentries-incubator.github.io/metagenomics/)).
 
 ## Lesson design
 
