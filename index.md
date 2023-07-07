@@ -13,7 +13,7 @@ and connecting to and using cloud computing.
 This workshop is designed to be taught over two full days of instruction.
 
 Interested in teaching these materials? We have an 
-[Slack channel](https://join.slack.com/t/metagenomicslesson/shared_invite/zt-pjaldgg7-BQVHxLTAqxlklkaH881xbA) 
+[Slack channel](https://join.slack.com/t/metagenomicslesson/shared_invite/zt-1tikq2o0k-VMX7ceLfenbbKheZ7XNCRw) 
 were we will be happy to help you!
 
 
