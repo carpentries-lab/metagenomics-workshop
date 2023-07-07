@@ -244,7 +244,7 @@ even a reluctant audience started.
 
 ## Reference
 
-This Instructor's Notes are based on the [corresponding page](https://datacarpentry.org/organization-genomics/guide/index.html) in the Project Organization and Management for Genomics lesson.
+This Instructor's Notes are based on the [corresponding page](https://datacarpentry.org/genomics-workshop/guide/index.html) in the Project Organization and Management for Genomics lesson.
 
 
 # Notes for the Introduction to the Command Line for Metagenomics lesson
@@ -257,7 +257,7 @@ either because there is no good alternative for the type of analysis they want t
 things manually on individual files is unfeasible. 
 
 This lesson will introduce learners to fundamental skills needed for working with their computers through a command-line interface (using
-the bash shell). They will learn how to navigate their file system, computationally manipulate their files (e.g. copying, moving, renaming), search files, redirect output and write shell scripts. By the end of the lesson, learners will be prepared to move on to using more advanced bioinformatics command line tools (see the lesson on [Data processing and visualization for metagenomics](https://carpentries-incubator.github.io/metagenomics/)).
+the bash shell). They will learn how to navigate their file system, computationally manipulate their files (e.g. copying, moving, renaming), search files, redirect output and write shell scripts. By the end of the lesson, learners will be prepared to move on to using more advanced bioinformatics command line tools (see the lesson on [Data Processing and Visualization for Metagenomics](https://carpentries-lab.github.io/metagenomics-analysis/)).
 
 ## Lesson design
 
@@ -277,7 +277,7 @@ In order to edit your command prompt, type `PS1='\W\ $ '` into your shell and pr
 
 In order to reset the command prompt, type `source .bashrc` in order to source the bash profile, or type `PS1="\u@\h:\w $ "` in order to set the prompt to show username, "@", hostname, ":", and current working directory (ie. the user's current location within the filesystem). 
 
-NOTE: Editing the prompt is discussed in [episode 01 - Introducing the Shell](https://carpentries-incubator.github.io/shell-metagenomics/01-introduction/index.html) under the 'Navigating your file system' section. This explains how to edit the prompt via `PS1='\W\ $ '` as here, so it would perhaps be best to *start* the lesson with the *default* prompt (as all the learners will and they can see that their screen will reassuringly match the instructor's screen at this point), and then instructors can choose to edit their prompt and talk through how they're doing that for learners' benefit at this section, or the instructor can just make the change early in the lesson for the visibility benefit, and explain to learners that they can find out how to do this in the lesson materials. 
+NOTE: Editing the prompt is discussed in [Introducing the Shell](https://carpentries-lab.github.io/metagenomics-shell/01-introduction/index.html) under the 'Navigating your file system' section. This explains how to edit the prompt via `PS1='\W\ $ '` as here, so it would perhaps be best to *start* the lesson with the *default* prompt (as all the learners will and they can see that their screen will reassuringly match the instructor's screen at this point), and then instructors can choose to edit their prompt and talk through how they're doing that for learners' benefit at this section, or the instructor can just make the change early in the lesson for the visibility benefit, and explain to learners that they can find out how to do this in the lesson materials. 
 
 Resetting the command prompt is not currently included in the lesson materials, so it might be useful to be familiar with this beforehand in case of learners' questions.
 
@@ -292,27 +292,27 @@ If a learner accidentally deletes or overwrites data files, you can have them ch
 
 ## Reference
 
-This Instructor notes are based on the [corresponding page](https://datacarpentry.org/shell-genomics/guide/index.html) in the Introduction to the Command Line for Genomics lesson.
+This Instructor's notes are based on the [corresponding page](https://datacarpentry.org/shell-genomics/instructor-notes.html) in the Introduction to the Command Line for Genomics lesson.
 
 # Notes for the Introduction to R for Metagenomics lesson
 
 We recommend taking a survey about the experience in coding and programming languages of the participants before preparing for the workshop. If the participants already know R (or even Python), this lesson may be skipped.
 
-# Notes for the Data processing and visualization for metagenomics lesson
+# Notes for the Data Processing and Visualization for Metagenomics lesson
 
 ## About the Data
-Throughout the lesson only 2 samples are used, but for the part of making the beta diversity graph it needs 
+Throughout the lesson, only 2 samples are used, but for the part of making the beta diversity graph, it needs 
 to be 3. That is why there are 3 Kraken reports available on the data provided. When downloading the reports 
 in the Taxonomic Assignment episode, before the Pavian part, the 3 reports will be downloaded, although only 2
 are used for that part.
 
 ## Technical tips and tricks
 
-Images can be zoomed in by clicking on them to show them more clearly while explaining. But you need to click on the backwards arrow 
+Images can be zoomed in by clicking on them to show them more clearly while explaining. But you need to click on the back arrow 
 of the browser to return to the episode.
 
-## Plots when using CCM UNAM server  
-The National Automous University of Mexico, in its Center for Mathematical Sciences has available upon request a learning server for this lesson. When using this server, plots are not displayed directly on R studio. To see the plots, they must be saved with the following instructions: 
+## Plots when using the CCM UNAM server  
+The National Autonomous University of Mexico, in its Center for Mathematical Sciences, has available upon request a learning server for this lesson. When using this server, plots are not displayed directly on R studio. To see the plots, they must be saved with the following instructions: 
 
 - ggplot and other plots  
     `pdf("plot_abundances.pdf",width = 15, height = 5)`  
@@ -326,4 +326,4 @@ Particularly when graphics were generated with ggplot you can use `ggsave` funct
   
 # Improving the workshop
 
-If you give this workshop and find more recommendations that can be useful to other instructors please make a **pull request** to [this page](https://github.com/carpentries-incubator/metagenomics-workshop/blob/gh-pages/_extras/guide.md).
+If you give this workshop and find more recommendations that can be useful to other instructors please make a **pull request** to [this page](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html).
