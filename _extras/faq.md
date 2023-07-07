@@ -25,7 +25,7 @@ This lesson assumes no prior experience with the tools covered in the workshop. 
 
 ### What are the software, hardware, and connectivity needs for this workshop?
 
-Learners will need to bring a laptop (not a tablet) with any spreadsheet program installed (e.g. LibreOffice, Microsoft Excel). Learners using a Windows machine will also need to download and install [Git for Windows](https://gitforwindows.org/). There are no other hardware or software requirements. Learners will need a stable, strong internet connection in order to work on the remote computing system used for this workshop.More information in the [Setup](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html) page of this workshop.
+Learners will need to bring a laptop (not a tablet) with any spreadsheet program installed (e.g. LibreOffice, Microsoft Excel). Learners using a Windows machine will also need to download and install [Git for Windows](https://gitforwindows.org/). There are no other hardware or software requirements. Learners will need a stable, strong internet connection in order to work on the remote computing system used for this workshop.More information in the [Setup](https://carpentries-lab.github.io/metagenomics-workshop/setup.html) page of this workshop.
 
 ### My institution has its own compute cluster, or our research group uses a different cloud computing resource. Can we deliver the workshop using that system?
 
