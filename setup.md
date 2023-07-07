@@ -213,7 +213,7 @@ R is a programming language that is especially powerful for data exploration, vi
 {: .solution}
 
 > ## Windows
-> -  Download R from the [CRAN website](https://cran.r-project.org/bin/windows/base/release.htm).
+> -  Download R from the [CRAN website](https://cran.r-project.org/bin/windows/base/).
 > + Run the .exe file that was just downloaded
 > + Go to the [RStudio download page](https://www.rstudio.com/products/rstudio/download/#download)
 > + Under Installers select RStudio x.yy.zzz - Windows Vista/7/8/10 (where x, y, and z represent version numbers)
