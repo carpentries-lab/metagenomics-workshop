@@ -50,7 +50,7 @@ You will need experience using a bash shell (the default shell on Mac OS and mos
 
 ### How can I prepare to teach this material? 
 
-Each lesson has a set of Instructor Notes that provide information about the design of the lesson, commonly encountered problems, and technical tips and tricks. You can access [Instructor Notes](https://carpentries-incubator.github.io/metagenomics-workshop/guide/index.html). Instructor Notes are written collaboratively by our Instructors, so please contribute your own notes after your workshop!
+Each lesson has a set of Instructor Notes that provide information about the design of the lesson, commonly encountered problems, and technical tips and tricks. You can access [Instructor Notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html). Instructor Notes are written collaboratively by our Instructors, so please contribute your own notes after your workshop!
 
 ### When will I have access to an AWS image to practice on?
 
@@ -62,7 +62,7 @@ The Carpentries Workshop and Logistics Manager will provide Instructors with con
 
 ### What are common problems that arise during this workshop?
 
-The best place to get information about common problems that arise during workshops is in the [Instructor Notes](https://carpentries-incubator.github.io/metagenomics-workshop/guide/index.html). You can access Instructor Notes through the Extras menu in the top navigation bar that appears across the head of each lesson. Instructors are strongly encouraged to contribute back to the Instructor Notes based on their workshop experience. To contribute to the Instructor Notes, click the “Improve this page” menu option in the upper right corner of the Instructor Notes page. 
+The best place to get information about common problems that arise during workshops is in the [Instructor Notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html). You can access Instructor Notes through the Extras menu in the top navigation bar that appears across the head of each lesson. Instructors are strongly encouraged to contribute back to the Instructor Notes based on their workshop experience. To contribute to the Instructor Notes, click the “Improve this page” menu option in the upper right corner of the Instructor Notes page. 
 
 ### Does the AWS image location matter? Do I need to set up an AMI in a different region if my workshop will be held outside of the Eastern US?
 
