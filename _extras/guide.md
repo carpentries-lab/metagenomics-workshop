@@ -167,7 +167,7 @@ of the data in the spreadsheet. What are the pain points!?
 * Go through the cardinal rule of spreadsheets about columns, rows and cells.
 * Hand them a messy data file and have them pair up and work together to clean up the data.
 
-#### [Planning for NGS projects]([../02-project-planning/](https://carpentries-lab.github.io/metagenomics-organization/02-project-planning/index.html))
+#### [Planning for NGS projects](https://carpentries-lab.github.io/metagenomics-organization/02-project-planning/index.html)
 
 * This episode depends on learners discussing exercises with one another. 
 Be sure to give plenty of time for this discussion.
@@ -190,7 +190,7 @@ they may have already generated their own data, they may be speculatively acquir
 
 You should feel free to "read the room", and it can be helpful to ask more specifics in a pre-workshop survey.
 
-#### [Data tidiness]([../01-tidiness/](https://carpentries-lab.github.io/metagenomics-organization/01-tidiness/index.html))
+#### [Data tidiness](https://carpentries-lab.github.io/metagenomics-organization/01-tidiness/index.html)
 
 Discussion 1, "What kinds of data and information have you generated before you sent your DNA/RNA off for sequencing?" can go very differently depending on the participants' background. Many instructors make adjustments to this section, and they should, depending on the learners. 
 
@@ -223,7 +223,7 @@ learning environment.
 
 ## Common problems
 
-#### Excel looks and acts different on different operating systems
+#### Excel looks and acts differently on different operating systems
 
 The main challenge with this lesson is that Excel looks very different and how you
 do things is even different between Mac and PC, and between different versions of
@@ -235,7 +235,7 @@ likely won't be able to cover all the different versions of Excel.
 If you have a helper who has more experience with the other OS than you, it would be good
 to prepare them to help with this lesson and tell people how to do things in the other OS.
 
-#### People are not interactive or responsive on the exercises
+#### People are not interactive or responsive during the exercises
 
 This lesson depends on people working on the exercise and responding with things
 that are fixed. If your audience is reluctant to participate, start out with
@@ -244,7 +244,7 @@ even a reluctant audience started.
 
 ## Reference
 
-This Instructor notes are based on the [corresponding page](https://datacarpentry.org/organization-genomics/guide/index.html) in the Project Organization and Management for Genomics lesson.
+This Instructor's Notes are based on the [corresponding page](https://datacarpentry.org/organization-genomics/guide/index.html) in the Project Organization and Management for Genomics lesson.
 
 
 # Notes for the Introduction to the Command Line for Metagenomics lesson
