@@ -11,12 +11,12 @@ line software and data used in the workshop are hosted on an Amazon
 Machine Image (AMI). If you are signed up to take 
 a Metagenomics Data Carpentry Workshop, **you do not need to worry about setting
 up an AMI instance.** The Carpentries staff will create an instance 
-for you, which will be provided at no cost. 
-This setup is true for both self-organized and centrally-organized workshops. 
+for you, which will be free. 
+This setup is accurate for both self-organized and centrally-organized workshops. 
 Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
 
 If you are in The Carpentries-Workshop, you do not even need to install a bash terminal; the R-studio terminal provided in the AWS-AMI is enough to run all the commands in the lesson. 
-Instead of connecting by ssh, users can simply use the R-studio AMI terminal. 
+Instead of connecting by ssh, users can use the R-studio AMI terminal. 
 
 This lesson requires a working spreadsheet program. 
 If you don't have a spreadsheet program already, you can use LibreOffice. 
@@ -42,10 +42,10 @@ If you are not in a Data Carpentry Workshop, the software you need is listed in 
 
 Follow these [instructions on creating an Amazon instance](https://carpentries-lab.github.io/metagenomics-workshop/AMI-setup/index.html). Use the AMI `ami-0f58e878fa70cc201` named `The Carpentries Lab Metagenomics v1.0` listed on the Community AMIs page. Please note that you must set your location as `N. Virginia` to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar. The cost of using this AMI for a few days, with the t2.medium instance type, is very low (about USD $2.00 per user per day). Data Carpentry has *no* control over AWS pricing structure and provides this cost estimate without guarantees. Please read AWS documentation on pricing for up-to-date information. 
 
-If you're an Instructor or Maintainer or want to contribute to these lessons, please contact us at [team@carpentries.org](mailto:team@carpentries.org), and we will start instances for you. 
+If you're an Instructor or Maintainer or want to contribute to these lessons, don't hesitate to contact us at [team@carpentries.org](mailto:team@carpentries.org), and we will start instances for you. 
 
 In this instance, you can use the terminal available in RStudio, and users won't need
-to install their own terminals or use `ssh` (see [Instructor Notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html)). **If, nevertheless, you
+to install their terminals or use `ssh` (see [Instructor Notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html)). **If, nevertheless, you
 prefer that the users install their own terminals**, directions to install them are included 
 for each Windows, Mac OS X, and Linux below in the Option B section. For Windows, you will need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
 
@@ -58,7 +58,7 @@ dataset. Instructions for doing this are below.
 #### **Data**   
 The data used in this workshop are available on Zenodo. Please read the Zenodo 
 page linked below for information about the data and access to the data files. Because this workshop works 
-with real data, be aware that file sizes for the data are large.information 
+with real data, be aware that file sizes for the data are large.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4285900.svg)](https://doi.org/10.5281/zenodo.4285900)
 
 More information about these data will be presented in the [first episode of the Data processing and visualization for metagenomics lesson](https://carpentries-lab.github.io/metagenomics-analysis/01-background-metadata/index.html).
@@ -96,11 +96,11 @@ More information about these data will be presented in the [first episode of the
 {: .solution}
 
 > ## macOS
-> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal Application (found in /Applications/Utilities). See how to open the terminal in the [video tutorial](https://www.youtube.com/watch?v=FuNsWg_VzeQ). You may want to keep the terminal in your dock for this workshop.
+> -  The default shell in some versions of macOS is Bash, and Bash is available in all versions, so no need to install anything. You access Bash from the Terminal Application (found in /Applications/Utilities). See how to open the terminal in the [video tutorial](https://www.youtube.com/watch?v=FuNsWg_VzeQ). You can keep the terminal in your dock for this workshop.
 {: .solution}
 
 > ## Linux
->  - The default shell is usually Bash, and there is usually no need to install anything. To see if your default shell is Bash type, echo $SHELL in a terminal and press the Enter key. If the message printed does not end with `/bash`, then your default is something else, and you can run Bash by typing `bash`.
+>  - The default shell is usually Bash, and there is usually no need to install anything. To see if your default shell is Bash type, echo $SHELL in a terminal and press Enter. If the message printed does not end with `/bash`, then your default is something else, and you can run Bash by typing `bash`.
 {: .solution}
 
 
@@ -136,7 +136,7 @@ To make a [Conda](https://conda.io/projects/conda/en/latest/index.html) environm
 
 #### **Install the metagenomics environment**
 
-Once your Miniconda3 ready, follow these instructions to install and activate the metagenomics environment. 
+Once your Miniconda3 is ready, follow these instructions to install and activate the metagenomics environment. 
 
 > ## Linux: Option 1 (recommended)
 > The easier way to install the environment is using the [specifications file](https://github.com/carpentries-lab/metagenomics-analysis/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
