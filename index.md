@@ -3,7 +3,7 @@
 
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools 
 for working
-with data so they can get more done in less time and with less pain. This workshop uses 
+with data so they can get more done quickly and with less pain. This workshop uses 
 Data Carpentry's approach to
 teach data management and analysis for metagenomics research, including: 
 best practices for the organization of bioinformatics projects and data, use
@@ -53,10 +53,10 @@ were we will be happy to help you!
 
 | Lesson    | Overview | Estimated time|
 | ------- | ---------- | ---------- |
-| [Project Organization and Management](https://carpentries-incubator.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
-| [Introduction to the Command Line](https://carpentries-incubator.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
-|[Introduction to R](https://carpentries-incubator.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and data structures. | 1:00 hr| 
-|[Data Processing and Visualization for Metagenomics](https://carpentries-incubator.github.io/metagenomics/) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
+| [Project Organization and Management](https://carpentries-lab.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
+| [Introduction to the Command Line](https://carpentries-lab.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
+|[Introduction to R](https://carpentries-lab.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and data structures. | 1:00 hr| 
+|[Data Processing and Visualization for Metagenomics](https://carpentries-lab.github.io/metagenomics/) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
 
 <!--
 # Optional Additional Lessons
@@ -72,7 +72,7 @@ The content of this page and three of the lessons presented in this workshop are
 # Teaching Platform
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
 instances. All the software and data used in the workshop are hosted on an Amazon Machine Image (AMI).
-If you want to run your own instance of the server used for this workshop, follow the directions in the [Setup](setup.html) tab. 
+If you want to run your instance of the server used for this workshop, follow the directions in the [Setup](setup.html) tab. 
 
 ## Citation 
 Preparing to submit to [JOSE](https://jose.theoj.org/about)
