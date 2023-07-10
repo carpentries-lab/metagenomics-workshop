@@ -53,10 +53,10 @@ were we will be happy to help you!
 
 | Lesson    | Overview | Estimated time|
 | ------- | ---------- | ---------- |
-| [Project Organization and Management](https://carpentries-lab.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
-| [Introduction to the Command Line](https://carpentries-lab.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
-|[Introduction to R](https://carpentries-lab.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and data structures. | 1:00 hr| 
-|[Data Processing and Visualization for Metagenomics](https://carpentries-lab.github.io/metagenomics/) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
+| [Project Organization and Management](https://carpentries-incubator.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
+| [Introduction to the Command Line](https://carpentries-incubator.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
+|[Introduction to R](https://carpentries-incubator.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and data structures. | 1:00 hr| 
+|[Data Processing and Visualization for Metagenomics](https://carpentries-incubator.github.io/metagenomics/) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
 
 <!--
 # Optional Additional Lessons
