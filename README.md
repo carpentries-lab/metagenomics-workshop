@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7713380.svg)](https://doi.org/10.5281/zenodo.7713380)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7713368.svg)](https://doi.org/10.5281/zenodo.7713368)
 
 [![The Carpentries Lab Review Status](http://badges.carpentries-lab.org/11_status.svg)](https://github.com/carpentries-lab/reviews/issues/11)
 
@@ -35,7 +35,8 @@ A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
 
 Please cite as:
 
-Claudia Zirión Martínez; Diego Garfias Gallegos; Tania Vanessa Arellano Fernández; Aarón Espinosa Jaime; Edder D Bustos Díaz; José Abel Lovaco Flores; Luis Gerardo Tejero Gómez; J Abraham Avelar Rivas; Nelly Sélem (March , 2023) A Data Carpentry- Style Metagenomics Workshop https://doi.org/10.5281/zenodo.7713380
+Claudia Zirión Martínez; Diego Garfias Gallegos; Tania Vanessa Arellano Fernández; Aarón Espinosa Jaime; Edder D Bustos Díaz; José Abel Lovaco Flores; Luis Gerardo Tejero Gómez; J Abraham Avelar Rivas; Nelly Sélem (March , 2023) A Data Carpentry- Style Metagenomics Workshop https://doi.org/10.5281/zenodo.7713368
+
 
 
 ## Acknowledgments  
