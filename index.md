@@ -75,4 +75,4 @@ instances. All the software and data used in the workshop are hosted on an Amazo
 If you want to run your instance of the server used for this workshop, follow the directions in the [Setup](setup.html) tab. 
 
 ## Citation 
-Preparing to submit to [JOSE](https://jose.theoj.org/about)
+![DOI](https://jose.theoj.org/papers/10.21105/jose.00209/status.svg)](https://doi.org/10.21105/jose.00209)
