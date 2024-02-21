@@ -74,5 +74,9 @@ This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
 instances. All the software and data used in the workshop are hosted on an Amazon Machine Image (AMI).
 If you want to run your instance of the server used for this workshop, follow the directions in the [Setup](setup.html) tab. 
 
-## Citation 
-![DOI](https://jose.theoj.org/papers/10.21105/jose.00209/status.svg)
+## Citation
+Please cite as:
+[![DOI](https://jose.theoj.org/papers/10.21105/jose.00209/status.svg)](https://doi.org/10.21105/jose.00209)
+
+Claudia Zirión Martínez; Diego Garfias Gallegos; Tania Vanessa Arellano Fernández; Aarón Espinosa Jaime; Edder D Bustos Díaz; José Abel Lovaco Flores; Luis Gerardo Tejero Gómez; J Abraham Avelar Rivas; Nelly Sélem (March , 2023) A Data Carpentry- Style Metagenomics Workshop
+
