@@ -1,7 +1,7 @@
 ---
 ---
 
-Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools 
+Data Carpentry aims to teach researchers basic concepts, skills, and tools 
 for working
 with data so they can get more done quickly and with less pain. This workshop uses 
 Data Carpentry's approach to
@@ -12,7 +12,7 @@ use of R studio and use of R libraries to compare diversity between samples,
 and connecting to and using cloud computing. 
 This workshop is designed to be taught over two full days of instruction.
 
-Interested in teaching these materials? We have an 
+Would you be interested in teaching these materials? We have an 
 [Slack channel](https://join.slack.com/t/metagenomicslesson/shared_invite/zt-1tikq2o0k-VMX7ceLfenbbKheZ7XNCRw) 
 were we will be happy to help you!
 
@@ -55,7 +55,7 @@ were we will be happy to help you!
 | ------- | ---------- | ---------- |
 | [Project Organization and Management](https://carpentries-incubator.github.io/organization-metagenomics/) | Learn how to structure your metadata, organize and document your metagenomics data and bioinformatics workflow, and access data on the NCBI sequence read archive (SRA) database.|1:30 hr|  
 | [Introduction to the Command Line](https://carpentries-incubator.github.io/shell-metagenomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. | 4:00 hr| 
-|[Introduction to R](https://carpentries-incubator.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and data structures. | 1:00 hr| 
+|[Introduction to R](https://carpentries-incubator.github.io/introduction-to-R-for-metagenomics/) | Use R studio to manage several data types and structures. | 1:00 hr| 
 |[Data Processing and Visualization for Metagenomics](https://carpentries-incubator.github.io/metagenomics/) | Use command-line tools to perform quality control, metagenomic assembly, metagenomic binning, taxonomic assignment, and diversity exploration. | 6:30 hr| 
 
 <!--
@@ -75,4 +75,4 @@ instances. All the software and data used in the workshop are hosted on an Amazo
 If you want to run your instance of the server used for this workshop, follow the directions in the [Setup](setup.html) tab. 
 
 ## Citation 
-![DOI](https://jose.theoj.org/papers/10.21105/jose.00209/status.svg)](https://doi.org/10.21105/jose.00209)
+![DOI](https://jose.theoj.org/papers/10.21105/jose.00209/status.svg)
