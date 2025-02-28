@@ -51,14 +51,14 @@ Carpentry workshop,
   <img src="{{ page.root }}/fig/ami_setup_1.png" alt="Location of Instances and Launch instance button are highlighted" />
 </a>
 
-3\. A new page will appear, scroll down to "Application and OS Images (Amazon Machine Image)" then, in the bar enter the code **0f58e878fa70cc201** 
+3\. A new page will appear, scroll down to "Application and OS Images (Amazon Machine Image)" then, in the bar enter the code **028155394f1e36b0d** 
 and click Enter. This image is the AMI listed on this curriculum's 
 [Setup page](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html).
 <a href="{{ page.root }}/fig/ami_setup_2.png">
   <img src="{{ page.root }}/fig/ami_setup_2.png" alt="The bar where the code must be inserted is highlighted." />
 </a>
 
-4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will appear with a box showing the "The Carpentries Lab Metagenomics v1.0" image. 
+4\-.  A page with the title "Choose an Amazon Machine Image (AMI)" will appear with a box showing the "The Carpentries Lab Metagenomics v1.0" image under "Community AMIs". 
 Click "Select" in that box.
 
 <a href="{{ page.root }}/fig/ami_setup_3.png">
