@@ -29,14 +29,14 @@ If you are not in a Data Carpentry Workshop, the software you need is listed in 
 
 | Software website | Used Version in Conda| Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [0.11.9](https://anaconda.org/bioconda/fastqc) | [Help](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, macOS, Windows | Quality control tool for high throughput sequence data.|
-| [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | [0.39](https://anaconda.org/bioconda/trimmomatic) | [GitHub](https://github.com/usadellab/Trimmomatic) | Linux, macOS, Windows | A flexible read trimming tool for Illumina NGS data. |
-|[Kraken](http://ccb.jhu.edu/software/kraken2/)| [2.1.2](https://anaconda.org/bioconda/kraken2)|[GitHub](https://github.com/DerrickWood/kraken2/wiki/Manual)|Linux, macOS|A tool for taxonomic assignation for reads from metagenomics|
-|[KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub](https://github.com/marbl/Krona/wiki/KronaTools)|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
-|[MaxBin2](https://sourceforge.net/projects/maxbin2/)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
-|[Spades](https://cab.spbu.ru/software/spades/)|[3.15.2](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades#sec3)|Linux, macOS| Tool for assemblies|
-|[Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
-|[CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.1](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki/Quick-Start#typical-workflow)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
+| [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | [0.12.1](https://anaconda.org/bioconda/fastqc) | [Help](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)| Linux, macOS, Windows | Quality control tool for high throughput sequence data.|
+| [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) | [0.40](https://anaconda.org/bioconda/trimmomatic) | [GitHub](https://github.com/usadellab/Trimmomatic) | Linux, macOS, Windows | A flexible read trimming tool for Illumina NGS data. |
+| [Kraken](http://ccb.jhu.edu/software/kraken2/)| [2.1.6](https://anaconda.org/bioconda/kraken2)|[GitHub](https://github.com/DerrickWood/kraken2/wiki/Manual)|Linux, macOS|A tool for taxonomic assignation for reads from metagenomics|
+| [KronaTools](https://github.com/marbl/Krona/tree/master/KronaTools) |[2.8.1](https://anaconda.org/bioconda/krona)|[GitHub](https://github.com/marbl/Krona/wiki/KronaTools)|Linux, macOS, Windows|A tool for taxonomic visualization in hierarchical pie graphs.|
+| [MaxBin2](https://sourceforge.net/projects/maxbin2/)|[2.2.7](https://anaconda.org/bioconda/maxbin2)| [SourceForge](https://sourceforge.net/projects/maxbin2/)|Linux, macOS| Tool for MAGs reconstruction|
+| [Spades](https://cab.spbu.ru/software/spades/)|[4.2.0](https://anaconda.org/bioconda/spades)|[GitHub](https://github.com/ablab/spades#sec3)|Linux, macOS| Tool for assemblies|
+| [Kraken-biom](https://github.com/smdabdoub/kraken-biom)|[1.2.0](https://anaconda.org/bioconda/kraken-biom)|[GitHub](https://github.com/smdabdoub/kraken-biom)|Linux, macOS, Windows|Tool to convert kraken reports in R readable files|
+| [CheckM-genome](https://ecogenomics.github.io/CheckM/)|[1.2.4](https://anaconda.org/bioconda/checkm-genome)|[Wiki](https://github.com/Ecogenomics/CheckM/wiki/Quick-Start#typical-workflow)|Linux, macOs, Windows|Tool to check completeness and contamination in MAGs |  
 
 ### Option A: Using the lessons with Amazon Web Services (AWS)
 
@@ -140,9 +140,9 @@ Once your Miniconda3 is ready, follow these instructions to install and activate
 
 > ## Linux: Option 1 (recommended)
 > The easier way to install the environment is using the [specifications file](https://github.com/carpentries-lab/metagenomics-analysis/blob/gh-pages/files/spec-file-Ubuntu22.txt) 
-> for Linux Ubuntu 22.04, which has the exact versions of each tool in this environment. You can use the spec file as follows:  
+> for Linux Ubuntu 24.04, which has the exact versions of each tool in this environment. You can use the spec file as follows:  
 > ~~~
-> $ conda create --name metagenomics --file spec-file-Ubuntu22.txt
+> $ conda create --name metagenomics --file spec-file-Ubuntu24.txt
 > ~~~
 > {: .bash}
 > More information about how to use environments and spec files is available at [conda documentation](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
@@ -150,9 +150,9 @@ Once your Miniconda3 is ready, follow these instructions to install and activate
 
 > ## Linux: option 2
 > Another way to create an environment is with a `ỳml` file.
-> This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu22.yml`.
+> This environment can be modified by adding or deleting tools in a file `metagenomics-Ubuntu24.yml`.
 > 
-> In Ubuntu 22.04, copy this file [metagenomics-Ubuntu22.yml](https://github.com/carpentries-lab/metagenomics-analysis/blob/gh-pages/files/metagenomics-Ubuntu22.yml) 
+> In Ubuntu 24.04, copy this file [metagenomics-Ubuntu24.yml](https://github.com/carpentries-lab/metagenomics-analysis/blob/gh-pages/files/metagenomics-Ubuntu24.yml) 
 > to your computer and follow the instructions in the [video tutorial](https://youtu.be/0Ks1k9gg3E0)
 {: .solution}
 
