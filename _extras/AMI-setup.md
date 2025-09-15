@@ -215,4 +215,4 @@ When you are finished with your instance, you must terminate it to avoid unwante
 5. Select 'Yes, Terminate' to terminate the instance.
 
 # Reference
-This notes are adapted from the Data Carpentry Genomics Workshop [corresponding page](https://datacarpentry.org/genomics-workshop/AMI-setup/index.html)
+This notes are adapted from the Data Carpentry Genomics Workshop [corresponding page](https://datacarpentry.github.io/genomics-workshop/AMI-setup)
